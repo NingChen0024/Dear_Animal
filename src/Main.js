@@ -63,15 +63,14 @@ class Main extends Component{
 
   
      <section class="project section-padding" id="project">
-          <div class="container-fluid">
-               <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <div class="container-fluid col-md-9">
+               <div id="carouselExampleIndicators" class="carousel slide fade-up" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 </ol>
                     <div class="carousel-inner">
-
                               <div class="carousel-item active" data-aos="fade-up" data-aos-delay="100">
                                    <img src={ require("./images/project/project-image01.jpg")} class="img-fluid d-block w-100" alt="project image"/>
                               
@@ -150,7 +149,7 @@ class Main extends Component{
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span class="sr-only">Previous</span>
                                 </a>
-                                
+
                                 <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span class="sr-only">Next</span>

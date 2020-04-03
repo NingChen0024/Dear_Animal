@@ -26,6 +26,10 @@ class Nav extends Component{
                             <Link to="/shop" >
                                 <li class="nav-link"> Shop</li>
                             </Link>
+
+                            <Link to="/shop" >
+                                <li class="nav-link contact"> contact</li>
+                            </Link>
                         </ul>
                     </div>
                 </div>
