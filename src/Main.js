@@ -62,7 +62,7 @@ class Main extends Component{
 
 
   
-     <section class="project section-padding" id="project">
+     <section class="project section-padding fade-up" id="project">
           <div class="container-fluid col-md-9">
                <div id="carouselExampleIndicators" class="carousel slide fade-up" data-ride="carousel">
                 <ol class="carousel-indicators">
