@@ -8,7 +8,7 @@ import About from './About'
 import Shop from './Shop'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Main from './Main'
-
+import PuzzleComp from './PuzzleComp'
 
 
 
@@ -21,6 +21,7 @@ class App extends Component{
         <Router>
           <div>
             <Nav/>
+            <PuzzleComp/>
             <Switch>
               <Route path="/" exact component={Main}/>
               <Route path="/about" component={About}/>
