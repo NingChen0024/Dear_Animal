@@ -19,8 +19,8 @@ class Nav extends Component{
                                 <li class="nav-link">Animal lovers</li>
                             </Link>
                        
-                            <Link to='/about' >
-                                <li class="nav-link">About</li>
+                            <Link to='/post' >
+                                <li class="nav-link">Post</li>
                             </Link>
 
                             <Link to="/shop" >
