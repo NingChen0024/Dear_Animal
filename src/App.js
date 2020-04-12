@@ -1,7 +1,7 @@
 import React ,{ Component }from 'react';
 import './App.css';
 import Nav from './Nav'
-import Posts from './About'
+import About from './About'
 import Shop from './Shop'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Main from './Main'
@@ -18,7 +18,7 @@ class App extends Component{
             <Nav/>
             <Switch>
               <Route path="/" exact component={Main}/>
-              <Route path="/post" component={Posts}/>
+              <Route path="/about" component={About}/>
               <Route path="/shop" component={Shop}/>
             </Switch>
           </div>
