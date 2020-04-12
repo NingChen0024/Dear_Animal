@@ -10,22 +10,29 @@ import axios from 'axios'
 class About extends Component {
 
     state = {
-      hello: null
+      pid: null,
     }
 
     componentDidMount(){
       axios.get('/api/get/allposts')
-      .then(res => this.setState({hello: res.data[0].date_created}))
+      // .then(res => console.log(res.data))
+      .then(res => this.setState({pid: res.data}))
       .catch(err => console.log(err))
     }
 
+    
+
     render() {
+
+      console.log(this.state.pid)
       return (
       <div >
         <p>123</p>
         <div>
-          {this.state.hello
-          ? <div> {this.state.hello}</div>
+          {this.state.pid
+          ? <div> 
+              <div>{this.state.pid[0].pid}</div>
+            </div>
           : <p>err</p>
           }
         </div>
