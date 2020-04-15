@@ -20,8 +20,7 @@ class About extends Component {
       .catch(err => console.log(err))
     }
 
-    
-
+  
     render() {
 
       console.log(this.state.pid)
