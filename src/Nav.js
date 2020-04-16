@@ -6,29 +6,32 @@ class Nav extends Component{
     render(){
         return(
             <nav className="navbar navbar-expand-lg">
-                <div class="container">
-                    <a class="navbar-brand" href="./">
-                        <i ></i>
-                        Animal lovers
+                <div className="container">
+                    <a className="navbar-brand" href="./">
+                        <i className ='navIcon'> Dear Animals </i>
                      </a>
 
-                    <div class="collapse navbar-collapse" id="navbarNav">
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                        <ul class="navbar-nav ml-auto" id="navbarNav">
+                    <div className="collapse navbar-collapse" id="navbarNav">
+                        <ul className="navbar-nav ml-auto" id="navbarNav">
                             <Link to='/'>
-                                <li class="nav-link">Animal lovers</li>
+                                <li className="nav-link navItem">Animal lovers</li>
                             </Link>
                        
                             <Link to='/about' >
-                                <li class="nav-link">About</li>
+                                <li className="nav-link navItem">About</li>
                             </Link>
 
                             <Link to="/shop" >
-                                <li class="nav-link"> Shop</li>
+                                <li className="nav-link navItem"> Shop</li>
                             </Link>
 
                             <Link to="/shop" >
-                                <li class="nav-link contact"> contact</li>
+                                <li className="nav-link contact navItem"> contact</li>
                             </Link>
                         </ul>
                     </div>
