@@ -17,15 +17,12 @@ class Main extends Component{
                                    <h1 className="text-white" data-aos="fade-up">We are ready for your digital marketing</h1>
 
                                    <a href="contact.html" class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">Let us discuss together!</a>
-
-                                   <strong classNames="d-block py-3 pl-5 text-white" data-aos="fade-up" data-aos-delay="200"><i class="fa fa-phone mr-2"></i> +99 080 070 4224</strong>
                               </div>
                         </div>
-
                         <div className="col-lg-6 col-12">
                           <div className="hero-image" data-aos="fade-up" data-aos-delay="300">
 
-                            <img src={ require("./images/working-girl.png")} class="img-fluid" alt="working girl"/>
+                            <img src={ require("./images/koala_cartoon.png")} class="img-fluid" alt="working girl"/>
                           
                           </div>
                         </div>
@@ -36,22 +33,19 @@ class Main extends Component{
 
 
      
-     <section class="about section-padding pb-0" id="about">
+     <section class="about section-padding pb-0 about-background" id="about">
           <div class="container">
                <div class="row">
 
-                    <div class="col-lg-7 mx-auto col-md-10 col-12">
+                    <div class="col-lg-7 mx-auto col-md-10 col-12 ">
                          <div class="about-info">
-
                               <h2 class="mb-4" data-aos="fade-up">the best <strong>Digital Marketing agency</strong> in Rio de Janeiro</h2>
-
                               <p class="mb-0" data-aos="fade-up">Total 5 HTML pages are included in this template from TemplateMo website. Please check 2 <a href="blog.html">blog</a> pages, <a href="project-detail.html">project</a> page, and <a href="contact.html">contact</a> page. 
                               <br/>You are <strong>allowed</strong> to use this template for commercial or non-commercial purpose. You are NOT allowed to redistribute the template ZIP file on template collection websites.</p>
                          </div>
-
                          <div class="about-image" data-aos="fade-up" data-aos-delay="200">
 
-                          <img src={ require("./images/office.png")} class="img-fluid" alt="office"/>
+                          <img src={ require("./images/kangaroo_cartoon.png")} class="img-fluid" alt="office"/>
                          
                         </div>
                     </div>
@@ -169,7 +163,7 @@ class Main extends Component{
                     <div class="col-lg-6 col-md-5 col-12">
                         <div class="contact-image" data-aos="fade-up">
 
-                          <img src={ require("./images/female-avatar.png")} class="img-fluid" alt="website"/>
+                          <img src={ require("./images/Wombat_cartoon.gif")} class="img-fluid" alt="website"/>
                          
                         </div>
                     </div>

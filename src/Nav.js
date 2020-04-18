@@ -30,8 +30,8 @@ class Nav extends Component{
                                 <li className="nav-link navItem"> Shop</li>
                             </Link>
 
-                            <Link to="/shop" >
-                                <li className="nav-link contact navItem"> contact</li>
+                            <Link to="/parent" >
+                                <li className="nav-link contact navItem"> For Parents</li>
                             </Link>
                         </ul>
                     </div>

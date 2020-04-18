@@ -254,7 +254,7 @@ MENU
 -----------------------------------------*/
 
 .navbar {
-background: var(--menu-bg);
+background: #ffffb3;
 z-index: 2;
 top: 0;
 right: 0;
@@ -381,7 +381,7 @@ overflow: hidden;
 }
 
 .hero-bg {
-background: linear-gradient(170deg, var(--primary-color) 64%, var(--white-color) 30%);
+background: linear-gradient(170deg, #9fdf9f 64%, var(--white-color) 30%);
 }
 
 .hero-image {
@@ -513,6 +513,9 @@ display: block;
 margin: 0 auto;
 }
 
+.about-background{
+  background: #fff2e6 ;
+}
 
 
 /*---------------------------------------
