@@ -140,7 +140,7 @@ line-height: 1.5em;
 b, 
 strong {
 letter-spacing: 0;
-color: var(--secondary-color);
+color: #ff99bb;
 }
 
 
@@ -338,7 +338,7 @@ transform: rotate(-45deg);
 }
 
 .navbar-toggler .navbar-toggler-icon {
-background: var(--white-color);
+background: black;
 transition: background 10ms 300ms ease;
 display: block;
 width: 30px;
@@ -354,7 +354,7 @@ transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 3
 position: absolute;
 right: 0;
 left: 0;
-background: var(--white-color);
+background: black;;
 width: 30px;
 height: 2px;
 content: '';
@@ -396,7 +396,7 @@ top: 2em;
 -----------------------------------------*/
 
 .project {
-background: var(--project-bg);
+background: #eee6ff;
 }
 
 .project-wrapper {
@@ -415,7 +415,7 @@ bottom: 32px;
 right: 32px;
 left: 32px;
 width: 90%;
-padding: 32px;
+padding: 15px;
 }
 
 .project-info small {
@@ -425,8 +425,10 @@ position: relative;
 top: 2px;
 }
 
+
+
 .project-info a {
-color: var(--primary-color);
+  color: #a880ff;
 }
 
 .project-info .project-icon {
@@ -747,9 +749,13 @@ h3 {
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
-  height: 80px;
-  width: 80px;
-  background-color: var(--menu-bg);
-  background-size: 100%, 100%;
+  height: 50px;
+  width: 50px;
+  background-color: #dcccff;
+  background-size: 50%, 50%;
   border-radius: 50%;
+}
+
+.table {
+  align-items: center;
 }

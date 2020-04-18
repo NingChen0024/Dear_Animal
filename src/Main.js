@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import {Link} from 'react-router-dom'
 
 class Main extends Component{
 
@@ -14,9 +14,9 @@ class Main extends Component{
                         <div className="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
                               <div className="hero-text">
 
-                                   <h1 className="text-white" data-aos="fade-up">We are ready for your digital marketing</h1>
+                                   <h1 className="text-white" data-aos="fade-up">Say hi to endangered animals in Victoria</h1>
 
-                                   <a href="contact.html" class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">Let us discuss together!</a>
+                                   <a href="contact.html" class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">Let's make friends</a>
                               </div>
                         </div>
                         <div className="col-lg-6 col-12">
@@ -57,6 +57,9 @@ class Main extends Component{
 
   
      <section class="project section-padding fade-up" id="project">
+          <h2 class="mb-5 text-center" data-aos="fade-up">
+               Please take a look through all<strong> amazing activities</strong>
+          </h2>
           <div class="container-fluid col-md-9">
                <div id="carouselExampleIndicators" class="carousel slide fade-up" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -66,75 +69,45 @@ class Main extends Component{
                 </ol>
                     <div class="carousel-inner">
                               <div class="carousel-item active" data-aos="fade-up" data-aos-delay="100">
-                                   <img src={ require("./images/project/project-image01.jpg")} class="img-fluid d-block w-100" alt="project image"/>
+                                   <img src={ require("./images/project/Project_one.jpg")} class="img-fluid d-block w-100" alt="project image"/>
                               
                                    <div class="project-info">
-                                        <small>Marketing</small>
+                                        <small>Outdoors</small>
                                         <h3>
-                                             <a href="project-detail.html">
-                                                  <span>Sweet Go Agency</span>
-                                                  <i class="fa fa-angle-right project-icon"></i>
-                                             </a>
+                                        <Link to='/wildexp'>
+                                             <span>Wild Explorers</span>
+                                             
+                                        </Link>
                                         </h3>
                                    </div>
                               </div>
 
                               <div class="carousel-item " data-aos="fade-up">
-                                   <img src={ require("./images/project/project-image02.jpg")} class="img-fluid d-block w-100" alt="project image"/>
+                                   <img src={ require("./images/project/Project_two.jpg")} class="img-fluid d-block w-100" alt="project image"/>
                                  
                                    <div class="project-info">
-                                        <small>Website</small>
+                                        <small>Exploring</small>
 
                                         <h3>
-                                             <a href="project-detail.html">
-                                                  <span>Smart Ladies</span>
-                                                  <i class="fa fa-angle-right project-icon"></i>
-                                             </a>
+                                        <Link to='/parent'>
+                                             <span>Nature's Calling</span>
+                                        
+                                        </Link>
                                         </h3>
                                    </div>
                               </div>
 
                               <div class="carousel-item " data-aos="fade-up">
-                                   <img src={ require("./images/project/project-image03.jpg")} class="img-fluid d-block w-100" alt="project image"/>
+                                   <img src={ require("./images/project/Project_three.jpg")} class="img-fluid d-block w-100" alt="project image"/>
                                    
                                    <div class="project-info">
-                                        <small>Branding</small>
+                                        <small>Adventures</small>
 
                                         <h3>
-                                             <a href="project-detail.html">
-                                                  <span>Shoes factory</span>
-                                                  <i class="fa fa-angle-right project-icon"></i>
-                                             </a>
-                                        </h3>
-                                   </div>
-                              </div>
-
-                              <div class="carousel-item" data-aos="fade-up">
-                                   <img src={ require("./images/project/project-image04.jpg")} class="img-fluid d-block w-100" alt="project image"/>
-                                 
-                                   <div class="project-info">
-                                        <small>Social Media</small>
-
-                                        <h3>
-                                             <a href="project-detail.html">
-                                                  <span>Race Bicycle</span>
-                                                  <i class="fa fa-angle-right project-icon"></i>
-                                             </a>
-                                        </h3>
-                                   </div>
-                              </div>
-
-                              <div class="carousel-item" data-aos="fade-up">
-                                   <img src={ require("./images/project/project-image05.jpg")} class="img-fluid d-block w-100" alt="project image"/>
-                                  
-                                   <div class="project-info">
-                                        <small>Video</small>
-
-                                        <h3>
-                                             <a href="project-detail.html">
-                                                  <span>Ultimate HealthCare</span>
-                                                  <i class="fa fa-angle-right project-icon"></i>
-                                             </a>
+                                             <Link to='/parent'>
+                                                  <span>Aussie Animal Adventurers</span>
+                                                
+                                             </Link>
                                         </h3>
                                    </div>
                               </div>
