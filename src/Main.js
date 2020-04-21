@@ -7,7 +7,7 @@ class Main extends Component{
     return(
 
         <div>
-        <section className="hero hero-bg d-flex justify-content-center align-items-center">
+        <section className="hero hero-bg d-flex justify-content-center align-items-center" id='list'>
                <div className="container">
                     <div className="row">
 
@@ -33,7 +33,7 @@ class Main extends Component{
 
 
      
-     <section class="about section-padding pb-0 about-background" id="about">
+     <section class="about section-padding pb-0 about-background" id="tips">
           <div class="container">
                <div class="row">
 
@@ -56,7 +56,7 @@ class Main extends Component{
 
 
   
-     <section class="project section-padding fade-up" id="project">
+     <section class="project section-padding fade-up" id="acts">
           <h2 class="mb-5 text-center" data-aos="fade-up">
                Please take a look through all<strong> amazing activities</strong>
           </h2>
@@ -127,7 +127,7 @@ class Main extends Component{
 
 
     
-     <section class="testimonial section-padding">
+     <section class="testimonial section-padding" id='last'>
           <div class="container">
                <div class="row">
 

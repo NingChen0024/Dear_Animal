@@ -10,24 +10,28 @@ import Parent from './Parents'
 import WildExp from './WildExp'
 import NatureCall from './NatureCall'
 import AusAdv from './AusAdv'
+import ScrollToTop from './ScrollToTop';
+
 
 class App extends Component{
 
   render(){
     return (
       <div >
-        <Router>
+        <Router >
           <div>
-            <Nav/>
-            <Switch>
-              <Route path="/" exact component={Main}/>
-              <Route path="/about" component={About}/>
-              <Route path="/shop" component={Shop}/>
-              <Route path="/parent" component={Parent}/>
-              <Route path='/wildexp' exact component={WildExp}/>
-              <Route path='/natureCall' exact component={NatureCall}/>
-              <Route path='/ausAdv' exact component={AusAdv}/>
-            </Switch>
+            <ScrollToTop>
+              <Nav/>
+              <Switch>
+                <Route path="/" exact component={Main}/>
+                <Route path="/about" component={About}/>
+                <Route path="/shop" component={Shop}/>
+                <Route path="/parent" component={Parent}/>
+                <Route path='/wildexp' exact component={WildExp}/>
+                <Route path='/natureCall' exact component={NatureCall}/>
+                <Route path='/ausAdv' exact component={AusAdv}/>
+              </Switch>
+            </ScrollToTop>
           </div>
         </Router>
     

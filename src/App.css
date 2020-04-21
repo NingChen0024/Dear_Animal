@@ -766,3 +766,11 @@ h3 {
 .table {
   align-items: center;
 }
+
+/* .dropdown{
+  border: 2px solid var(--secondary-color);
+  border-radius: var(--border-radius-large);
+  color: var(--secondary-color);
+  font-family: var(--font-bold-family);
+  padding: 0.6em 2em 0.8em 2em;
+} */
