@@ -1,21 +1,22 @@
 import React ,{ Component }from 'react';
-
+import ScrollAnimation from 'react-animate-on-scroll';
 
 function WildExp() {
     return (
       <div className='project-background'>
-        <div className="container">
-
-                    <div className="row">
+        <div className="container mb-5 pb-5">
+                <ScrollAnimation animateIn="fadeIn">
+                    <div className="row ">
 
                             <div className="col-lg-9 mx-auto col-md-10 col-12 mt-lg-5 text-center fade-up" >
 
                             <h4 className='m-3'>Outdoors</h4>
 
-                            <h1 className='m-4'>Wild Explorers</h1>
+                            <h1 className='m-4 eventshead pt-5'>Wild Explorers</h1>
                             <h4>Children will become a Wild Explorer for the day, learning about three special endangered Australian animals through song, story and play.</h4>
                             </div>
                     </div>
+                </ScrollAnimation>
 
             <div  class="full-image text-center zoom-in m-5">
                 <img src={ require("./images/project/Project_one.jpg")} class="img-fluid" alt="interview process"/>
