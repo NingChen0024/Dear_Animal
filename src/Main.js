@@ -76,7 +76,6 @@ class Main extends Component{
                                         <h3>
                                         <Link to='/wildexp'>
                                              <span>Wild Explorers</span>
-                                             
                                         </Link>
                                         </h3>
                                    </div>
@@ -89,9 +88,8 @@ class Main extends Component{
                                         <small>Exploring</small>
 
                                         <h3>
-                                        <Link to='/parent'>
+                                        <Link to='/natureCall'>
                                              <span>Nature's Calling</span>
-                                        
                                         </Link>
                                         </h3>
                                    </div>
@@ -104,7 +102,7 @@ class Main extends Component{
                                         <small>Adventures</small>
 
                                         <h3>
-                                             <Link to='/parent'>
+                                             <Link to='/ausAdv'>
                                                   <span>Aussie Animal Adventurers</span>
                                                 
                                              </Link>

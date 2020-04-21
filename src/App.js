@@ -8,6 +8,8 @@ import Main from './Main'
 import PuzzleComp from './PuzzleComp'
 import Parent from './Parents'
 import WildExp from './WildExp'
+import NatureCall from './NatureCall'
+import AusAdv from './AusAdv'
 
 class App extends Component{
 
@@ -23,6 +25,8 @@ class App extends Component{
               <Route path="/shop" component={Shop}/>
               <Route path="/parent" component={Parent}/>
               <Route path='/wildexp' exact component={WildExp}/>
+              <Route path='/natureCall' exact component={NatureCall}/>
+              <Route path='/ausAdv' exact component={AusAdv}/>
             </Switch>
           </div>
         </Router>
