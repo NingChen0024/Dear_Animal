@@ -12,6 +12,8 @@ import NatureCall from './NatureCall'
 import AusAdv from './AusAdv'
 import ScrollToTop from './ScrollToTop';
 import ParentTips from './Parent_tips';
+import ParentRes from './Parent_rescure';
+import Game from './Game';
 
 class App extends Component{
 
@@ -31,6 +33,8 @@ class App extends Component{
                 <Route path='/natureCall' exact component={NatureCall}/>
                 <Route path='/ausAdv' exact component={AusAdv}/>
                 <Route path='/parentTips' exact component={ParentTips}/>
+                <Route path='/parentRescure' exact component={ParentRes}/>
+                <Route path='/games' exact component={Game}/>
               </Switch>
             </ScrollToTop>
           </div>

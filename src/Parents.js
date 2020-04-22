@@ -39,7 +39,10 @@ function Parent() {
               <div class="blog-info">
                 <h4 class="blog-category text-danger">Rescure</h4>
 
-                <h3><a href="blog-detail.html">Methods that are critical to help harmed animals</a></h3>
+                <Link to='/parentRescure'>
+                  <h3>Methods that are critical to help harmed animals</h3>                        
+                </Link>
+                
               </div>
             </div>
           
