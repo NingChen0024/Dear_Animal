@@ -11,7 +11,7 @@ import WildExp from './WildExp'
 import NatureCall from './NatureCall'
 import AusAdv from './AusAdv'
 import ScrollToTop from './ScrollToTop';
-
+import ParentTips from './Parent_tips';
 
 class App extends Component{
 
@@ -30,6 +30,7 @@ class App extends Component{
                 <Route path='/wildexp' exact component={WildExp}/>
                 <Route path='/natureCall' exact component={NatureCall}/>
                 <Route path='/ausAdv' exact component={AusAdv}/>
+                <Route path='/parentTips' exact component={ParentTips}/>
               </Switch>
             </ScrollToTop>
           </div>
