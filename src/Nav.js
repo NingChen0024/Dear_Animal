@@ -26,7 +26,7 @@ class Nav extends Component{
                                 <li className="nav-link navItem">About Us</li>
                             </Link>
 
-                            <div class="dropdown">
+                            {/* <div class="dropdown">
                                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Main
                                 </button>
@@ -35,7 +35,7 @@ class Nav extends Component{
                                     <a class="dropdown-item" href="#acts">Another action</a>
                                     <a class="dropdown-item" href="#last">Something else here</a>
                                 </div>
-                            </div>
+                            </div> */}
 
                             <Link to="/parent" >
                                 <li className="nav-link contact navItem"> For Parents</li>
@@ -50,9 +50,3 @@ class Nav extends Component{
 
 export default Nav 
 
-
-{/* 
-             <a className="nav-link active" href="https://www.google.com">Active</a>
-            <a className="nav-link" href="#">Link</a>
-            <a className="nav-link" href="#">Link</a>
-            <a className="nav-link disabled" href="#">Disabled</a> */}

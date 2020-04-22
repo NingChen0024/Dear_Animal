@@ -24,7 +24,7 @@ function Parent() {
                 <h4 class="blog-category text-info">Tips</h4>
 
                 <Link to='/parentTips'>
-                  <h3>10 tips that are useful you need to know to help animals</h3>                        
+                  <h3>10 Easy Things You Can Do to Save Endangered Species</h3>                        
                 </Link>
 
               </div>
@@ -47,12 +47,26 @@ function Parent() {
             </div>
           
             <div class="blog-sidebar py-4 d-flex justify-content-center align-items-center" data-aos-delay="300">
+              <img src={ require("./images/project/parents_cons.jpg")} class="img-fluid" alt="blog"/>
+
+              <div class="blog-info">
+                <h4 class="blog-category text-primary">Conservation</h4>
+                <Link to='/parentFaq'>
+                  <h3>Conservation measures for serveral animals</h3>                        
+                </Link>
+        
+              </div>
+            </div>
+
+            <div class="blog-sidebar py-4 d-flex justify-content-center align-items-center" data-aos-delay="300">
               <img src={ require("./images/project/parents_faq.jpg")} class="img-fluid" alt="blog"/>
 
               <div class="blog-info">
                 <h4 class="blog-category text-success">FAQ</h4>
-
-                <h3><a href="blog-detail.html">All the answers of frequently asked questions</a></h3>
+                <Link to='/parentFaq'>
+                  <h3>All the answers of frequently asked questions</h3>                        
+                </Link>
+        
               </div>
             </div>
          

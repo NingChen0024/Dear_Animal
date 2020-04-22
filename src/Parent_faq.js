@@ -6,93 +6,75 @@ function ParentFaq() {
     return (
       <div >
         <div className='container'>
-        <ScrollAnimation animateIn="fadeIn">
-            <div >
+          <ScrollAnimation animateIn="fadeIn">
+            <div className='mb-5, pb-5'>
 
-              <h1 className=' parentshead2 pt-5 mt-5'>Rescure methods for all animals</h1>
-            
-              
-              <div  class="parent-image text-center zoom-in mt-5">
-                <img src={ require("./images/project/parents_help.jpg")} class="img-fluid" alt="interview process"/>
-              </div>
+                <h1 className=' parentshead2 pt-5 mt-5 mb-5'>Conservation methods for animals</h1>
 
+                <div className='row mt-5 mp-5'>
+                    <div class="col-lg-7 col-md-7 col-12 mb-4 mt-3">
+                        <img src={ require("./images/koala_pho.jpg")} class="img-fluid parent-image" alt="interview process"/>
+
+                    </div>
+                    
+                    <div class="col-lg-5 col-md-5 col-12 mb-4"  >
+                        <h2>What are the safety measures to save injured Koala?</h2>
+
+                        <p class="mt-3 mb-4">following management actions are undertaken to conserve the koala and their habitat</p>
+
+                        <ul class="list-detail">
+                            <li><span>Restrain your dog and keep it away from the koala.</span></li>
+                            <li><span>approach the koala from behind and place a washing basket over the koala.</span></li>
+                            <li><span>Put something heavy on top of the basket to stop the koala moving away and climbing a tree.</span></li>
+                            <li><span>Ensure the koala is left in a quiet and stresss free environment.</span></li>
+                        </ul> 
+                    </div>
+                </div>
+
+
+                <div className='row mt-5 mp-5'>
+                    <div class="col-lg-7 col-md-7 col-12 mb-4 mt-3">
+                        <img src={ require("./images/wallaby_pho.jpg")} class="img-fluid parent-image" alt="interview process"/>
+
+                    </div>
+                    
+                    <div class="col-lg-5 col-md-5 col-12 mb-4"  >
+                        <h2>What are the safety measures to save injured Wallaby?</h2>
+
+                        <p class="mt-3 mb-4">How to protect wallaby?</p>
+
+                        <ul class="list-detail">
+                            <li><span>Protecting Proserpine rock-wallaby habitat through voluntary conservation agreements and council open space habitat.</span></li>
+                            <li><span>Controlling feral and domestic animals conducting weed control in Proserpine rock-wallaby habitat.</span></li>
+                            <li><span>Implementing grazing and fire management appropriate for the Proserpine rock-wallaby.</span></li>
+                            <li><span>Installing fences (eg. solid as opposed to mesh) that allow wallabies to escape from predators.</span></li>
+                        </ul> 
+                    </div>
+                </div>
+
+
+                <div className='row mt-5 mp-5'>
+                    <div class="col-lg-7 col-md-7 col-12 mb-4 mt-3">
+                        <img src={ require("./images/wombat_pho.jpg")} class="img-fluid parent-image" alt="interview process"/>
+
+                    </div>
+                    
+                    <div class="col-lg-5 col-md-5 col-12 mb-4"  >
+                        <h2>What are the basic protective measures for wombat?</h2>
+
+                        <p class="mt-3 mb-4">ollowing management actions are undertaken to conserve the wombats and their habitat</p>
+
+                        <ul class="list-detail">
+                            <li><span>Research and monitoring of the wombats</span></li>
+                            <li><span>Fire management.</span></li>
+                            <li><span>Pmaintenance of the predator-proof fence.</span></li>
+                            <li><span>Control of predators and competitors.</span></li>
+                            <li><span>weed control..</span></li>
+                        </ul> 
+                    </div>
+                </div>
             </div>
           </ScrollAnimation>
-          <div className='container parent-text-space mb-5 pb-5'>
-
-            <p className ='font-weight-bold m-4'>
-                Personal safety is first and foremost.
-            </p>  
-
-            <p className ='font-weight-bold m-4'>
-                1. Wear a safety vest with reflective bands to increase your visibility. 
-                The wearing of a vest alsoallows the public and authorities to realise that
-                you are acting in an official capacity. This isparticularly important if you are 
-                carrying a rifle or must euthanase an animal in some way. It also makes it easier 
-                for other rescuers to find you.
-            </p>  
-
-            <p className ='font-weight-bold m-4'>
-                2. If an animal appears to be unreasonably agitated by your presence, try removing 
-                the vest in case it is the bright colour that is alarming the animal.
-            </p>  
-
-            <p className ='font-weight-bold m-4'>
-                3. Examination or surgical gloves are recommended for personal hygiene when handling 
-                injured animals or when checking pouches. This also reduces the risk of infection 
-                to an animal you are handling.
-            </p>  
-
-            <p className ='font-weight-bold m-4'>
-                4. After wearing examination gloves and, preferably, even before you put them on, 
-                disinfect your hands – the warm and moist environment under a latex glove is a 
-                paradise for bacteria.
-            </p> 
-
-   
-            <p className ='font-weight-bold m-4'>
-                5. Before dealing with an animal, familiarise yourself with the surroundings 
-                and assess for risks or dangers to yourself, and to the animal – eg you may 
-                be half way around a bend and not visible to oncoming vehicles.
-            </p> 
-
-            <p className ='font-weight-bold m-4'>
-                6. If the animal is on private property, you will need permission to enter.
-            </p> 
-            
-            <p className ='font-weight-bold m-4'>
-                7. Attempt to assess an animal from a safe distance. Good binoculars are essential. 
-                Keeping a reasonable distance improves your own safety and minimises the possibility 
-                of an animal trying to flee and hurt itself further, or perhaps even escaping.
-            </p> 
-            <p className ='font-weight-bold m-4'>
-                8. Decide if you can handle the situation. You may need help, other equipment 
-                or Veterinary assistance (drugs, etc).
-            </p> 
-            <p className ='font-weight-bold m-4'>
-                9. Before you attempt to capture an animal, make sure you will be able to deal with 
-                the animal and that it has somewhere to go. Don’t put an animal through the torment 
-                of capture if it can’t be cared for.
-            </p> 
-            <p className ='font-weight-bold m-4'>
-                10. Be prepared when you approach an animal. Take a blanket with you even if the animal 
-                doesn’t appear to be able to move. It may suddenly get up or you may need to quickly grab a joey.
-            </p> 
-            <p className ='font-weight-bold m-4'>
-                11. The GOLDEN RULE for most animals is to cover the head as quickly as possible. This will
-                generally calm it down, or at least it will cover the bitey bits.
-            </p> 
-
-            <p className ='font-weight-bold m-4'>
-                12. When transporting an animal, turn off your car radio/stereo.
-            </p> 
-
-            <p className ='font-weight-bold m-4'>
-                13. If an animal is mobile DO NOT CHASE IT – follow it and devise a rescue plan.
-            </p> 
-        </div>
-     
-
         
       </div>
       <footer class="site-footer">

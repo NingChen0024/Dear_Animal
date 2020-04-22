@@ -1,7 +1,15 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
+import {FloatingMenu, MainButton, ChildButton} from 'react-floating-button-menu';
+
+
+
 
 class Main extends Component{
+     
+     state = {
+          isOpen: false,
+        }
 
     render(){
     return(
@@ -19,13 +27,40 @@ class Main extends Component{
                                    <a href="contact.html" class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">Let's make friends</a>
                               </div>
                         </div>
-                        <div className="col-lg-6 col-12">
+                        <div className="col-lg-5 col-12">
                           <div className="hero-image" data-aos="fade-up" data-aos-delay="300">
 
                             <img src={ require("./images/koala_cartoon.png")} class="img-fluid" alt="working girl"/>
                           
                           </div>
                         </div>
+                        {/* <div className='col-lg-1'>
+                        <FloatingMenu
+                         slideSpeed={500}
+                         direction="up"
+                         spacing={8}
+                         isOpen={this.state.isOpen}
+                         >
+                         <MainButton
+                              iconResting={<MdAdd style={{ fontSize: 20 }} nativeColor="white" />}
+                              iconActive={<MdClose style={{ fontSize: 20 }} nativeColor="white" />}
+                              backgroundColor="black"
+                              onClick={() => this.setState({ isOpen: !this.state.isOpen })}
+                              size={56}
+                         />
+                              <ChildButton
+                              icon={<MdFavorite style={{ fontSize: 20 }} nativeColor="black" />}
+                              backgroundColor="white"
+                              size={40}
+                              onClick={() => console.log('First button clicked')}
+                         />
+                         <ChildButton
+                              icon={<MdFavorite style={{ fontSize: 20 }} nativeColor="black" />}
+                              backgroundColor="white"
+                              size={40}
+                         />
+                         </FloatingMenu>
+                        </div> */}
 
                     </div>
                </div>
@@ -39,13 +74,19 @@ class Main extends Component{
 
                     <div class="col-lg-7 mx-auto col-md-10 col-12 ">
                          <div class="about-info">
-                              <h2 class="mb-4" data-aos="fade-up">the best <strong>Digital Marketing agency</strong> in Rio de Janeiro</h2>
-                              <p class="mb-0" data-aos="fade-up">Total 5 HTML pages are included in this template from TemplateMo website. Please check 2 <a href="blog.html">blog</a> pages, <a href="project-detail.html">project</a> page, and <a href="contact.html">contact</a> page. 
-                              <br/>You are <strong>allowed</strong> to use this template for commercial or non-commercial purpose. You are NOT allowed to redistribute the template ZIP file on template collection websites.</p>
+                              <h2 class="mb-4" data-aos="fade-up">We know you are <strong>nice</strong> and want to help your <strong>animals friends !</strong></h2>
+                              <div class="row">
+                                   <p class="mb-3 col-lg-8 col-md-8 kids-tip-font" data-aos="fade-up">There are seveal ways to help your animal friends! Click the button to see the tips when your are ready!</p>
+                                   <div className=' mt-3 col-md-4 col-lg-4'>
+                                        <Link to='/kidsTips'>     
+                                             <a class="tips-custom-btn tips-btn-bg btn " data-aos="fade-up">Click Me!</a>
+                                        </Link>
+                                   </div>
+                              </div>                        
                          </div>
                          <div class="about-image" data-aos="fade-up" data-aos-delay="200">
 
-                          <img src={ require("./images/kangaroo_cartoon.png")} class="img-fluid" alt="office"/>
+                          <img src={ require("./images/kangaroo_cartoon.png")} class="img-fluid mb-5" alt="office"/>
                          
                         </div>
                     </div>
