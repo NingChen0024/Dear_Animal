@@ -145,7 +145,7 @@ function ParentTips() {
                 <div class="col-lg-4 mx-lg-auto text-center col-md-8 col-12" data-aos-delay="400">
                     <p class="copyright-text">Copyright &copy; 2020 Your Company
                     <br></br>
-                    <a rel="nofollow noopener" href="https://templatemo.com">Design: TemplateMo</a></p>
+                    <a rel="nofollow noopener" href="https://templatemo.com">Design: </a></p>
                 </div>
 
                 </div>

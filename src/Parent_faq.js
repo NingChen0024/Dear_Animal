@@ -4,73 +4,104 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 function ParentFaq() {
     return (
-      <div >
-        <div className='container'>
+      <div className='faq-background'>
+        <div className='container '>
           <ScrollAnimation animateIn="fadeIn">
             <div className='mb-5, pb-5'>
 
-                <h1 className=' parentshead2 pt-5 mt-5 mb-5'>Conservation methods for animals</h1>
+                <h1 className=' parentshead2 pt-5 mb-5'>Q &amp; A</h1>
+
+                <div  class="parent-image text-center zoom-in mt-5">
+                <img src={ require("./images/faq_buble.jpg")} class="img-fluid" alt="interview process"/>
+                </div>
 
                 <div className='row mt-5 mp-5'>
                     <div class="col-lg-7 col-md-7 col-12 mb-4 mt-3">
-                        <img src={ require("./images/koala_pho.jpg")} class="img-fluid parent-image" alt="interview process"/>
+                        <h3>Q1. Are there any animal-friendly activities for kids to do at home?</h3>
+                    </div>
+                    
+                    <div class="col-lg-5 col-md-5 col-12 mb-4"  >
+
+                        <p class="mt-3 mb-4">Watching movies is always a good time. It is 
+                            good to watch movies related to the protection of animals with your children. 
+                            After watching an animal-related movie, discuss the information with your 
+                            child and think about how to help protect the animal as in the movie.</p>
+                    </div>
+                </div>
+
+                <div className='row mt-5 mp-5'>
+
+                    <h3>Q2. Which books are suitable for children to learn more about endangered wildlife?</h3>
+                    <div class="col-lg-6 col-md-6 col-12 mb-4 mt-3">
+                    <p class="mt-3 mb-4">BANIMAL RESCUE </p>
+                        <p>With this interactive book, kids can become animal-rescuing heroes! 
+                            Turn the transparent pages to move animals from bad situations to 
+                            places where they’re happy and free.</p>
+                        <img src={ require("./images/faq_bear.png")} class="img-fluid parent-image" alt="interview process"/>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-12 mb-4 mt-3"  >
+                        
+                        <p class="mt-3 mb-4">LOVE ME GENTLY </p>
+                        <p>Love Me Gently is a kids’ guide to caring for canine companions. 
+                            Learn about showing animals (especially dogs) love, compassion, 
+                            and kindness. And read about the real-life problems a boy and his 
+                            newly adopted puppy have—until they work them out together</p>
+                        <img src={ require("./images/faq_dog.png")} class="img-fluid parent-image" alt="interview process"/>
+
+
+                    </div>
+                </div>
+
+                <div className='row mt-5 mp-5'>
+                    <div class="col-lg-7 col-md-7 col-12 mb-4 mt-3">
+                        <h3>Q3. What if the child is scratched by wild animals?</h3>
 
                     </div>
                     
                     <div class="col-lg-5 col-md-5 col-12 mb-4"  >
-                        <h2>What are the safety measures to save injured Koala?</h2>
 
-                        <p class="mt-3 mb-4">following management actions are undertaken to conserve the koala and their habitat</p>
+                        <p class="mt-3 mb-4">If a child is unfortunately scratched by a wild animal, 
+                        parents should first help the child squeeze the contaminated blood from 
+                        the wound and disinfect it with alcohol or iodophor. After that, parents 
+                        need to call the doctor to see if they need to be vaccinated. If the wound 
+                        is severe or if bleeding cannot be stopped in time, parents should immediately 
+                        take the child to the hospital.</p>
 
-                        <ul class="list-detail">
-                            <li><span>Restrain your dog and keep it away from the koala.</span></li>
-                            <li><span>approach the koala from behind and place a washing basket over the koala.</span></li>
-                            <li><span>Put something heavy on top of the basket to stop the koala moving away and climbing a tree.</span></li>
-                            <li><span>Ensure the koala is left in a quiet and stresss free environment.</span></li>
-                        </ul> 
                     </div>
                 </div>
 
 
                 <div className='row mt-5 mp-5'>
                     <div class="col-lg-7 col-md-7 col-12 mb-4 mt-3">
-                        <img src={ require("./images/wallaby_pho.jpg")} class="img-fluid parent-image" alt="interview process"/>
-
+                        <h3>Q4. How to ensure the health of children after contact with wild animals?</h3>
                     </div>
                     
                     <div class="col-lg-5 col-md-5 col-12 mb-4"  >
-                        <h2>What are the safety measures to save injured Wallaby?</h2>
+                        
+                        <p class="mt-3 mb-4">Because small animals carry some germs, when children get in 
+                        touch with animals, parents should instruct their children to wash their hands 
+                        and disinfect them. In addition, children should change the clothes they wear 
+                        when they play with animals, because there may be animal body fluids or feces. 
+                        These clothes should be washed carefully. If the child feels unwell, he should 
+                        go to the hospital immediately.</p>
 
-                        <p class="mt-3 mb-4">How to protect wallaby?</p>
-
-                        <ul class="list-detail">
-                            <li><span>Protecting Proserpine rock-wallaby habitat through voluntary conservation agreements and council open space habitat.</span></li>
-                            <li><span>Controlling feral and domestic animals conducting weed control in Proserpine rock-wallaby habitat.</span></li>
-                            <li><span>Implementing grazing and fire management appropriate for the Proserpine rock-wallaby.</span></li>
-                            <li><span>Installing fences (eg. solid as opposed to mesh) that allow wallabies to escape from predators.</span></li>
-                        </ul> 
+                    
                     </div>
                 </div>
 
-
                 <div className='row mt-5 mp-5'>
                     <div class="col-lg-7 col-md-7 col-12 mb-4 mt-3">
-                        <img src={ require("./images/wombat_pho.jpg")} class="img-fluid parent-image" alt="interview process"/>
-
+                        <h3>Q5. What suggestions can I give to make the schools and kindergartens more animal-friendly?</h3>
                     </div>
                     
                     <div class="col-lg-5 col-md-5 col-12 mb-4"  >
-                        <h2>What are the basic protective measures for wombat?</h2>
-
-                        <p class="mt-3 mb-4">ollowing management actions are undertaken to conserve the wombats and their habitat</p>
-
-                        <ul class="list-detail">
-                            <li><span>Research and monitoring of the wombats</span></li>
-                            <li><span>Fire management.</span></li>
-                            <li><span>Pmaintenance of the predator-proof fence.</span></li>
-                            <li><span>Control of predators and competitors.</span></li>
-                            <li><span>weed control..</span></li>
-                        </ul> 
+                        
+                        <p class="mt-3 mb-4">Ask teachers to start an animal rights group so that kids can 
+                        learn how to protect endangered animals and try to save animals. Not only that, 
+                        children can learn how to work with other classmates. The tips are to get together, 
+                        to get educated, to get a name, to ger organized and to be creative.</p>
+                    
                     </div>
                 </div>
             </div>
@@ -108,7 +139,7 @@ function ParentFaq() {
                 <div class="col-lg-4 mx-lg-auto text-center col-md-8 col-12" data-aos-delay="400">
                     <p class="copyright-text">Copyright &copy; 2020 Your Company
                     <br></br>
-                    <a rel="nofollow noopener" href="https://templatemo.com">Design: TemplateMo</a></p>
+                    <a rel="nofollow noopener" href="https://templatemo.com">Design: </a></p>
                 </div>
 
                 </div>

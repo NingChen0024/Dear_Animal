@@ -51,7 +51,7 @@ function Parent() {
 
               <div class="blog-info">
                 <h4 class="blog-category text-primary">Conservation</h4>
-                <Link to='/parentFaq'>
+                <Link to='/parentCons'>
                   <h3>Conservation measures for serveral animals</h3>                        
                 </Link>
         
@@ -123,7 +123,7 @@ function Parent() {
                 <div class="col-lg-4 mx-lg-auto text-center col-md-8 col-12" data-aos-delay="400">
                     <p class="copyright-text">Copyright &copy; 2020 Your Company
                     <br></br>
-                    <a rel="nofollow noopener" href="https://templatemo.com">Design: TemplateMo</a></p>
+                    <a rel="nofollow noopener" href="https://templatemo.com">Design: </a></p>
                 </div>
 
                 </div>

@@ -14,6 +14,7 @@ import ScrollToTop from './ScrollToTop';
 import ParentTips from './Parent_tips';
 import ParentRes from './Parent_rescure';
 import Game from './Game';
+import ParentCons from './Parent_cons';
 import ParentFaq from './Parent_faq';
 import KidsTips from './KidsTips';
 
@@ -39,6 +40,7 @@ class App extends Component{
                 <Route path='/parentFaq' exact component={ParentFaq}/>
                 <Route path='/games' exact component={Game}/>
                 <Route path='/kidsTips' exact component={KidsTips}/>
+                <Route path='/parentCons' exact component={ParentCons}/>
               </Switch>
             </ScrollToTop>
           </div>
