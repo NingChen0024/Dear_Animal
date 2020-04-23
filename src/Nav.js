@@ -22,7 +22,6 @@ class Nav extends Component{
                             
                             <li className="nav-link navItem" href="#tips">Activities</li>
                             
-                         
 
                             <Link to='/KidsTips'>
                                 <li className="nav-link navItem">Tips</li>

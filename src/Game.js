@@ -5,7 +5,6 @@ class Game extends Component{
     render(){
         return(
             <PuzzleComp/>
-
     )}
 }
 

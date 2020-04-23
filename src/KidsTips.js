@@ -10,15 +10,16 @@ function KidsTips() {
             <div >
 
               <h1 className=' parentshead pt-5 '>Tips for children</h1>
-            
-              
+                        
               <div  class="parent-image text-center zoom-in mt-5">
                 <img src={ require("./images/Kids_tips.jpg")} class="img-fluid kids-tips-image" alt="interview process"/>
               </div>
 
             </div>
           </ScrollAnimation>
-          <div className='container parent-text-space mb-5 pb-5'>
+
+
+          <div className='container parent-text-space mt-5 pt-5 mb-5 pb-5'>
             <p className ='font-weight-bold m-4'>
                 1. Dear kids! Sometimes you maybe see injured koalas or wombats in the wild
                 when you go out to play! They are very weak at that time and good boys will
@@ -26,14 +27,22 @@ function KidsTips() {
                 wombats will hurt and will never play with kids!
             </p>  
 
-           
-            <p className ='font-weight-bold m-4'>
-                2. We know that you all especially want to take your cute pet dogs for a walk.
-                But little koalas and wombats may be afraid of them. So dear kids, when you
-                see koalas and wombats, please Keep your pet dogs away from the lovely small
-                animals!
-            </p>  
+            <div className='row mt-5 mp-5'>
+                    <div class="col-lg-5 col-md-5 col-12 mb-4 mt-3 pl-5">
 
+                        <img src={ require("./images/kids-tip1.png")} class="img-fluid kidstipimage" alt="interview process"/>
+
+                    </div>
+                    
+                    <div class="col-lg-5 col-md-5 col-12 mb-4"  >
+                    <p className ='font-weight-bold mt-4'>
+                        2. We know that you all especially want to take your cute pet dogs for a walk.
+                        But little koalas and wombats may be afraid of them. So dear kids, when you
+                        see koalas and wombats, please Keep your pet dogs away from the lovely small
+                        animals!
+                    </p>  
+                    </div>
+            </div>
            
             <p className ='font-weight-bold m-4'>
                 3. You are all be able to eat delicious ice cream in summer! But koalas and
@@ -42,11 +51,21 @@ function KidsTips() {
                 thank all of those kind kids very much!
             </p>  
 
-            <p className ='font-weight-bold m-4'>
-                4. Dear children, I know you think wallaby are cute and funny, but their
-                strength is truly great just like a superman! Keep a safe distance from them!!!
-            </p>  
+            <div className='row mt-5 mp-5'>
 
+                    <div class="col-lg-5 col-md-5 col-12 mb-4 pl-5"  >
+                        <p className ='font-weight-bold mt-4'>
+                            4. Dear children, I know you think wallaby are cute and funny, but their
+                            strength is truly great just like a superman! Keep a safe distance from them!!!
+                        </p>  
+                    </div>
+
+                    <div class="col-lg-7 col-md-7 col-12 mb-4 mt-3">
+
+                        <img src={ require("./images/kids-tip2.jpg")} class="img-fluid kidstipimage" alt="interview process"/>
+
+                    </div>
+            </div>
            
             <p className ='font-weight-bold m-4'>
                 5. Dear children! If you touch cute wild animals in the wild, do not forget to
@@ -54,18 +73,27 @@ function KidsTips() {
                 wash to wash your hands carefully! Otherwise, you may will take other &quot;little
                 animals&quot; to your home!
             </p> 
+            
+            <div className='row mt-5 mp-5'>
+                    <div class="col-lg-5 col-md-5 col-12 mb-4 mt-3 pl-5">
+
+                        <img src={ require("./images/kids-tip3.jpg")} class="img-fluid kidstipimage" alt="interview process"/>
+
+                    </div>
+                    
+                    <div class="col-lg-7 col-md-7 col-12 mb-4"  >
+                    <p className ='font-weight-bold mt-4'>
+                        6. I know that you all have strong compassion and hope that cute animals can
+                        stay with you at your home. However, small animals prefer to return to the wild,
+                        that is their own home!
+                    </p>  
+                    </div>
+            </div>
 
             <p className ='font-weight-bold m-4'>
                 6. I know that you all have strong compassion and hope that cute animals can
                 stay with you at your home. However, small animals prefer to return to the wild,
                 that is their own home!
-            </p> 
-
-            <p className ='font-weight-bold m-4'>
-                7. Dear children, I know you like snacks very much and are willing to share
-                your snacks with small wild animals. But the little animals have their own food!
-                If they eat unsuitable food, they will feel very bad! So dear children, just enjoy
-                snacks by yourself
             </p> 
     
         </div>
