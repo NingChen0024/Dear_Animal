@@ -17,6 +17,7 @@ import Game from './Game';
 import ParentCons from './Parent_cons';
 import ParentFaq from './Parent_faq';
 import KidsTips from './KidsTips';
+import AniamlList from './AnimalList';
 
 class App extends Component{
 
@@ -41,6 +42,7 @@ class App extends Component{
                 <Route path='/games' exact component={Game}/>
                 <Route path='/kidsTips' exact component={KidsTips}/>
                 <Route path='/parentCons' exact component={ParentCons}/>
+                <Route path='/animalList' exact component={AniamlList}/>
               </Switch>
             </ScrollToTop>
           </div>

@@ -6,17 +6,17 @@ function KidsTips() {
     return (
       <div className='kids-tips-background'>
         <div className='container '>
-        <ScrollAnimation animateIn="fadeIn">
-            <div >
+            <ScrollAnimation animateIn="fadeIn">
+                <div >
 
-              <h1 className=' parentshead pt-5 '>Tips for children</h1>
-                        
-              <div  class="parent-image text-center zoom-in mt-5">
-                <img src={ require("./images/Kids_tips.jpg")} class="img-fluid kids-tips-image" alt="interview process"/>
-              </div>
+                <h1 className=' parentshead pt-5 '>Tips for children</h1>
+                            
+                <div  class="parent-image text-center zoom-in mt-5">
+                    <img src={ require("./images/Kids_tips.jpg")} class="img-fluid kids-tips-image" alt="interview process"/>
+                </div>
 
-            </div>
-          </ScrollAnimation>
+                </div>
+            </ScrollAnimation>
 
 
           <div className='container parent-text-space mt-5 pt-5 mb-5 pb-5'>

@@ -23,8 +23,11 @@ class Main extends Component{
                               <div className="hero-text">
 
                                    <h1 className="text-white" data-aos="fade-up">Say hi to endangered animals in Victoria</h1>
-
-                                   <a href="contact.html" class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">Let's make friends</a>
+                                   
+                                   <Link to='/animalList'>     
+                                        <a class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">Let's make friends</a>
+                                   </Link>
+                                   
                               </div>
                         </div>
                         <div className="col-lg-5 col-12">
