@@ -31,12 +31,12 @@
 }
 
 .navItem {
-  font-family: Salsa; 
-  font-size: 30px; 
+  font-family: 'Tahoma'; 
+  font-size: 40x; 
   font-style: normal; 
   font-variant: normal; 
   font-weight: 700; 
-  line-height: 26.4px;
+  line-height: 27px;
 }
 
 @font-face {
