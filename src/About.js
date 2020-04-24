@@ -4,9 +4,6 @@ import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 import axios from 'axios'
 
-
-
-
 class About extends Component {
 
     state = {
