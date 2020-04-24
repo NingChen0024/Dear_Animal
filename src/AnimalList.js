@@ -25,7 +25,7 @@ class AnimalList extends Component {
      render() {
         console.log(this.state)
         console.log(this.state.pid)
-        console.log(this.state.pid[0])
+        
 
 
         return (
