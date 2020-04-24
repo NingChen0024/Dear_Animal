@@ -39,7 +39,7 @@ class AnimalList extends Component {
       }
      render() {
 
-        console.log(this.state.pid)
+        console.log(this.state.pid[0])
         return (
         <div className='kids-tips-background'>
             <div className='container '>
