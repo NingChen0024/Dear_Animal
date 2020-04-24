@@ -10,17 +10,9 @@ import wombatPho from './images/wombat_icon.png'
 
 
 class AnimalList extends Component {
-
-
-    constructor () {
-        super();
-        this.state = {
-          showModal: false,
-          pid: null
-        };
-        
-        this.handleOpenModal = this.handleOpenModal.bind(this);
-        this.handleCloseModal = this.handleCloseModal.bind(this);
+    
+    state = {
+        pid: null,
       }
 
       componentDidMount(){
@@ -30,16 +22,12 @@ class AnimalList extends Component {
         .catch(err => console.log(err))
       }
       
-      handleOpenModal () {
-        this.setState({ showModal: true });
-      }
-      
-      handleCloseModal () {
-        this.setState({ showModal: false });
-      }
      render() {
-
+        console.log(this.state)
+        console.log(this.state.pid)
         console.log(this.state.pid[0])
+
+
         return (
         <div className='kids-tips-background'>
             <div className='container '>
