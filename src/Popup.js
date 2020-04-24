@@ -28,16 +28,7 @@ class Popup extends Component {
          
         var loc = this.props.location
         
-        const customStyles = {
-            content : {
-              top                   : '50%',
-              left                  : '50%',
-              right                 : 'auto',
-              bottom                : 'auto',
-              marginRight           : '-50%',
-              transform             : 'translate(-50%, -50%)'
-            }
-          };
+        
 
       return (
         <div>
@@ -45,10 +36,37 @@ class Popup extends Component {
           <ReactModal 
              isOpen={this.state.showModal}
              contentLabel="Minimal Modal Example"
-             style={customStyles}
+             closeTimeoutMS={500}
+             style={{
+                overlay: {
+                  position: 'fixed',
+                  top: 250,
+                  left: 250,
+                  right: 250,
+                  bottom: 250,
+                  backgroundColor: 'rgb(230, 255, 242)'
+                },
+                content: {
+            
+                  top: '40px',
+                  left: '40px',
+                  right: '40px',
+                  bottom: '40px',
+                  border: '1px #ccc',
+                  background: '#fff',
+                  overflow: 'auto',
+                  WebkitOverflowScrolling: 'touch',
+                  borderRadius: '40px',
+                  outline: 'none',
+                  padding: '20px',
+                  backgroundColor:'rgb(255, 245, 204)'
+                  
+                }
+              }}
           >
-            <button onClick={this.handleCloseModal}>Close Modal</button>
             <p>1223</p>
+            <button onClick={this.handleCloseModal} className='custom-kid-btn btn-kid-bg btn popupbutton'>Go Back</button>
+        
           </ReactModal>
         </div>
       );

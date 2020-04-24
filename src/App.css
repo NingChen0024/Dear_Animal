@@ -892,6 +892,32 @@ h3 {
   height:auto;
 }
  
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+  opacity: 0;
+}
+
+.popupbutton{
+  width: 150px;
+  margin-left: 40%;
+  margin-top: 20%;
+}
+
+.custom-kid-btn.btn-kid-bg {
+  background: #df99ff;
+  color: white;
+  border-color: transparent;
+  transition: all .3s ease;
+  border-radius: 10%
+  }
 /* .dropdown{
   border: 2px solid var(--secondary-color);
   border-radius: var(--border-radius-large);

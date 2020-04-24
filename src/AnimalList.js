@@ -60,23 +60,9 @@ class AnimalList extends Component {
                     wombats will hurt and will never play with kids!
                 </p>  
 
-
-             
-                {/* <div>
-                    <button onClick={this.handleOpenModal}>Trigger Modal</button>
-                    <ReactModal 
-                    isOpen={this.state.showModal}
-                    contentLabel="Minimal Modal Example"
-                    >
-                    <button onClick={this.handleCloseModal}>Close Modal</button>
-                    </ReactModal>
-                </div> */} 
-                
-                
-
-
                 <div className='row mt-5 mp-5'>
                         <div class="col-lg-4 col-md-4 col-12 mb-4 mt-3 pl-5">
+
                             <Popup img={wallebyPho} />                          
                         </div>
                         
