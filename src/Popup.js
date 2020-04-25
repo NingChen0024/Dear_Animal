@@ -27,7 +27,8 @@ class Popup extends Component {
     render () {
          
         var loc = this.props.location
-        
+        var name = this.props.name
+        var des = this.props.des
         
 
       return (
@@ -64,7 +65,8 @@ class Popup extends Component {
                 }
               }}
           >
-            <p>1223</p>
+            <h3>{name}</h3>
+            <p>{des}</p>
             <button onClick={this.handleCloseModal} className='custom-kid-btn btn-kid-bg btn popupbutton'>Go Back</button>
         
           </ReactModal>

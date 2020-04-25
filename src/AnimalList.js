@@ -37,24 +37,21 @@ class AnimalList extends Component {
 
                 <div className='container parent-text-space mt-5 pt-5 mb-5 pb-5'>
                     <p className ='font-weight-bold m-4'>
-                        1. Dear kids! Sometimes you maybe see injured koalas or wombats in the wild
-                        when you go out to play! They are very weak at that time and good boys will
-                        not poke them with branches or hit them with stones! Otherwise, koalas and
-                        wombats will hurt and will never play with kids!
+                        Click there animals to find out what they looks like!
                     </p>  
 
                     <div className='row mt-5 mp-5'>
                             <div class="col-lg-4 col-md-4 col-12 mb-4 mt-3 pl-5">
 
-                                <Popup img={wallebyPho} />                          
+                                <Popup img={wallebyPho} name='Walleby' des='wallabies are small to medium sized animals whereby the largest can measure 6 feet (1.8 metres) in height from head to tail. Wallabies can weigh anywhere between 2 – 24 kilograms (4 – 53 pounds).'/>                          
                             </div>
                             
                             <div class="col-lg-4 col-md-4 col-12 mb-4">
-                                <Popup img={koalaPho} />                       
+                                <Popup img={koalaPho} name='Koala' des='thick-set animals with thick, soft, wool-like ash-grey coloured coats with white underparts'/>                       
                             </div>
 
                             <div class="col-lg-4 col-md-4 col-12 mb-4"  >
-                                <Popup img={wombatPho} />
+                                <Popup img={wombatPho} name='Wombat' des='Wombats measure 0.7 – 1.2 metres (28 – 48 inches) in length, 35 centimetres high and weigh 15 – 35 kilograms (11 – 77 pounds). They have large heads, short, powerful legs with powerful claws, thick set, muscular bodies and rodent-like front teeth suitable for their burrowing way of life.'/>
                             </div>
                     </div> 
         

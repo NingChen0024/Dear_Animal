@@ -4,7 +4,9 @@ import PuzzleComp from './PuzzleComp'
 class Game extends Component{
     render(){
         return(
-            <PuzzleComp/>
+            <dev className='gamebackground '>
+                    <PuzzleComp/>           
+            </dev>
     )}
 }
 

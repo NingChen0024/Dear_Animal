@@ -918,6 +918,11 @@ h3 {
   transition: all .3s ease;
   border-radius: 10%
   }
+
+  .gamebackground{
+    background-color: #df99ff;
+    
+  }
 /* .dropdown{
   border: 2px solid var(--secondary-color);
   border-radius: var(--border-radius-large);
