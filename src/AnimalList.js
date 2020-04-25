@@ -21,7 +21,7 @@ class AnimalList extends Component {
         .then(res => this.setState({pid: res.data}))
         .catch(err => console.log(err))
       }
-      
+
      render() {
 
         console.log(this.state)
@@ -32,42 +32,38 @@ class AnimalList extends Component {
             <div className='container '>
                 <ScrollAnimation animateIn="fadeIn">
                     <div >
-
                         <h1 className=' parentshead pt-5 '>They are your animal friends</h1>
-
                     </div>
                 </ScrollAnimation>
 
 
-            <div className='container parent-text-space mt-5 pt-5 mb-5 pb-5'>
-                <p className ='font-weight-bold m-4'>
-                    1. Dear kids! Sometimes you maybe see injured koalas or wombats in the wild
-                    when you go out to play! They are very weak at that time and good boys will
-                    not poke them with branches or hit them with stones! Otherwise, koalas and
-                    wombats will hurt and will never play with kids!
-                </p>  
+                <div className='container parent-text-space mt-5 pt-5 mb-5 pb-5'>
+                    <p className ='font-weight-bold m-4'>
+                        1. Dear kids! Sometimes you maybe see injured koalas or wombats in the wild
+                        when you go out to play! They are very weak at that time and good boys will
+                        not poke them with branches or hit them with stones! Otherwise, koalas and
+                        wombats will hurt and will never play with kids!
+                    </p>  
 
-                <div className='row mt-5 mp-5'>
-                        <div class="col-lg-4 col-md-4 col-12 mb-4 mt-3 pl-5">
+                    <div className='row mt-5 mp-5'>
+                            <div class="col-lg-4 col-md-4 col-12 mb-4 mt-3 pl-5">
 
-                            <Popup img={wallebyPho} />                          
-                        </div>
-                        
-                        <div class="col-lg-4 col-md-4 col-12 mb-4">
-                            <Popup img={koalaPho} />                       
-                        </div>
+                                <Popup img={wallebyPho} />                          
+                            </div>
+                            
+                            <div class="col-lg-4 col-md-4 col-12 mb-4">
+                                <Popup img={koalaPho} />                       
+                            </div>
 
-                        <div class="col-lg-4 col-md-4 col-12 mb-4"  >
-                            <Popup img={wombatPho} />
-                        </div>
-                </div> 
+                            <div class="col-lg-4 col-md-4 col-12 mb-4"  >
+                                <Popup img={wombatPho} />
+                            </div>
+                    </div> 
         
+                </div>
+   
             </div>
-        
-
-            
-        </div>
-        <footer class="site-footer">
+            <footer class="site-footer">
                 <div class="container">
                     <div class="row">
                     <div class="col-lg-3 col-md-6 col-12" data-aos-delay="200">

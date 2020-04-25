@@ -10,13 +10,19 @@ class About extends Component {
       pid: null,
     }
 
+    // componentDidMount(){
+    //   axios.get('/api/get/allposts')
+    //   // .then(res => console.log(res.data))
+    //   .then(res => this.setState({pid: res.data}))
+    //   .catch(err => console.log(err))
+    // }
+
     componentDidMount(){
-      axios.get('/api/get/allposts')
-      // .then(res => console.log(res.data))
+      axios.get('/api/get/allanimals')
+      //.then(res => console.log(res.data))
       .then(res => this.setState({pid: res.data}))
       .catch(err => console.log(err))
     }
-
   
     render() {
 
