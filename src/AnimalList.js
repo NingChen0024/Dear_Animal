@@ -1,7 +1,5 @@
 import React ,{ Component }from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
-import ReactDOM from 'react-dom';
-import ReactModal from 'react-modal';
 import axios from 'axios'
 import Popup from './Popup'
 import wallebyPho from './images/wallaby_icon.png'
