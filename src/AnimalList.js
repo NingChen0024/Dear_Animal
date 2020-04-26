@@ -91,7 +91,7 @@ class AnimalList extends Component {
                         <br></br>
                         <a rel="nofollow noopener" href="https://templatemo.com">Design: </a></p>
                     </div>
-
+                    
                     </div>
                 </div>
             </footer>
