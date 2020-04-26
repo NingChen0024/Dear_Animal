@@ -176,7 +176,7 @@ class Main extends Component{
                <div class="row">
 
                     <div class="col-lg-6 col-md-5 col-12">
-                    <h2 class="mb-4" data-aos="fade-up">let's sing a <strong>lovely</strong> song !</h2>
+                    <h2 class="mb-4" data-aos="fade-up">Let's sing a <strong>lovely</strong> song !</h2>
                         <div class="contact-image" data-aos="fade-up">
 
                           <img src={ require("./images/Wombat_cartoon.gif")} class="img-fluid" alt="website"/>

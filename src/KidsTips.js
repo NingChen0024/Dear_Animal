@@ -84,7 +84,13 @@ function KidsTips() {
                     </p>  
                     </div>
             </div>
+            <p className ='font-weight-bold mt-4 pt-5 kidtipsfont'>
+                4. We all like snacks very much and are willing to share your snacks with small wild animals. But the little animals have their own food! If they eat unsuitable food, they will feel very bad! So dear children, just enjoy snacks by yourself
+            </p>  
 
+            <p className ='font-weight-bold mt-4 pt-5 kidtipsfont'>
+                5. We all have strong compassion and hope that cute animals can stay with you at your home. However, small animals prefer to return to the wild, that is their own home!
+            </p> 
          
     
         </div>
