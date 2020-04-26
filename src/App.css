@@ -871,7 +871,7 @@ h3 {
 }
 
 .kids-tips-background{
-  background-color: #ffe6cc;
+  background-color: #eee6ff;
 }
 
 .faq-background{
@@ -920,7 +920,7 @@ h3 {
   }
 
   .gamebackground{
-   
+    background-color: #5dbcd2;
     text-align: center
 
   }
@@ -976,5 +976,5 @@ h3 {
   }
 
   .gamebackground{
-    background-color: #b3ffcc
+    background-color: #ccffdd
   }

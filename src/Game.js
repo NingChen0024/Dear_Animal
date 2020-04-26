@@ -5,9 +5,11 @@ import ScrollAnimation from 'react-animate-on-scroll';
 class Game extends Component{
     render(){
         return(
-            <dev className='gamebackground '>
-                <div class="row mt-5 pt-5 mb-5 pb-5">
-
+            <dev >
+                <div className='gamebackground '>
+        
+                <div class="row pt-5 pb-5">
+                
                     <div class="col-lg-6 col-md-6 col-12">
                         <div >
                             <h1 className=' kidtipshead pt-5  '>Let's play games</h1>
@@ -22,6 +24,7 @@ class Game extends Component{
                                 </div>
                             </div>                    
                         </div>
+                    </div>
                     </div>
 
                 </div>
