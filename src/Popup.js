@@ -47,7 +47,7 @@ class Popup extends Component {
                   left: 250,
                   right: 250,
                   bottom: 250,
-                  backgroundColor: 'rgb(230, 255, 242)'
+                 
                 },
                 content: {
             
@@ -72,8 +72,8 @@ class Popup extends Component {
                 <h3>{name}&nbsp;&nbsp;&nbsp;({status})</h3>
              
             </div>
-            <p>total number: {count}</p>
-            <p>habitat: {habitat}</p>
+            <p>Total Number: {count}</p>
+            <p>Habitat: {habitat}</p>
             <p>{des}</p>
             <button onClick={this.handleCloseModal} className='custom-kid-btn btn-kid-bg btn popupbutton'>Go Back</button>
         
