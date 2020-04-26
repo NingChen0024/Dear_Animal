@@ -886,7 +886,7 @@ h3 {
 
 .icon-size{
   display: block;
-  max-width:45%;
+  max-width:60%;
   margin-left: auto;
   margin-right: auto;
   height:auto;
@@ -973,4 +973,8 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     height:auto;
+  }
+
+  .gamebackground{
+    background-color: #b3ffcc
   }

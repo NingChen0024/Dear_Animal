@@ -1,6 +1,6 @@
 import React ,{ Component }from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
-
+import ReactPlayer from "react-player"
 
 function KidsTips() {
     return (
@@ -10,16 +10,33 @@ function KidsTips() {
                 <div >
 
                 <h1 className=' parentshead pt-5 '>Tips for you! </h1>
-                            
-                <div  class="parent-image text-center zoom-in mt-5">
-                    <img src={ require("./images/kidsTIps_one.png")} class="img-fluid kids-tips-image" alt="interview process"/>
-                </div>
 
                 </div>
             </ScrollAnimation>
 
+            <div class="row mt-5">
 
-          <div className='container parent-text-space mt-5 pt-5 mb-5 pb-5'> 
+                    <div class="col-lg-2 col-md-2 col-12">
+                        
+                    </div>
+
+                    <div class="col-lg-10 col-md-10 col-12">
+                         <div >
+          
+                              <div className='text-center' >
+                                   <div >
+                                        <ReactPlayer
+                                             url="https://www.youtube.com/watch?v=7k8CcAU2Lt0"
+                                        />
+                                   </div>
+                              </div>
+                         
+                         </div>
+                    </div>
+
+               </div>
+
+          <div className='container parent-text-space  pt-5 mb-5 pb-5'> 
 
             <div className='row mt-5 mp-5'>
                     <div class="col-lg-5 col-md-5 col-12 mb-4 mt-3 pl-5">

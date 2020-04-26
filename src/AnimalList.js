@@ -29,8 +29,9 @@ class AnimalList extends Component {
         <div className='kids-tips-background'>
             <div className='container '>
                 <ScrollAnimation animateIn="fadeIn">
+                    <div pt-5></div>
                     <div >
-                        <h1 className=' kidtipshead pt-5 '>They are your animal friends</h1>
+                        <h1 className=' kidtipshead pt-5  '>They are your animal friends</h1>
                     </div>
                 </ScrollAnimation>
 
@@ -58,15 +59,6 @@ class AnimalList extends Component {
                 </div>
                 
             </div>
-            
-            <div className='text-center' >
-                    <div >
-                        <ReactPlayer
-                            url="https://www.youtube.com/watch?v=ALhA9WGqG0k"
-                        />
-                    </div>
-            </div>
-
             
             <footer class="site-footer">
                 <div class="container">
