@@ -19,7 +19,7 @@ function WildExp() {
                 </ScrollAnimation>
 
             <div  class="full-image text-center zoom-in m-5">
-                <img src={ require("./images/project/Project_one.jpg")} class="img-fluid" alt="interview process"/>
+                <img src={ require("./images/project/Project_one_inside.jpg")} class="img-fluid" alt="interview process"/>
             </div>
 
             <p className ='font-weight-bold m-4'>

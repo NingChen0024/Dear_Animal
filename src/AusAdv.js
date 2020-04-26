@@ -20,7 +20,7 @@ function AusAdv() {
             </ScrollAnimation>
 
             <div  class="full-image text-center zoom-in m-5">
-                <img src={ require("./images/project/Project_three.jpg")} class="img-fluid" alt="interview process"/>
+                <img src={ require("./images/project/Project_three_inside.jpg")} class="img-fluid" alt="interview process"/>
             </div>
             <div className='container eventstext'>
                 <p className ='font-weight-bold m-4'>

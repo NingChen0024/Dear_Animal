@@ -5,7 +5,7 @@ import Puzzle from 'react-image-puzzle';
 class PuzzleComp extends Component{
     render(){
         return(
-            <Puzzle image={ require('./images/koala_game.jpg')} className='gamebackground' />
+            <Puzzle image={ require('./images/puzzleImg.jpg')} className='gamebackground' />
         )
     }
 }
