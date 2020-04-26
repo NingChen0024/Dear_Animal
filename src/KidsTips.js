@@ -29,7 +29,7 @@ function KidsTips() {
                     </div>
                     
                     <div class="col-lg-5 col-md-5 col-12 mb-4"  >
-                    <p className ='font-weight-bold mt-4'>
+                    <p className ='font-weight-bold mt-4 kidtipsfont'>
                         1. If you have Cats, attach a small bell to them. It helps to alert the native animals to run away.
                     </p>  
                     </div>
@@ -40,7 +40,7 @@ function KidsTips() {
             <div className='row mt-5 mp-5'>
 
                     <div class="col-lg-5 col-md-5 col-12 mb-4 pl-5"  >
-                        <p className ='font-weight-bold mt-4'>
+                        <p className ='font-weight-bold mt-4 kidtipsfont'>
                             2. Yes, polluting the forest or parks with plastics, glasses, steels would cause a 
                             injury or harm to the animals easily. Avoid using  them and throw the waste in bin.
                         </p>  
@@ -62,7 +62,7 @@ function KidsTips() {
                     </div>
                     
                     <div class="col-lg-7 col-md-7 col-12 mb-4"  >
-                    <p className ='font-weight-bold mt-4'>
+                    <p className ='font-weight-bold mt-4 kidtipsfont'>
                         3.First ask your parents, make sure you follow the guidelines and wear all protective measures to help them safely.
                     </p>  
                     </div>

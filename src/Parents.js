@@ -1,6 +1,7 @@
 import React ,{ Component }from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import {Link} from 'react-router-dom'
+import ReactPlayer from "react-player"
 
 function Parent() {
     return (
@@ -72,24 +73,48 @@ function Parent() {
          
           </div>
           
-          <div class="col-lg-5 ml-auto mt-5 pt-5 col-md-6 col-12">
-            <img src={ require("./images/newsletter.png")} data-aos-delay="100" class="img-fluid" alt="newsletter"/>
+
+               
+          <div >
+            <div class='row'>
+              <div class="col-lg-5 mr-auto mt-5 pt-5 col-md-6 col-12 careKoala"> 
+              <h2 class="careKoala ml-5">Caring For A Koala</h2>
+              <img src={ require("./images/care.png")} class="img-fluid careImg" alt="blog"/>
+              </div>
+             
+              <div class="col-lg-5 ml-auto mt-5 pt-5 col-md-6 col-12">
+                <div className='text-center' >
+                        <div >
+                            <ReactPlayer
+                                url="https://www.youtube.com/watch?v=0tKPzSRzs1c"
+                            />
+                        </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="col-lg-5 mr-auto mt-5 pt-5 col-md-6 col-12">
-            <h4  data-aos-delay="200">Contact Us</h4>
-
-            <h2  data-aos-delay="300">We value your opinions.</h2>
-            <h4  data-aos-delay="300">Please let us know your ideas about our service.</h4>
-            <p   data-aos-delay="300">Email to: dearanimal@gmail.com</p>
-            <div class="form-group mt-4"  data-aos-delay="400">
-
-            <small id="emailHelp" class="form-text text-muted" >We'll NOT share your email address to anyone else.</small>
-
+            <div class="col-lg-5 ml-auto mt-5 pt-5 col-md-6 col-12">
+              <img src={ require("./images/newsletter.png")} data-aos-delay="100" class="img-fluid" alt="newsletter"/>
             </div>
-           </div>
-           </div>
-           
+
+            <div class="col-lg-5 mr-auto mt-5 pt-5 col-md-6 col-12">
+              <h4  data-aos-delay="200">Contact Us</h4>
+
+              <h2  data-aos-delay="300">We value your opinions.</h2>
+              <h4  data-aos-delay="300">Please let us know your ideas about our service.</h4>
+              <p   data-aos-delay="300">Email to: dearanimal@gmail.com</p>
+                <div class="form-group mt-4"  data-aos-delay="400">
+
+                <small id="emailHelp" class="form-text text-muted" >We'll NOT share your email address to anyone else.</small>
+
+                </div>
+            </div>
+          
+          </div>
+     
+
+
         </div>
 
         <footer class="site-footer">

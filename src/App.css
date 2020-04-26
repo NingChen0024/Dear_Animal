@@ -924,10 +924,53 @@ h3 {
     text-align: center
 
   }
-/* .dropdown{
-  border: 2px solid var(--secondary-color);
-  border-radius: var(--border-radius-large);
-  color: var(--secondary-color);
-  font-family: var(--font-bold-family);
-  padding: 0.6em 2em 0.8em 2em;
-} */
+
+  .kidtipsfont{
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
+    font-size: 24px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.4px;
+  }
+
+  .kidtipshead{
+    font-family: "Futura";
+    font-size: 40px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    text-align: center;
+  }
+
+  .video{
+    text-align: center;
+  }
+
+  .player-wrapper {
+    position: relative;
+    padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+  }
+  
+  .react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .careKoala{
+    font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace; 
+    font-size: 40px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.4px;
+  }
+
+  .careImg{
+    display: block;
+    max-width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    height:auto;
+  }

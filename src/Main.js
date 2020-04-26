@@ -77,7 +77,7 @@ class Main extends Component{
 
                     <div class="col-lg-7 mx-auto col-md-10 col-12 ">
                          <div class="about-info">
-                              <h2 class="mb-4" data-aos="fade-up">We know you are <strong>nice</strong> and want to help your <strong>animals friends !</strong></h2>
+                              <h2 class="mb-4" data-aos="fade-up">We know you want to help your <strong>animals friends !</strong></h2>
                               <div class="row">
                                    <p class="mb-3 col-lg-8 col-md-8 kids-tip-font" data-aos="fade-up">There are seveal ways to help your animal friends! Click the button to see the tips when your are ready!</p>
                                    <div className=' mt-3 col-md-4 col-lg-4'>

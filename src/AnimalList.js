@@ -5,7 +5,7 @@ import Popup from './Popup'
 import wallebyPho from './images/wallaby_icon.png'
 import koalaPho from './images/koala_icon.png'
 import wombatPho from './images/wombat_icon.png'
-
+import ReactPlayer from "react-player"
 
 class AnimalList extends Component {
     
@@ -30,34 +30,44 @@ class AnimalList extends Component {
             <div className='container '>
                 <ScrollAnimation animateIn="fadeIn">
                     <div >
-                        <h1 className=' parentshead pt-5 '>They are your animal friends</h1>
+                        <h1 className=' kidtipshead pt-5 '>They are your animal friends</h1>
                     </div>
                 </ScrollAnimation>
 
 
                 <div className='container parent-text-space mt-5 pt-5 mb-5 pb-5'>
-                    <p className ='font-weight-bold m-4'>
-                        Click there animals to find out what they looks like!
+                    <p className ='font-weight-bold m-4 kidtipsfont'>
+                        Click these animals to find out more about them!
                     </p>  
 
                     <div className='row mt-5 mp-5'>
                             <div class="col-lg-4 col-md-4 col-12 mb-4 mt-3 pl-5">
 
-                                <Popup img={wallebyPho} name='Walleby' des='wallabies are small to medium sized animals whereby the largest can measure 6 feet (1.8 metres) in height from head to tail. Wallabies can weigh anywhere between 2 – 24 kilograms (4 – 53 pounds).'/>                          
+                                <Popup img={wallebyPho} name='Walleby' count='11798' status='endangered - vulnerable' habitat='Wallabies generally prefer more remote areas which are wooded or rugged rather than open arid plains' des='wallabies are small to medium sized animals whereby the largest can measure 6 feet (1.8 metres) in height from head to tail. Wallabies can weigh anywhere between 2 – 24 kilograms (4 – 53 pounds).'/>                          
                             </div>
                             
                             <div class="col-lg-4 col-md-4 col-12 mb-4">
-                                <Popup img={koalaPho} name='Koala' des='thick-set animals with thick, soft, wool-like ash-grey coloured coats with white underparts'/>                       
+                                <Popup img={koalaPho} name='Koala' count='10260' status='Endangered - high risk' habitat='eucalyptus forests, coastal regions and moist woodlands' des='thick-set animals with thick, soft, wool-like ash-grey coloured coats with white underparts'/>                       
                             </div>
 
                             <div class="col-lg-4 col-md-4 col-12 mb-4"  >
-                                <Popup img={wombatPho} name='Wombat' des='Wombats measure 0.7 – 1.2 metres (28 – 48 inches) in length, 35 centimetres high and weigh 15 – 35 kilograms (11 – 77 pounds). They have large heads, short, powerful legs with powerful claws, thick set, muscular bodies and rodent-like front teeth suitable for their burrowing way of life.'/>
+                                <Popup img={wombatPho} name='Wombat' count='6730' status='endangered - Persecuted' habitat='dig out burrows measuring 30 metres (100 feet) long' des='Wombats measure 0.7 – 1.2 metres (28 – 48 inches) in length, 35 centimetres high and weigh 15 – 35 kilograms (11 – 77 pounds). They have large heads, short, powerful legs with powerful claws, thick set, muscular bodies and rodent-like front teeth suitable for their burrowing way of life.'/>
                             </div>
                     </div> 
-        
+            
                 </div>
-   
+                
             </div>
+            
+            <div className='text-center' >
+                    <div >
+                        <ReactPlayer
+                            url="https://www.youtube.com/watch?v=ALhA9WGqG0k"
+                        />
+                    </div>
+            </div>
+
+            
             <footer class="site-footer">
                 <div class="container">
                     <div class="row">
@@ -91,7 +101,7 @@ class AnimalList extends Component {
                         <br></br>
                         <a rel="nofollow noopener" href="https://templatemo.com">Design: </a></p>
                     </div>
-                    
+
                     </div>
                 </div>
             </footer>
