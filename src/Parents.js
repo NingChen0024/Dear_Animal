@@ -2,12 +2,18 @@ import React ,{ Component }from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import {Link} from 'react-router-dom'
 import ReactPlayer from "react-player"
+import { monitorEventLoopDelay } from 'perf_hooks';
+
+
+// this components contain server link to its sub pages which contain 
+// more specified imforemation, and it provides a video plugin
+
 
 function Parent() {
     return (
       <div >
+
         <div className='container mb-5 pb-5'>
-        
         
         <div class="row">
     
@@ -38,7 +44,7 @@ function Parent() {
               <img src={ require("./images/project/parents_help.jpg")} class="img-fluid" alt="blog"/>
 
               <div class="blog-info">
-                <h4 class="blog-category text-danger">Rescure</h4>
+                <h4 class="blog-category text-danger">Rescue</h4>
 
                 <Link to='/parentRescure'>
                   <h3>Methods that are critical to help harmed animals</h3>                        

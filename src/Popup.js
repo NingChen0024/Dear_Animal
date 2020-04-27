@@ -2,6 +2,9 @@ import React ,{ Component }from 'react';
 import ReactDOM from 'react-dom';
 import ReactModal from 'react-modal';
 
+// this component manage the style of the popup window and render info from the 
+// props and them present it in the window
+
 class Popup extends Component {
     constructor (props) {
       super(props);

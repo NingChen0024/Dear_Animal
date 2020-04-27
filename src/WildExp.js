@@ -1,6 +1,8 @@
 import React ,{ Component }from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 
+// this component contains info about wild explore activties
+
 function WildExp() {
     return (
       <div >

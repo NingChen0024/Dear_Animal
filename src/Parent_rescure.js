@@ -2,6 +2,8 @@ import React ,{ Component }from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 
+
+
 function ParentRes() {
     return (
       <div >
