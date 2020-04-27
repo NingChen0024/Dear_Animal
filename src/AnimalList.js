@@ -50,7 +50,7 @@ class AnimalList extends Component {
                             </div>
                             
                             <div class="col-lg-4 col-md-4 col-12 mb-4">
-                                <Popup img={koalaPho} name='Koala' count='10,260' status='Endangered - High risk' habitat='Eucalyptus forests, coastal regions and moist woodlands' des='Thick-set animals with thick, soft, wool-like ash-grey coloured coats with white underparts'/>                       
+                                <Popup img={koalaPho} name='Koala' count='10,260' status='Endangered - High risk' habitat='Eucalyptus forests, coastal regions and moist woodlands' des='Thick-set animals with thick, soft, wool-like ash-grey coloured coats with white underpants'/>                       
                             </div>
 
                             <div class="col-lg-4 col-md-4 col-12 mb-4"  >
