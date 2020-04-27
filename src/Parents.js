@@ -2,7 +2,7 @@ import React ,{ Component }from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import {Link} from 'react-router-dom'
 import ReactPlayer from "react-player"
-import { monitorEventLoopDelay } from 'perf_hooks';
+
 
 
 // this components contain server link to its sub pages which contain 
@@ -105,14 +105,11 @@ function Parent() {
             </div>
 
             <div class="col-lg-5 mr-auto mt-5 pt-5 col-md-6 col-12">
-              <h4  data-aos-delay="200">Contact Us</h4>
 
-              <h2  data-aos-delay="300">We value your opinions.</h2>
-              <h4  data-aos-delay="300">Please let us know your ideas about our service.</h4>
-              <p   data-aos-delay="300">Email to: dearanimal@gmail.com</p>
+              <h2  className="mt-5 pt-5" data-aos-delay="300">We value your opinions.</h2>
+              <h4  data-aos-delay="300">Please let us know your ideas about our service .</h4>
                 <div class="form-group mt-4"  data-aos-delay="400">
 
-                <small id="emailHelp" class="form-text text-muted" >We'll NOT share your email address to anyone else.</small>
 
                 </div>
             </div>
