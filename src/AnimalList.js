@@ -46,15 +46,15 @@ class AnimalList extends Component {
 
                     <div className='row mt-5 mp-5'>
                             <div class="col-lg-4 col-md-4 col-12 mb-4 mt-3 pl-5">
-                                <Popup img={wallebyPho} name='Walleby' count='11798' status='Endangered - Vulnerable' habitat='Wallabies generally prefer more remote areas which are wooded or rugged rather than open arid plains' des='Wallabies are small to medium sized animals whereby the largest can measure 6 feet (1.8 metres) in height from head to tail. Wallabies can weigh anywhere between 2 – 24 kilograms (4 – 53 pounds).'/>                          
+                                <Popup img={wallebyPho} name='Wallaby' count='11,798' status='Endangered - Vulnerable' habitat='Wallabies generally prefer more remote areas which are wooded or rugged rather than open arid plains' des='Wallabies are small to medium sized animals whereby the largest can measure 6 feet (1.8 metres) in height from head to tail. Wallabies can weigh anywhere between 2 – 24 kilograms (4 – 53 pounds).'/>                          
                             </div>
                             
                             <div class="col-lg-4 col-md-4 col-12 mb-4">
-                                <Popup img={koalaPho} name='Koala' count='10260' status='Endangered - High risk' habitat='Eucalyptus forests, coastal regions and moist woodlands' des='Thick-set animals with thick, soft, wool-like ash-grey coloured coats with white underparts'/>                       
+                                <Popup img={koalaPho} name='Koala' count='10,260' status='Endangered - High risk' habitat='Eucalyptus forests, coastal regions and moist woodlands' des='Thick-set animals with thick, soft, wool-like ash-grey coloured coats with white underparts'/>                       
                             </div>
 
                             <div class="col-lg-4 col-md-4 col-12 mb-4"  >
-                                <Popup img={wombatPho} name='Wombat' count='6730' status='Endangered - Persecuted' habitat='Dig out burrows measuring 30 metres (100 feet) long' des='Wombats measure 0.7 – 1.2 metres (28 – 48 inches) in length, 35 centimetres high and weigh 15 – 35 kilograms (11 – 77 pounds). They have large heads, short, powerful legs with powerful claws, thick set, muscular bodies and rodent-like front teeth suitable for their burrowing way of life.'/>
+                                <Popup img={wombatPho} name='Wombat' count='6,730' status='Endangered - Persecuted' habitat='Dig out burrows measuring 30 metres (100 feet) long' des='Wombats measure 0.7 – 1.2 metres (28 – 48 inches) in length, 35 centimetres high and weigh 15 – 35 kilograms (11 – 77 pounds). They have large heads, short, powerful legs with powerful claws, thick set, muscular bodies and rodent-like front teeth suitable for their burrowing way of life.'/>
                             </div>
                     </div> 
             
