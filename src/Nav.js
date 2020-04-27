@@ -19,7 +19,10 @@ class Nav extends Component{
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav ml-auto" id="navbarNav">
                            
-                            
+                            <a className=" nav-link navItem" href="./">
+                                <li > Home </li>
+                            </a>
+
 
                             <Link to='/KidsTips'>
                                 <li className="nav-link navItem">Tips</li>
@@ -43,9 +46,11 @@ class Nav extends Component{
                                     <a class="dropdown-item" href="#last">Something else here</a>
                                 </div>
                             </div> */}
+                            
 
+                            {/* contact */}
                             <Link to="/parent" >
-                                <li className="nav-link contact navItem"> For Parents</li>
+                                <li className="nav-link navItem"> For Parents</li>
                             </Link>
                         </ul>
                     </div>

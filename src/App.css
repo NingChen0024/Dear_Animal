@@ -16,26 +16,27 @@
   font-size: var(--menu-font-size);
   width: 50%;
   display: flex;
+  font-weight: bold; 
   justify-content: space-around;
   align-items: center;
 }
 
 .navIcon{
-  font-family: Sniglet; 
+  font-family: 'Sniglet'; 
   font-size: 40px; 
   font-style: normal; 
   font-variant: normal; 
   font-weight: 700; 
   line-height: 26.4px;
-  color: #f1c111
+  color: white
 }
 
 .navItem {
-  font-family: 'Tahoma'; 
+  font-family: 'Sniglet'; 
   font-size: 40x; 
   font-style: normal; 
   font-variant: normal; 
-  font-weight: 700; 
+  font-weight: bold; 
   line-height: 27px;
 }
 
@@ -86,7 +87,7 @@
 --h3-font-size:         24px;
 --p-font-size:          18px;
 --base-font-size:       16px;
---menu-font-size:       14px;
+--menu-font-size:       17px;
 
 --border-radius-large:  100px;
 --border-radius-small:  5px;
@@ -97,6 +98,9 @@ background: var(--white-color);
 font-family: var(--base-font-family);
 }
 
+.unifont{
+  font-family: 'Sniglet'; 
+}
 
 /*---------------------------------------
  TYPOGRAPHY              
@@ -258,7 +262,7 @@ MENU
 -----------------------------------------*/
 
 .navbar {
-background: #ffffb3;
+background: #ffb32c;
 z-index: 2;
 top: 0;
 right: 0;
@@ -272,16 +276,18 @@ font-size: var(--h2-font-size);
 }
 
 .nav-link {
-color: var(--black-color);
-font-size: var(--menu-font-size);
+font-family: 'Sniglet';
+color: White;
+font-size: 20px;
+font-weight: 900;
 letter-spacing: 0.4px;
-margin: 0 1.6em;
-padding: 0.6em;
+margin: 0 1em;
+padding: 0.8em;
 }
 
 .nav-link.active,
 .nav-link:hover {
-color: var(--secondary-color);
+color: #ffd6cc;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -290,16 +296,16 @@ padding-left: 0;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link.contact {
-border: 2px solid var(--secondary-color);
+border: 2px solid white;
 border-radius: var(--border-radius-large);
-color: var(--secondary-color);
+color: white;
 font-family: var(--font-bold-family);
 padding: 0.6em 2em 0.8em 2em;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link.contact:hover,
 .navbar-expand-lg .navbar-nav .nav-link.contact.active {
-background: var(--secondary-color);
+background: #ff9980;
 color: var(--white-color);
 }
 
@@ -385,7 +391,7 @@ overflow: hidden;
 }
 
 .hero-bg {
-background: linear-gradient(170deg, #9fdf9f 64%, var(--white-color) 30%);
+background: linear-gradient(170deg, #e699ff 64%, var(--white-color) 30%);
 }
 
 .hero-image {
@@ -785,7 +791,17 @@ h3 {
 }
 
 .parentshead{
-  font-family: "Book Antiqua"; 
+  font-family: 'Sniglet'; 
+  font-size: 50px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 700; 
+  text-align: center;
+
+}
+
+.parentshead3{
+  font-family: 'Book Antiqua'; 
   font-size: 50px; 
   font-style: normal; 
   font-variant: normal; 
@@ -826,7 +842,7 @@ h3 {
 }
 
 .kids-tip-font{
-  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
+  font-family: 'Sniglet'; 
   font-size: 20px; 
   font-style: normal; 
   font-variant: normal; 
@@ -926,16 +942,17 @@ h3 {
   }
 
   .kidtipsfont{
-    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
+    font-family: 'Sniglet'; 
     font-size: 24px; 
     font-style: normal; 
     font-variant: normal; 
     font-weight: 700; 
     line-height: 26.4px;
+    text-align: center;
   }
 
   .kidtipshead{
-    font-family: "Futura";
+    font-family: 'Sniglet';
     font-size: 40px; 
     font-style: normal; 
     font-variant: normal; 
@@ -977,4 +994,21 @@ h3 {
 
   .gamebackground{
     background-color: #ccffdd
+  }
+
+
+  .puzzle-game-pic{
+    display: block;
+    max-width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    height:auto;
+  }
+
+  .wombatSongImg{
+    display: block;
+    max-width:60%;
+    margin-left: auto;
+    margin-right: auto;
+    height:auto;
   }

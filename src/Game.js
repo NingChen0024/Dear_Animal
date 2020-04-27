@@ -2,29 +2,41 @@ import React, { Component } from 'react'
 import PuzzleComp from './PuzzleComp'
 import ScrollAnimation from 'react-animate-on-scroll';
 
+// this component display several games to kids
+
+
 class Game extends Component{
     render(){
         return(
             <dev >
-                <div className='gamebackground '>
+                <div>
         
-                <div class="row pt-5 pb-5">
+                    <div class="row pt-5 pb-5">
                 
-                    <div class="col-lg-6 col-md-6 col-12">
-                        <div >
-                            <h1 className=' kidtipshead pt-5  '>Let's play games</h1>
+                        <div class="col-lg-5 col-md-5 col-12">
+                            <div >
+                                <h1 className=' kidtipshead pt-5  '>Let's play games</h1>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="col-lg-6 col-md-6 col-12">
-                        <div >
-                            <div className='text-center' >
-                                <div > 
-                                    <PuzzleComp/>     
-                                </div>
-                            </div>                    
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div >
+                                <div className='text-center' >
+                                    <div > 
+                                        <PuzzleComp/>     
+                                    </div>
+                                </div>                    
+                            </div>
                         </div>
-                    </div>
+
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <div >
+                                <div className='text-center puzzle-game-pic' >
+                                    <img src={ require("./images/puzzleImg.jpg")} class="img-fluid" alt="website"/>
+                                </div>                    
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
