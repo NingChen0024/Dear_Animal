@@ -79,7 +79,7 @@ class Main extends Component{
                          <div class="about-info">
                               <h2 class="mb-4 unifont" data-aos="fade-up">We know you want to help your <strong>animals friends !</strong></h2>
                               <div class="row">
-                                   <p class="mb-3 col-lg-8 col-md-8 kids-tip-font unifont" data-aos="fade-up">There are seveal ways to help your animal friends!</p>
+                                   <p class="mb-3 col-lg-8 col-md-8 kids-tip-font unifont" data-aos="fade-up">Several ways to help your animal friends!</p>
                                    <div className=' mt-3 col-md-4 col-lg-4'>
                                         <Link to='/kidsTips'>     
                                              <a class="tips-custom-btn tips-btn-bg btn unifont" data-aos="fade-up">Show Me!</a>
@@ -113,43 +113,46 @@ class Main extends Component{
                 </ol>
                     <div class="carousel-inner">
                               <div class="carousel-item active" data-aos="fade-up" data-aos-delay="100">
-                                   <img src={ require("./images/project/Project_one.jpg")} class="img-fluid d-block w-100" alt="project image"/>
-                              
+                                   <Link to='/wildexp'>
+                                        <img src={ require("./images/project/Project_one.jpg")} class="img-fluid d-block w-100" alt="project image"/>
+                                   </Link>
                                    <div class="project-info">
                                         <small>Outdoors</small>
                                         <h3>
-                                        <Link to='/wildexp'>
+                                        
                                              <span>Wild Explorers</span>
-                                        </Link>
+                                        
                                         </h3>
                                    </div>
                               </div>
 
                               <div class="carousel-item " data-aos="fade-up">
-                                   <img src={ require("./images/project/Project_two.jpg")} class="img-fluid d-block w-100" alt="project image"/>
-                                 
+                                   <Link to='/natureCall'>
+                                        <img src={ require("./images/project/Project_two.jpg")} class="img-fluid d-block w-100" alt="project image"/>
+                                   </Link>
                                    <div class="project-info">
                                         <small>Exploring</small>
 
                                         <h3>
-                                        <Link to='/natureCall'>
+                                        
                                              <span>Nature's Calling</span>
-                                        </Link>
+                                       
                                         </h3>
                                    </div>
                               </div>
 
                               <div class="carousel-item " data-aos="fade-up">
-                                   <img src={ require("./images/project/Project_three.jpg")} class="img-fluid d-block w-100" alt="project image"/>
-                                   
+                                   <Link to='/natureCall'>
+                                        <img src={ require("./images/project/Project_three.jpg")} class="img-fluid d-block w-100" alt="project image"/>
+                                   </Link>
                                    <div class="project-info">
                                         <small>Adventures</small>
 
                                         <h3>
-                                             <Link to='/ausAdv'>
+                                            
                                                   <span>Aussie Animal Adventurers</span>
                                                 
-                                             </Link>
+                                           
                                         </h3>
                                    </div>
                               </div>
@@ -221,26 +224,10 @@ class Main extends Component{
               </a>
             </p>
 
-            <p class="copyright-text">Copyright &copy; Black Panther
-            <br></br>
-            </p>
           </div>
 
-          <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="300">
-            <h4 class="my-4">Our Team</h4>
-
-            <p class="mb-1">
-               Ning Chen
-            </p>
-            <p class="mb-1">
-               Deepanshu Singh
-            </p>
-            <p class="mb-1">
-               BingXin Yan
-            </p>
-            <p class="mb-1">
-               Arun Padmanaban
-            </p>
+          <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="300">
+               <h4 class="my-4">Copyright &copy; Black Panther</h4>
           </div>
 
           

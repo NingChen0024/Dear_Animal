@@ -69,12 +69,12 @@ class Popup extends Component {
           >
             <div>
         
-                <h3>{name}&nbsp;&nbsp;&nbsp;({status})</h3>
+                <h3 className='unifont'>{name}&nbsp;&nbsp;&nbsp;({status})</h3>
              
             </div>
-            <p>Total Number: {count}</p>
-            <p>Habitat: {habitat}</p>
-            <p>{des}</p>
+            <p className='unifont'>Total Number: {count}</p>
+            <p className='unifont'>Habitat: {habitat}</p>
+            <p className='unifont'>{des}</p>
             <button onClick={this.handleCloseModal} className='custom-kid-btn btn-kid-bg btn popupbutton'>Go Back</button>
             
           </ReactModal>
