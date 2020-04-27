@@ -76,7 +76,7 @@ class Popup extends Component {
             <p>Habitat: {habitat}</p>
             <p>{des}</p>
             <button onClick={this.handleCloseModal} className='custom-kid-btn btn-kid-bg btn popupbutton'>Go Back</button>
-        
+            
           </ReactModal>
         </div>
       );
