@@ -2,7 +2,11 @@ import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
 import {FloatingMenu, MainButton, ChildButton} from 'react-floating-button-menu';
 import ReactPlayer from "react-player"
+import { isPipelinePrimaryTopicReference } from '@babel/types';
 
+
+// the main component pervide navigation to other pages and the theme is customized for 
+// the topic
 
 
 class Main extends Component{

@@ -2,6 +2,8 @@ import React ,{ Component }from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 
+// this component provide clear instruction of conservation for parents
+
 function ParentCons() {
     return (
       <div >

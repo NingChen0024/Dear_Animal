@@ -1,5 +1,9 @@
 import React ,{ Component }from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
+import { parenthesizedExpression } from '@babel/types';
+
+// This components provide frequent asked questions for parents
+// which helps to provide instructions for kids
 
 
 function ParentFaq() {

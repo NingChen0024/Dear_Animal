@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
 
 
+// the navigation bar peovide links which lead to different pages
+
 class Nav extends Component{
     render(){
         return(

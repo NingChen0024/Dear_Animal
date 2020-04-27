@@ -2,7 +2,7 @@ import React ,{ Component }from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 
-
+// this components provide tips for parents to help endangered animal
 
 function ParentTips() {
     return (

@@ -8,7 +8,7 @@ import Nav from './Nav'
 import Form from './Form'
 
 
-
+// the root app componnet is rendered for index.js
 
 ReactDOM.render(<App/>, document.getElementById('root'))
 

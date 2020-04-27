@@ -2,7 +2,7 @@ import React ,{ Component }from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 
-
+// this components provides solutions for parents to rescue animals
 
 function ParentRes() {
     return (

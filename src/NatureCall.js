@@ -1,6 +1,9 @@
 import React ,{ Component }from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 
+
+// this component add activity information of nature's calling
+
 function NatureCall() {
     return (
       <div >
