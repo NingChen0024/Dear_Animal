@@ -18,6 +18,10 @@ class About extends Component {
       axios.get('/api/get/allanimals')
       .then(res => console.log(res.data))
       .catch(err => console.log(err))
+
+      axios.get('/api/get/allusers')
+      .then(res => console.log(res.data))
+      .catch(err => console.log(err))
     }
 
   
