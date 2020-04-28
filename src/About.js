@@ -22,6 +22,14 @@ class About extends Component {
       axios.get('/api/get/allusers')
       .then(res => console.log(res.data))
       .catch(err => console.log(err))
+
+      this.asyncFunction()
+    }
+
+    asyncFunction = async() => {
+      await festch('/api/get/allanimals')
+      .then(res => res.json())
+      .then(json => console.log(json))
     }
 
   
