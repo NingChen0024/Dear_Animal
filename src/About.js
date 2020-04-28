@@ -10,8 +10,8 @@ class About extends Component {
 
     componentDidMount(){
       axios.get('/api/get/allposts')
-      // .then(res => console.log(res.data))
-      .then(res => this.setState({pid: res.data}))
+      .then(res => console.log(res.data))
+      //.then(res => this.setState({pid: res.data}))
       .catch(err => console.log(err))
 
 
