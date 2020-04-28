@@ -18,13 +18,15 @@ import ParentCons from './Parent_cons';
 import ParentFaq from './Parent_faq';
 import KidsTips from './KidsTips';
 import AniamlList from './AnimalList';
+import { HashRouter } from 'react-router-dom'
+
 
 class App extends Component{
 
   render(){
     return (
       <div >
-        <Router >
+        <HashRouter >
           <div>
             <ScrollToTop>
               <Nav/>
@@ -46,7 +48,7 @@ class App extends Component{
               </Switch>
             </ScrollToTop>
           </div>
-        </Router>
+        </HashRouter>
     
       </div>
     )
