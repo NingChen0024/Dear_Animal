@@ -27,7 +27,7 @@ class About extends Component {
     }
 
     asyncFunction = async() => {
-      await festch('/api/get/allanimals')
+      await fetch('/api/get/allanimals')
       .then(res => res.json())
       .then(json => console.log(json))
     }
