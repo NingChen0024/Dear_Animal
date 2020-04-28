@@ -15,22 +15,18 @@ class About extends Component {
       .catch(err => console.log(err))
 
 
-      axios.get('/api/get/allanimals')
-      .then(res => console.log(res.data))
-      .catch(err => console.log(err))
-
       axios.get('/api/get/allusers')
       .then(res => console.log(res.data))
       .catch(err => console.log(err))
 
-      this.asyncFunction()
+      //this.asyncFunction()
     }
 
-    asyncFunction = async() => {
-      await fetch('/api/get/allanimals')
-      .then(res => res.json())
-      .then(json => console.log(json))
-    }
+    // asyncFunction = async() => {
+    //   await fetch('/api/get/allanimals')
+    //   .then(res => res.json())
+    //   .then(json => console.log(json))
+    // }
 
   
     render() {
