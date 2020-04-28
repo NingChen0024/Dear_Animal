@@ -26,7 +26,7 @@ class App extends Component{
   render(){
     return (
       <div >
-        <HashRouter >
+        <HashRouter>
           <div>
             <ScrollToTop>
               <Nav/>
