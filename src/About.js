@@ -30,7 +30,7 @@ class About extends Component {
         <div>
           {this.state.pid
           ? <div> 
-              <div>{this.state.pid[0].pid}</div>
+              <div>{this.state.pid[0].title}</div>
             </div>
           : <p>err</p>
           }

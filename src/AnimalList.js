@@ -5,7 +5,6 @@ import Popup from './Popup'
 import wallebyPho from './images/wallaby_icon.png'
 import koalaPho from './images/koala_icon.png'
 import wombatPho from './images/wombat_icon.png'
-import ReactPlayer from "react-player"
 
 // this component display a list of animals and show their characterics to kids
 
