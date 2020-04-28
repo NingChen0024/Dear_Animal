@@ -13,20 +13,9 @@ class About extends Component {
       .then(res => console.log(res.data))
       //.then(res => this.setState({pid: res.data}))
       .catch(err => console.log(err))
-
-
-      axios.get('/api/get/allusers')
-      .then(res => console.log(res.data))
-      .catch(err => console.log(err))
-
-      //this.asyncFunction()
+  
     }
 
-    // asyncFunction = async() => {
-    //   await fetch('/api/get/allanimals')
-    //   .then(res => res.json())
-    //   .then(json => console.log(json))
-    // }
 
   
     render() {
