@@ -34,7 +34,7 @@ class Nav extends Component{
                                 <li className="nav-link navItem">Games</li>
                             </Link>
                        
-                            {/* <Link to='/about' >
+                            <Link to='/about' >
                                 <li className="nav-link navItem">About Us</li>
                             </Link> */}
 
@@ -47,7 +47,7 @@ class Nav extends Component{
                                     <a class="dropdown-item" href="#acts">Another action</a>
                                     <a class="dropdown-item" href="#last">Something else here</a>
                                 </div>
-                            </div> */}
+                            </div>
                             
 
                             {/* contact */}

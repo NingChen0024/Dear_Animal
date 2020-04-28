@@ -13,6 +13,11 @@ class About extends Component {
       // .then(res => console.log(res.data))
       .then(res => this.setState({pid: res.data}))
       .catch(err => console.log(err))
+
+
+      axios.get('/api/get/allanimals')
+      .then(res => console.log(res.data))
+      .catch(err => console.log(err))
     }
 
   
