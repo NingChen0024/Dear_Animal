@@ -23,40 +23,39 @@ class About extends Component {
       pid: null,
     }
 
-    componentDidMount(){
-      axios.get('/api/get/allanimals')
-      //.then(res => console.log(res.data))
-      .then(res => this.setState({pid: res.data}))
-      .catch(err => console.log(err))
-    }
+    // componentDidMount(){
+    //   axios.get('/api/get/allanimals')
+    //   //.then(res => console.log(res.data))
+    //   .then(res => this.setState({pid: res.data}))
+    //   .catch(err => console.log(err))
+    // }
 
-    async componentDidMount(){
-      await axios.get('/api/get/allkidtips')
-      .then(res => { console.log(res.data);
-        this.setState({pid: res.data})})
+    componentWillMount(){
+      axios.get('/api/get/allkidtips')
+      .then(res => this.setState({pid: res.data}))
       .catch(err => console.log(err))  
     }
 
-    content(){
-      return(
-        <div className="container">
-        <Carousel>
-          {
-            this.state.pid.map(pers => (
-              <Carousel.Item>
-              <img src={ require("./images/newsletter.png")} class="kidtipsImg" alt="office"/>
-              <Carousel.Caption>
-                <h1>{pers.name}</h1>
+    // content(){
+    //   return(
+    //     <div className="container">
+    //     <Carousel>
+    //       {
+    //         this.state.pid.map(pers => (
+    //           <Carousel.Item>
+    //           <img src={ require("./images/newsletter.png")} class="kidtipsImg" alt="office"/>
+    //           <Carousel.Caption>
+    //             <h1>{pers.name}</h1>
                
-              </Carousel.Caption>
-            </Carousel.Item>
-            ))
-          }
-        </Carousel>
-      </div> 
-      )
+    //           </Carousel.Caption>
+    //         </Carousel.Item>
+    //         ))
+    //       }
+    //     </Carousel>
+    //   </div> 
+    //   )
 
-    }
+    // }
 
     render() {
 
@@ -64,9 +63,7 @@ class About extends Component {
       console.log(this.state.pid)
       return (
       <div >
-         <div>
-          {this.state.loaded ? this.content() : null}
-        </div>
+       
         {/* <p>123</p>
         <div>
           {this.state.pid
@@ -80,7 +77,7 @@ class About extends Component {
         </div> */}
           
 
-        {/* <div className="container">
+        <div className="container">
           <Carousel>
             {
               this.state.pid.map(pers => (
@@ -94,7 +91,7 @@ class About extends Component {
               ))
             }
           </Carousel>
-        </div> */}
+        </div>
 
           {/* <FlippingCard>
               <FlippingCardBack>
