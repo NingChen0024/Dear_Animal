@@ -26,10 +26,9 @@ class About extends Component {
       axios.get('/api/get/allkidtips')
       // .then(res => console.log(res.data))
       .then(res => this.setState({pid: res.data}))
+      .then(res => console.log(this.state))
       .catch(err => console.log(err))
   
-      // var cars = [{name:'qwe',qty:1223},{name:'erer',qty: 2323},{name:'frfr', qty:454},{name:'eeww', qty:454}]
-      // this.setState({pid: cars})
     }
 
 
@@ -37,6 +36,7 @@ class About extends Component {
     render() {
 
       console.log(this.state)
+      console.log(this.state.pid)
       return (
       <div >
         <p>123</p>
