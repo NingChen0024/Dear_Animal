@@ -57,7 +57,7 @@ class About extends Component {
         </div> */}
           
 
-        <div className="container">
+        {/* <div className="container">
           <Carousel>
             {
               this.state.pid.map(pers => (
@@ -71,7 +71,7 @@ class About extends Component {
               ))
             }
           </Carousel>
-        </div>
+        </div> */}
 
           {/* <FlippingCard>
               <FlippingCardBack>
