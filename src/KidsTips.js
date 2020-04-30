@@ -48,6 +48,7 @@ class KidsTips extends Component {
         {this.state.loading || !this.state.pid ? (
           <div>loading....</div>
         ) : (
+            <div>
            <div className="container">
                <ScrollAnimation animateIn="fadeIn">
                 <div >
@@ -55,23 +56,7 @@ class KidsTips extends Component {
                 </div>
                 </ScrollAnimation>
 
-
-             <Carousel>
-               {
-                 this.state.pid.map(tip => (
-                   <Carousel.Item>
-                   <img src={ require("./images/kidtipsimg.png")} class="kidtipsImg" alt="office"/>
-                   <Carousel.Caption>
-                     <h1 className='kidtipsfont'>{tip.content}</h1>
-                   
-                   </Carousel.Caption>
-                 </Carousel.Item>
-                 ))
-               }
-             </Carousel>
-
-
-             <div class="row mt-5">
+             <div class="row mt-5 mb-3">
                 <div class="col-lg-2 col-md-2 col-12">                  
                 </div>
 
@@ -91,6 +76,21 @@ class KidsTips extends Component {
             </div>
 
 
+            <Carousel>
+               {
+                 this.state.pid.map(tip => (
+                   <Carousel.Item>
+                   <img src={ require("./images/kidtipsimg.png")} class="kidtipsImg" alt="office"/>
+                   <Carousel.Caption>
+                     <h1 className='kidtipsfont'>{tip.content}</h1>
+                   
+                   </Carousel.Caption>
+                 </Carousel.Item>
+                 ))
+               }
+             </Carousel>
+
+           </div>
                 <footer class="site-footer">
                     <div class="container">
                         <div class="row">
@@ -119,7 +119,7 @@ class KidsTips extends Component {
                         </div>
                     </div>
                 </footer>
-           </div>
+                </div>
         )}
         </div>
  
