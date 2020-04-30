@@ -49,7 +49,7 @@ class About extends Component {
                   <Carousel.Item>
                   <img src={ require("./images/kidtipsimg.png")} class="kidtipsImg" alt="office"/>
                   <Carousel.Caption>
-                    <p className='kidtipsfont'>{tip.content}</p>
+                    <h1 className='kidtipsfont'>{tip.content}</h1>
                   
                   </Carousel.Caption>
                 </Carousel.Item>
