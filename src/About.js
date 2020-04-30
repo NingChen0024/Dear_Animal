@@ -15,6 +15,7 @@ import {
   DropdownCard
 } from 'react-ui-cards'
 import Carousel from 'react-bootstrap/Carousel'
+import { ConsoleWriter } from 'istanbul-lib-report';
 
 class About extends Component {
 
@@ -24,14 +25,12 @@ class About extends Component {
 
     componentDidMount(){
       axios.get('/api/get/allkidtips')
-      .then(res => console.log(res.data))
-      // .then(res => this.setState({pid: res.data}))
+      .then(res => { console.log(res.data);
+        this.setState({pid: res.data})})
       .catch(err => console.log(err))
   
     }
 
-
-  
     render() {
 
       console.log(this.state)
