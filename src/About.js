@@ -19,7 +19,7 @@ import Carousel from 'react-bootstrap/Carousel'
 class About extends Component {
 
     state = {
-      pid: null
+      pid: null,
     }
 
     componentDidMount(){
