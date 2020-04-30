@@ -24,6 +24,13 @@ class About extends Component {
     }
 
     componentDidMount(){
+      axios.get('/api/get/allanimals')
+      //.then(res => console.log(res.data))
+      .then(res => this.setState({pid: res.data}))
+      .catch(err => console.log(err))
+    }
+
+    componentDidMount(){
       axios.get('/api/get/allkidtips')
       .then(res => { console.log(res.data);
         this.setState({pid: res.data})})
@@ -37,7 +44,7 @@ class About extends Component {
       console.log(this.state.pid)
       return (
       <div >
-        <p>123</p>
+        {/* <p>123</p>
         <div>
           {this.state.pid
           ? <div> 
@@ -45,6 +52,10 @@ class About extends Component {
             </div>
           : <p>err</p>
           }
+
+    
+        </div> */}
+          
 
         <div className="container">
           <Carousel>
@@ -61,8 +72,7 @@ class About extends Component {
             }
           </Carousel>
         </div>
-        </div>
-          
+
           {/* <FlippingCard>
               <FlippingCardBack>
               Content that will be displayed on the back of the card
