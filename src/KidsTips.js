@@ -2,7 +2,7 @@ import React ,{ Component }from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import ReactPlayer from "react-player"
 import Carousel from 'react-bootstrap/Carousel'
-
+import axios from 'axios'
 import {
     UserCard,
     ProductCard,
