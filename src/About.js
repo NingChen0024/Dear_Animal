@@ -24,9 +24,8 @@ class About extends Component {
 
     componentDidMount(){
       axios.get('/api/get/allkidtips')
-      // .then(res => console.log(res.data))
-      .then(res => this.setState({pid: res.data}))
-      .then(res => console.log(this.state))
+      .then(res => console.log(res.data))
+      // .then(res => this.setState({pid: res.data}))
       .catch(err => console.log(err))
   
     }
