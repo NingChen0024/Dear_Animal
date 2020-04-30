@@ -15,7 +15,7 @@ import {
   DropdownCard
 } from 'react-ui-cards'
 import Carousel from 'react-bootstrap/Carousel'
-import { ConsoleWriter } from 'istanbul-lib-report';
+import { ConsoleWriter, ContentWriter } from 'istanbul-lib-report';
 
 class About extends Component {
 
@@ -30,12 +30,32 @@ class About extends Component {
       .catch(err => console.log(err))
     }
 
-    componentDidMount(){
-      axios.get('/api/get/allkidtips')
+    async componentDidMount(){
+      await axios.get('/api/get/allkidtips')
       .then(res => { console.log(res.data);
         this.setState({pid: res.data})})
-      .catch(err => console.log(err))
-  
+      .catch(err => console.log(err))  
+    }
+
+    content(){
+      return(
+        <div className="container">
+        <Carousel>
+          {
+            this.state.pid.map(pers => (
+              <Carousel.Item>
+              <img src={ require("./images/newsletter.png")} class="kidtipsImg" alt="office"/>
+              <Carousel.Caption>
+                <h1>{pers.name}</h1>
+               
+              </Carousel.Caption>
+            </Carousel.Item>
+            ))
+          }
+        </Carousel>
+      </div> 
+      )
+
     }
 
     render() {
@@ -44,6 +64,9 @@ class About extends Component {
       console.log(this.state.pid)
       return (
       <div >
+         <div>
+          {this.state.loaded ? this.content() : null}
+        </div>
         {/* <p>123</p>
         <div>
           {this.state.pid
