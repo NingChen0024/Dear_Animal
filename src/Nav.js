@@ -33,7 +33,24 @@ class Nav extends Component{
                             <Link to='/games'>
                                 <li className="nav-link navItem">Games</li>
                             </Link>
+                       
+                            <Link to='/about' >
+                                <li className="nav-link navItem">About Us</li>
+                            </Link> 
 
+                            {/* <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Main
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#tips">Action</a>
+                                    <a class="dropdown-item" href="#acts">Another action</a>
+                                    <a class="dropdown-item" href="#last">Something else here</a>
+                                </div>
+                            </div>
+                            
+
+                            {/* contact */}
                             <Link to="/parent" >
                                 <li className="nav-link navItem"> For Parents</li>
                             </Link>

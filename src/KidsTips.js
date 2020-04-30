@@ -1,8 +1,23 @@
 import React ,{ Component }from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import ReactPlayer from "react-player"
-
-
+import {
+    UserCard,
+    ProductCard,
+    TaggedContentCard,
+    FlippingCard,
+    FlippingCardFront,
+    FlippingCardBack,
+    RecipeCard,
+    NewsHeaderCard,
+    CryptoCard,
+    PaymentCard,
+    DropdownCard
+  } from 'react-ui-cards'
+  
+function refreshPage() {
+    window.location.reload(false);
+  }
 // this component show tips to kids about how to protect endangered animals
 
 function KidsTips() {
@@ -40,6 +55,10 @@ function KidsTips() {
                     </div>
 
             </div>
+
+
+
+    
 
           <div className='container parent-text-space  pt-5 mb-5 pb-5'> 
 
