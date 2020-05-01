@@ -83,18 +83,17 @@ function Parent() {
                
           <div >
             <div class='row'>
-              <div class="col-lg-5 mr-auto mt-5 pt-5 col-md-6 col-12 careKoala"> 
-              <h2 class="careKoala ml-5">Caring For A Koala</h2>
-              <img src={ require("./images/care.png")} class="img-fluid careImg" alt="blog"/>
+              <div class="col-lg-6 mr-auto mt-5 pt-5 col-md-6 col-12 careKoala"> 
+                <h2 class="careKoala ml-5">Caring For A Koala</h2>
+                <img src={ require("./images/care.png")} class="img-fluid careImg" alt="blog"/>
               </div>
              
-              <div class="col-lg-5 ml-auto mt-5 pt-5 col-md-6 col-12">
+              <div class="col-lg-6 ml-auto mt-5 pt-5 col-md-6 col-12">
                 <div className='text-center' >
-                        <div >
-                            <ReactPlayer
-                                url="https://www.youtube.com/watch?v=0tKPzSRzs1c"
-                            />
-                        </div>
+                    <iframe width="448" height="252" 
+                    src="https://www.youtube.com/embed/0tKPzSRzs1c" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
               </div>
             </div>

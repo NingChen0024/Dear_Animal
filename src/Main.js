@@ -191,8 +191,8 @@ class Main extends Component{
                         </div>
                     </div>
 
-                    <div class="col-lg-6 col-md-7 col-12">
-                         <div >
+                    <div class="col-lg-6 col-md-7 col-12 pt-3">
+                         {/* <div >
           
                               <div className='text-center' >
                                    <div >
@@ -202,7 +202,12 @@ class Main extends Component{
                                    </div>
                               </div>
                          
-                         </div>
+                         </div> */}
+
+                         <iframe width="448" height="252" 
+                         src="https://www.youtube.com/embed/ALhA9WGqG0k" 
+                         frameborder="0" 
+                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
 
                </div>

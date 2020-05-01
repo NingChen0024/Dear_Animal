@@ -19,7 +19,8 @@ import ParentFaq from './Parent_faq';
 import KidsTips from './KidsTips';
 import AniamlList from './AnimalList';
 import { HashRouter } from 'react-router-dom'
-
+import ReactDom from 'react-dom';
+import Popup from 'react-popup';
 
 class App extends Component{
 
@@ -49,12 +50,10 @@ class App extends Component{
             </ScrollToTop>
           </div>
         </HashRouter>
-    
       </div>
     )
   }
 }
-
 
 
 export default App;

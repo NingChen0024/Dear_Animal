@@ -977,7 +977,7 @@ h3 {
 
   .careKoala{
     font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace; 
-    font-size: 40px; 
+    font-size: 30px; 
     font-style: normal; 
     font-variant: normal; 
     font-weight: 700; 
@@ -986,7 +986,7 @@ h3 {
 
   .careImg{
     display: block;
-    max-width:80%;
+    max-width:60%;
     margin-left: auto;
     margin-right: auto;
     height:auto;

@@ -12,21 +12,51 @@ import wombatPho from './images/wombat_icon.png'
 class AnimalList extends Component {
     
     state = {
-        pid: null,
+        animals: [{id:1, name:'animal1', type:'fish', des:'animal_one'}, 
+        {id:2, name:'animal2', type:'mammel', des:'animal_two'},
+        {id:3, name:'animal3', type:'bird', des:'animal_three'}],
+        animal:"All"
       }
 
-      componentDidMount(){
-        axios.get('/api/get/allanimals')
-        //.then(res => console.log(res.data))
-        .then(res => this.setState({pid: res.data}))
-        .catch(err => console.log(err))
-      }
+    //   componentDidMount(){
+    //     axios.get('/api/get/allanimals')
+    //     //.then(res => console.log(res.data))
+    //     .then(res => this.setState({pid: res.data}))
+    //     .catch(err => console.log(err))
+    //   }
+
+        handleChangeAnimal = event => {
+        this.setState({ animal: event.target.value });
+      };
+
+        getUnique(arr, comp) {
+            const unique = arr
+            //store the comparison values in array
+            .map(e => e[comp])
+        
+            // store the keys of the unique objects
+            .map((e, i, final) => final.indexOf(e) === i && i)
+        
+            // eliminate the dead keys & store unique objects
+            .filter(e => arr[e])
+        
+            .map(e => arr[e]);
+        
+            return unique;
+        }
 
      render() {
 
-        console.log(this.state)
-        console.log(this.state.pid)
-    
+        const animals = this.state.animals
+        const animal = this.state.animal
+        const uniqueType= this.getUnique(this.state.animals, "type");
+        uniqueType.push({type:'All'})
+
+        const filterDropdown = animals.filter(function(result) {
+            return result.type === animal
+          });
+        
+     
         return (
         <div >
             <div className='container '>
@@ -38,6 +68,42 @@ class AnimalList extends Component {
                 </ScrollAnimation>
 
 
+                <form >
+                    <br />
+                    <br />
+                    <label>
+                        Looping through Courses tag from Json File
+                        <select
+                            value={this.state.animal}
+                            onChange={this.handleChangeAnimal}
+                        >
+                            { 
+                                uniqueType.map(animal => (
+                                <option key={animal.id} value={animal.type}>
+                                {animal.type}
+                                </option>
+                        ))}
+                        </select>
+                    </label>
+                    <div>
+                        {this.state.animal === 'All' ? 
+                        (this.state.animals.map(animal => <div key={animal.id} >
+                            {animal.name}
+                            <br />
+                        </div>)) : 
+                        (filterDropdown.map(animal => (
+                        <div key={animal.id} >
+                            {animal.name}
+                            <br />
+                        </div>
+                        )))}
+                    </div>
+                </form>
+
+
+
+
+{/* 
                 <div className='container parent-text-space mt-5 mb-5 pb-5'>
                     <p className ='font-weight-bold m-4 kidtipsfont'>
                         Tap on my belly to know more !!
@@ -57,7 +123,7 @@ class AnimalList extends Component {
                             </div>
                     </div> 
             
-                </div>
+                </div> */}
                 
             </div>
             <footer class="site-footer">
