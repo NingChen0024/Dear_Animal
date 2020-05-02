@@ -619,6 +619,7 @@ background: var(--secondary-color);
 .site-footer {
 background: var(--dark-color);
 padding: 7em 0 6em 0;
+clear: both;	
 }
 
 .site-footer a {
@@ -1031,19 +1032,60 @@ h3 {
     height:auto;
   }
 
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 80%;
-  }
-  
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
-  .container {
-    padding: 2px 16px;
-  }
+.container {
+  display: block;
+  width: 100%;
+}
 
+.card {
+  border: 8px solid rgb(235, 134, 41);
+  float: left;
+  display: flex;
+  border-radius: 10px 10px 0 0;
+  flex-flow: row-reverse wrap;
+  margin: 1px;
+  padding: 10px 3px;
+  /*setting width for each and every card element as well as -10px for removing the margin width for 5 elements*/
+  width: 28%;
+  overflow: hidden; 
+  background-color: #decce6
+}
+
+
+/*first element*/
+
+.container .card:first-child {
+  margin-left: 0;
+}
+
+
+/*last element of the first row*/
+
+.container .card:nth-child(5n) {
+  margin-right: 0;
+}
+
+
+/*first-element of the 2nd row*/
+
+.container .card:nth-child(5n+1) {
+  margin-left: 0;
+}
+
+
+/*last element*/
+
+.container .card:last-child {
+  margin-right: 0;
+}
+
+
+.view-rows {
+  width: 1074px;
+  max-width: 100%;
+  margin: 0 auto;
+  font-size: 24px;
+  position: relative;
+}
 
 

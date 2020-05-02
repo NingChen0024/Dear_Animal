@@ -30,7 +30,8 @@ class AnimalList extends Component {
     state = {
         animals: [{id:1, name:'animal1', type:'fish', des:'animal_one'}, 
         {id:2, name:'animal2', type:'mammel', des:'animal_two'},
-        {id:3, name:'animal3', type:'bird', des:'animal_three'}],
+        {id:3, name:'animal3', type:'bird', des:'animal_three'},
+        {id:4, name:'animal4', type:'bird', des:'animal_four'}],
         animal:"All"
       }
 
@@ -87,8 +88,7 @@ class AnimalList extends Component {
                 <form >
                     <br />
                     <br />
-                    <label>
-                       
+                    <label>                     
                         <select
                             value={this.state.animal}
                             onChange={this.handleChangeAnimal}
@@ -101,88 +101,48 @@ class AnimalList extends Component {
                         ))}
                         </select>
                     </label>
-                    <div className='cardlayout'>
+
+                    <div className='container view-rows'>
                         {this.state.animal === 'All' ? 
-                        (this.state.animals.map(animal => <div key={animal.id}  className = " dev col-sm-5 col-lg-5 col-md-5">
-                           <div key={animal.id} className="card">
-
-
-                           <img src={ require("./images/koala_cartoon.png")} class="img-fluid" alt="working girl"/>
-                            <div class="container">
-                                <h4><b>John Doe</b></h4> 
-                                <p>Architect & Engineer</p> 
-                                <Link to={{
-                                        pathname: "/animalDetail",
-                                        data: animal
-                                        }}>     
-                                        <a class="custom-btn btn-bg btn unifont" >Learn more</a>
-                                </Link>
-                            </div>
-
-
-
-
-
-
-
-
-                            {/* <ProductCard 
-                                photos={[
-                                    'https://i.imgur.com/jRVDeI8.jpg'
-                                ]}
-                                productName= {animal.name}
-                                description= {animal.des}
-                                buttonText='learn more'
-                                rating={3}
-                                url='https://github.com/nukeop'
-                                /> */}
-                            </div>
-                        </div>)) : 
-                        (filterDropdown.map(animal => (
+                        (this.state.animals.map(animal => (
                         <div key={animal.id} >
-                           <ProductCard
-                            photos={[
-                                'https://i.imgur.com/jRVDeI8.jpg',
-                                'https://i.imgur.com/raPe27t.jpg',
-                                'https://i.imgur.com/IpEsYSH.jpg'
-                            ]}
-                            productName= {animal.name}
-                            description= {animal.des}
-                            buttonText='learn more'
-                            rating={3}
-                            url='https://github.com/nukeop'
-                            />
+                            <div className='card m-4'>
+                                <img src={ require("./images/koala_cartoon.png")} class="img-fluid" />
+                                <div class="container">
+                                    <h4><b>{animal.name}</b></h4> 
+                                    <p>{animal.des}</p> 
+                                    <Link to={{
+                                            pathname: "/animalDetail",
+                                            data: animal
+                                            }}>     
+                                            <a class="custom-btn btn-bg btn unifont" >Learn more</a>
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>))) : 
+
+                        (filterDropdown.map(animal => (
+                        <div key={animal.id}>
+                            <div className='card m-4'>
+                                <img src={ require("./images/koala_cartoon.png")} class="img-fluid" />
+                                <div class="container">
+                                    <h4><b>{animal.name}</b></h4> 
+                                    <p>{animal.des}</p> 
+                                    <Link to={{
+                                            pathname: "/animalDetail",
+                                            data: animal
+                                            }}>     
+                                            <a class="custom-btn btn-bg btn unifont" >Learn more</a>
+                                    </Link>
+                                </div>
+                            </div>               
                         </div>
                         )))}
                     </div>
-                </form>
-
-
-
-
-{/* 
-                <div className='container parent-text-space mt-5 mb-5 pb-5'>
-                    <p className ='font-weight-bold m-4 kidtipsfont'>
-                        Tap on my belly to know more !!
-                    </p>  
-
-                    <div className='row mt-5 mp-5'>
-                            <div class="col-lg-4 col-md-4 col-12 mb-4 mt-3 pl-5">
-                                <Popup img={wallebyPho} name='Wallaby' count='11,798' status='Endangered - Vulnerable' habitat='Wallabies generally prefer more remote areas which are wooded or rugged rather than open arid plains' des='Wallabies are small to medium sized animals whereby the largest can measure 6 feet (1.8 metres) in height from head to tail. Wallabies can weigh anywhere between 2 – 24 kilograms (4 – 53 pounds).'/>                          
-                            </div>
-                            
-                            <div class="col-lg-4 col-md-4 col-12 mb-4">
-                                <Popup img={koalaPho} name='Koala' count='10,260' status='Endangered - High risk' habitat='Eucalyptus forests, coastal regions and moist woodlands' des='Thick-set animals with thick, soft, wool-like ash-grey coloured coats with white underpants'/>                       
-                            </div>
-
-                            <div class="col-lg-4 col-md-4 col-12 mb-4"  >
-                                <Popup img={wombatPho} name='Wombat' count='6,730' status='Endangered - Persecuted' habitat='Dig out burrows measuring 30 metres (100 feet) long' des='Wombats measure 0.7 – 1.2 metres (28 – 48 inches) in length, 35 centimetres high and weigh 15 – 35 kilograms (11 – 77 pounds). They have large heads, short, powerful legs with powerful claws, thick set, muscular bodies and rodent-like front teeth suitable for their burrowing way of life.'/>
-                            </div>
-                    </div> 
-            
-                </div> */}
-                
+                </form>              
             </div>
+
+            <div></div>
             <footer class="site-footer">
                 <div class="container">
                     <div class="row">
