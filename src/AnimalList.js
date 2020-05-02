@@ -5,7 +5,23 @@ import Popup from './Popup'
 import wallebyPho from './images/wallaby_icon.png'
 import koalaPho from './images/koala_icon.png'
 import wombatPho from './images/wombat_icon.png'
+import {Link} from 'react-router-dom'
 
+
+
+import {
+    UserCard,
+    ProductCard,
+    TaggedContentCard,
+    FlippingCard,
+    FlippingCardFront,
+    FlippingCardBack,
+    RecipeCard,
+    NewsHeaderCard,
+    CryptoCard,
+    PaymentCard,
+    DropdownCard
+  } from 'react-ui-cards'
 // this component display a list of animals and show their characterics to kids
 
 
@@ -72,7 +88,7 @@ class AnimalList extends Component {
                     <br />
                     <br />
                     <label>
-                        Looping through Courses tag from Json File
+                       
                         <select
                             value={this.state.animal}
                             onChange={this.handleChangeAnimal}
@@ -85,16 +101,57 @@ class AnimalList extends Component {
                         ))}
                         </select>
                     </label>
-                    <div>
+                    <div className='cardlayout'>
                         {this.state.animal === 'All' ? 
-                        (this.state.animals.map(animal => <div key={animal.id} >
-                            {animal.name}
-                            <br />
+                        (this.state.animals.map(animal => <div key={animal.id}  className = " dev col-sm-5 col-lg-5 col-md-5">
+                           <div key={animal.id} className="card">
+
+
+                           <img src={ require("./images/koala_cartoon.png")} class="img-fluid" alt="working girl"/>
+                            <div class="container">
+                                <h4><b>John Doe</b></h4> 
+                                <p>Architect & Engineer</p> 
+                                <Link to={{
+                                        pathname: "/animalDetail",
+                                        data: animal
+                                        }}>     
+                                        <a class="custom-btn btn-bg btn unifont" >Learn more</a>
+                                </Link>
+                            </div>
+
+
+
+
+
+
+
+
+                            {/* <ProductCard 
+                                photos={[
+                                    'https://i.imgur.com/jRVDeI8.jpg'
+                                ]}
+                                productName= {animal.name}
+                                description= {animal.des}
+                                buttonText='learn more'
+                                rating={3}
+                                url='https://github.com/nukeop'
+                                /> */}
+                            </div>
                         </div>)) : 
                         (filterDropdown.map(animal => (
                         <div key={animal.id} >
-                            {animal.name}
-                            <br />
+                           <ProductCard
+                            photos={[
+                                'https://i.imgur.com/jRVDeI8.jpg',
+                                'https://i.imgur.com/raPe27t.jpg',
+                                'https://i.imgur.com/IpEsYSH.jpg'
+                            ]}
+                            productName= {animal.name}
+                            description= {animal.des}
+                            buttonText='learn more'
+                            rating={3}
+                            url='https://github.com/nukeop'
+                            />
                         </div>
                         )))}
                     </div>

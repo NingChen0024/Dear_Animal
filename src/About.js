@@ -1,19 +1,7 @@
 
 import React ,{ Component }from 'react';
 import axios from 'axios'
-import {
-  UserCard,
-  ProductCard,
-  TaggedContentCard,
-  FlippingCard,
-  FlippingCardFront,
-  FlippingCardBack,
-  RecipeCard,
-  NewsHeaderCard,
-  CryptoCard,
-  PaymentCard,
-  DropdownCard
-} from 'react-ui-cards'
+
 import Carousel from 'react-bootstrap/Carousel'
 
 
@@ -94,9 +82,9 @@ class About extends Component {
             <FlippingCardFront>
               Content that will be displayed on the front of the card
             </FlippingCardFront>
-        </FlippingCard>
+        </FlippingCard> */}
 
-        <TaggedContentCard
+        {/* <TaggedContentCard
           href='https://github.com/nukeop'
           thumbnail='https://i.imgur.com/H0f0R6p.jpg'
           title='Burger'
