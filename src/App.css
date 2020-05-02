@@ -922,11 +922,7 @@ h3 {
   opacity: 0;
 }
 
-.popupbutton{
-  width: 150px;
-  margin-left: 40%;
-  margin-top: 5%;
-}
+
 
 .custom-kid-btn.btn-kid-bg {
   background: #df99ff;
@@ -939,7 +935,6 @@ h3 {
   .gamebackground{
     background-color: #5dbcd2;
     text-align: center
-
   }
 
   .kidtipsfont{
@@ -1038,45 +1033,16 @@ h3 {
 }
 
 .card {
-  border: 8px solid rgb(235, 134, 41);
+  border: 4px solid rgb(235, 134, 41);
   float: left;
   display: flex;
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 10px 10px;
   flex-flow: row-reverse wrap;
   margin: 1px;
-  padding: 10px 3px;
-  /*setting width for each and every card element as well as -10px for removing the margin width for 5 elements*/
+  padding: 8px 3px;
   width: 28%;
   overflow: hidden; 
-  background-color: #decce6
-}
-
-
-/*first element*/
-
-.container .card:first-child {
-  margin-left: 0;
-}
-
-
-/*last element of the first row*/
-
-.container .card:nth-child(5n) {
-  margin-right: 0;
-}
-
-
-/*first-element of the 2nd row*/
-
-.container .card:nth-child(5n+1) {
-  margin-left: 0;
-}
-
-
-/*last element*/
-
-.container .card:last-child {
-  margin-right: 0;
+  background-color: #fdfcfd
 }
 
 
@@ -1089,3 +1055,33 @@ h3 {
 }
 
 
+/* select buttom */
+
+.custom-select {
+  border: 2px solid rgb(235, 134, 41);
+  position: relative;
+  font-family: Arial;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.popupfont{
+  font-family: 'Sniglet'; 
+  font-size: 30px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 700; 
+  color:  #ff9933;
+  text-align: center;
+}
+
+.popupbutton{
+  display: block;
+  max-width: 300px;
+  margin: auto;
+}

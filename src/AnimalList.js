@@ -2,9 +2,6 @@ import React ,{ Component }from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import axios from 'axios'
 import Popup from './Popup'
-import wallebyPho from './images/wallaby_icon.png'
-import koalaPho from './images/koala_icon.png'
-import wombatPho from './images/wombat_icon.png'
 import {Link} from 'react-router-dom'
 
 
@@ -92,13 +89,13 @@ class AnimalList extends Component {
                         <select
                             value={this.state.animal}
                             onChange={this.handleChangeAnimal}
-                        >
-                            { 
-                                uniqueType.map(animal => (
-                                <option key={animal.id} value={animal.type}>
+                            className="custom-select">
+
+                            {uniqueType.map(animal => (
+                            <option key={animal.id} value={animal.type}>
                                 {animal.type}
-                                </option>
-                        ))}
+                            </option>))}
+
                         </select>
                     </label>
 
@@ -107,34 +104,39 @@ class AnimalList extends Component {
                         (this.state.animals.map(animal => (
                         <div key={animal.id} >
                             <div className='card m-4'>
-                                <img src={ require("./images/koala_cartoon.png")} class="img-fluid" />
-                                <div class="container">
-                                    <h4><b>{animal.name}</b></h4> 
-                                    <p>{animal.des}</p> 
+                                
                                     <Link to={{
                                             pathname: "/animalDetail",
                                             data: animal
                                             }}>     
-                                            <a class="custom-btn btn-bg btn unifont" >Learn more</a>
+
+                                    <div class="container">
+                                        <img src={ require("./images/koala_cartoon.png")} class="img-fluid" />
+                                        <h4><b>{animal.name}</b></h4> 
+                                        <p>{animal.des}</p>
+                                    </div>
+                                            
                                     </Link>
-                                </div>
+                                
                             </div>
                         </div>))) : 
 
                         (filterDropdown.map(animal => (
                         <div key={animal.id}>
                             <div className='card m-4'>
-                                <img src={ require("./images/koala_cartoon.png")} class="img-fluid" />
-                                <div class="container">
-                                    <h4><b>{animal.name}</b></h4> 
-                                    <p>{animal.des}</p> 
-                                    <Link to={{
+
+                                <Link to={{
                                             pathname: "/animalDetail",
                                             data: animal
                                             }}>     
-                                            <a class="custom-btn btn-bg btn unifont" >Learn more</a>
-                                    </Link>
-                                </div>
+                                            
+                                    <div class="container">
+                                        <img src={ require("./images/koala_cartoon.png")} class="img-fluid" />
+                                        <h4><b>{animal.name}</b></h4> 
+                                        <p>{animal.des}</p>
+                                    </div>
+                                            
+                                </Link>
                             </div>               
                         </div>
                         )))}
