@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
 import PuzzleComp from './PuzzleComp'
+import ReactDOM from "react-dom";
+import Cardgame from "./gamejs/Game/Cardgame";
 import ScrollAnimation from 'react-animate-on-scroll';
 import ReactDom from 'react-dom';
 import Popup from 'react-popup';
+import "./scss/main.scss";
 // this component display several games to kids
 
 
@@ -41,7 +44,9 @@ class Game extends Component{
                     </div>
 
                 </div>
-
+                <div>
+                    <Cardgame/>
+                </div>
 
                 <footer class="site-footer">
                     <div class="container">
