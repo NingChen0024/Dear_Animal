@@ -67,7 +67,11 @@ class AnimalList extends Component {
 
         handleChangeAnimal = event => {
         this.setState({ animal: event.target.value });
+        filterDropdown = animals.filter(function(result) {
+            return result.class === animal
+          })
 
+        console.log(filterDropdown)
       };
 
 
@@ -78,9 +82,9 @@ class AnimalList extends Component {
         // const uniqueType= this.getUnique(this.state.animals, "class");
         // uniqueType.push({type:'All'})
 
-        filterDropdown = animals.filter(function(result) {
-            return result.class === animal
-          });
+        // filterDropdown = animals.filter(function(result) {
+        //     return result.class === animal
+        //   });
 
 
         
