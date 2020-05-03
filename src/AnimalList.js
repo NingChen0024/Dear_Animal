@@ -50,14 +50,10 @@ class AnimalList extends Component {
         async componentDidMount(){
         axios.get('/api/get/allanimals')
         .then(res => this.setState({animals: res.data}))
-        .then(res => console.log(this.state.animals))
         .then(res => {animals = this.state.animals})
-        .then(res => console.log(animals))
         .then(res => {animal = this.state.animal})
-        .then(res => console.log(animal))
         .then(res => {uniqueType = this.getUnique(this.state.animals, "class")})
         .then(res => {uniqueType.push({class:'All'})})
-        .then(res => console.log(uniqueType))
         .then(res => { filterDropdown = animals.filter(function(result) {
                 return result.class === animal
               })})
@@ -66,12 +62,14 @@ class AnimalList extends Component {
 
 
         handleChangeAnimal = event => {
-        this.setState({ animal: event.target.value });
+        this.setState({ animal: event.target.value })
         filterDropdown = animals.filter(function(result) {
-            return result.class === animal
+            return result.class === this.state.animal
           })
 
         console.log(filterDropdown)
+        console.log(animal)
+        console.log(animals)
       };
 
 
