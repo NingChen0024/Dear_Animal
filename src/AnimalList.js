@@ -56,7 +56,8 @@ class AnimalList extends Component {
         .then(res => {animal = this.state.animal})
         .then(res => console.log(animal))
         .then(res => {uniqueType= this.getUnique(this.state.animals, "class")})
-        .then(res => {uniqueType.push({type:'All'})})
+        .then(res => {uniqueType.push({class:'All'})})
+        .then(res => console.log(uniqueType))
         .then(res => { filterDropdown = animals.filter(function(result) {
                 return result.class === animal
               })})
@@ -112,7 +113,7 @@ class AnimalList extends Component {
 
                                 {uniqueType.map(animal => (
                                 <option key={animal.aid} value={animal.class}>
-                                    {animal.aniname}
+                                    {animal.class}
                                 </option>))}
 
                             </select>
