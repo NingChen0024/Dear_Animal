@@ -134,7 +134,7 @@ class AnimalList extends Component {
 
                                         <div class="container">
                                             <img src={ require("./images/koala_cartoon.png")} class="img-fluid" />
-                                            <h4><b>{animal.aniname}</b></h4> 
+                                            <p><b>{animal.aniname}</b></p> 
                                         </div>
                                                 
                                         </Link>
@@ -153,7 +153,7 @@ class AnimalList extends Component {
                                                 
                                         <div class="container">
                                             <img src={ require("./images/koala_cartoon.png")} class="img-fluid" />
-                                            <h4><b>{animal.aniname}</b></h4> 
+                                            <p><b>{animal.aniname}</b></p> 
                                         </div>
                                                 
                                     </Link>
