@@ -1,43 +1,26 @@
 import React ,{ Component }from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import axios from 'axios'
-import Popup from './Popup'
 import {Link} from 'react-router-dom'
 
 
-
-import {
-    UserCard,
-    ProductCard,
-    TaggedContentCard,
-    FlippingCard,
-    FlippingCardFront,
-    FlippingCardBack,
-    RecipeCard,
-    NewsHeaderCard,
-    CryptoCard,
-    PaymentCard,
-    DropdownCard
-  } from 'react-ui-cards'
 // this component display a list of animals and show their characterics to kids
 
 
 class AnimalList extends Component {
     
     state = {
-        animals: [{id:1, name:'animal1', type:'fish', des:'animal_one'}, 
-        {id:2, name:'animal2', type:'mammel', des:'animal_two'},
-        {id:3, name:'animal3', type:'bird', des:'animal_three'},
-        {id:4, name:'animal4', type:'bird', des:'animal_four'}],
-        animal:"All"
+        loading:true,
+        animals: null,
+        animal:''
       }
 
-    //   componentDidMount(){
-    //     axios.get('/api/get/allanimals')
-    //     //.then(res => console.log(res.data))
-    //     .then(res => this.setState({pid: res.data}))
-    //     .catch(err => console.log(err))
-    //   }
+      async componentDidMount(){
+        axios.get('/api/get/allanimals')
+        //.then(res => console.log(res.data))
+        .then(res => this.setState({animals: res.data, loading: false}))
+        .catch(err => console.log(err))
+      }
 
         handleChangeAnimal = event => {
         this.setState({ animal: event.target.value });
@@ -61,6 +44,9 @@ class AnimalList extends Component {
 
      render() {
 
+
+
+
         const animals = this.state.animals
         const animal = this.state.animal
         const uniqueType= this.getUnique(this.state.animals, "type");
@@ -72,7 +58,15 @@ class AnimalList extends Component {
         
      
         return (
+
+
+
+        
         <div >
+            {this.state.loading || !this.state.animals ? (
+                <div>loading....</div>
+            ) : (
+            <div>
             <div className='container '>
                 <ScrollAnimation animateIn="fadeIn">
                     <div pt-5></div>
@@ -92,8 +86,8 @@ class AnimalList extends Component {
                             className="custom-select">
 
                             {uniqueType.map(animal => (
-                            <option key={animal.id} value={animal.type}>
-                                {animal.type}
+                            <option key={animal.aid} value={animal.class}>
+                                {animal.aniname}
                             </option>))}
 
                         </select>
@@ -102,7 +96,7 @@ class AnimalList extends Component {
                     <div className='container view-rows'>
                         {this.state.animal === 'All' ? 
                         (this.state.animals.map(animal => (
-                        <div key={animal.id} >
+                        <div key={animal.aid} >
                             <div className='card m-4'>
                                 
                                     <Link to={{
@@ -112,8 +106,7 @@ class AnimalList extends Component {
 
                                     <div class="container">
                                         <img src={ require("./images/koala_cartoon.png")} class="img-fluid" />
-                                        <h4><b>{animal.name}</b></h4> 
-                                        <p>{animal.des}</p>
+                                        <h4><b>{animal.aniname}</b></h4> 
                                     </div>
                                             
                                     </Link>
@@ -122,7 +115,7 @@ class AnimalList extends Component {
                         </div>))) : 
 
                         (filterDropdown.map(animal => (
-                        <div key={animal.id}>
+                        <div key={animal.aid}>
                             <div className='card m-4'>
 
                                 <Link to={{
@@ -132,8 +125,7 @@ class AnimalList extends Component {
                                             
                                     <div class="container">
                                         <img src={ require("./images/koala_cartoon.png")} class="img-fluid" />
-                                        <h4><b>{animal.name}</b></h4> 
-                                        <p>{animal.des}</p>
+                                        <h4><b>{animal.aniname}</b></h4> 
                                     </div>
                                             
                                 </Link>
@@ -144,7 +136,6 @@ class AnimalList extends Component {
                 </form>              
             </div>
 
-            <div></div>
             <footer class="site-footer">
                 <div class="container">
                     <div class="row">
@@ -173,6 +164,8 @@ class AnimalList extends Component {
                     </div>
                 </div>
             </footer>
+            </div>
+            )}
         </div>
     )}
   }

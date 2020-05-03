@@ -3,25 +3,10 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import ReactPlayer from "react-player"
 import Carousel from 'react-bootstrap/Carousel'
 import axios from 'axios'
-import {
-    UserCard,
-    ProductCard,
-    TaggedContentCard,
-    FlippingCard,
-    FlippingCardFront,
-    FlippingCardBack,
-    RecipeCard,
-    NewsHeaderCard,
-    CryptoCard,
-    PaymentCard,
-    DropdownCard
-  } from 'react-ui-cards'
+
   
 
 
-function refreshPage() {
-    window.location.reload(false);
-  }
 // this component show tips to kids about how to protect endangered animals
 
 class KidsTips extends Component {
@@ -123,7 +108,7 @@ class KidsTips extends Component {
         )}
         </div>
  
-    );
+    )
     }
   }
 

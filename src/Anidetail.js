@@ -12,7 +12,7 @@ class Anidetail extends Component{
         const{data} = this.props.location
         return(
             <dev >
-                <p>{data.des}</p>
+                <p>{data.aniname}</p>
             </dev>
 
       )}
