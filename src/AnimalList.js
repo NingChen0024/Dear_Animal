@@ -35,10 +35,21 @@ class AnimalList extends Component {
         return unique;
     }
 
-      async componentDidMount(){
+    //   async componentDidMount(){
+    //     axios.get('/api/get/allanimals')
+    //     //.then(res => console.log(res.data))
+    //     .then(res => this.setState({animals: res.data, loading: false}))
+    //     .then(res => {animals = this.state.animals})
+    //     .then(res => {animal = this.state.animal})
+    //     .then(res => {uniqueType= this.getUnique(this.state.animals, "class")})
+    //     .then(res => {uniqueType.push({type:'All'})})
+    //     .then(res => { filterDropdown = animals.filter(function(result) {
+    //             return result.class === animal
+    //           })})
+
+        async componentDidMount(){
         axios.get('/api/get/allanimals')
         //.then(res => console.log(res.data))
-        .then(res => this.setState({animals: res.data, loading: false}))
         .then(res => {animals = this.state.animals})
         .then(res => {animal = this.state.animal})
         .then(res => {uniqueType= this.getUnique(this.state.animals, "class")})
@@ -46,7 +57,7 @@ class AnimalList extends Component {
         .then(res => { filterDropdown = animals.filter(function(result) {
                 return result.class === animal
               })})
-
+        .then(res => this.setState({animals: res.data, loading: false}))
         
       }
 
