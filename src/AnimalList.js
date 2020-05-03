@@ -5,7 +5,10 @@ import {Link} from 'react-router-dom'
 
 
 // this component display a list of animals and show their characterics to kids
-
+const animals 
+const animal
+const filterDropdown
+const uniqueType=
 
 class AnimalList extends Component {
     
@@ -16,14 +19,33 @@ class AnimalList extends Component {
       }
 
 
+      getUnique(arr, comp) {
+        const unique = arr
+        //store the comparison values in array
+        .map(e => e[comp])
+    
+        // store the keys of the unique objects
+        .map((e, i, final) => final.indexOf(e) === i && i)
+    
+        // eliminate the dead keys & store unique objects
+        .filter(e => arr[e])
+    
+        .map(e => arr[e]);
+    
+        return unique;
+    }
+
       async componentDidMount(){
         axios.get('/api/get/allanimals')
         //.then(res => console.log(res.data))
         .then(res => this.setState({animals: res.data, loading: false}))
-        .catch(err => console.log(err))
-
-        const uniqueType= this.getUnique(this.state.animals, "class");
-        uniqueType.push({type:'All'})
+        .then(res => {animals = this.state.animals})
+        .then(res => {animal = this.state.animal})
+        .then(res => {uniqueType= this.getUnique(this.state.animals, "class")})
+        .then(res => {uniqueType.push({type:'All'})})
+        .then(res => { filterDropdown = animals.filter(function(result) {
+                return result.class === animal
+              })})
 
         
       }
@@ -32,40 +54,27 @@ class AnimalList extends Component {
         this.setState({ animal: event.target.value });
       };
 
-        getUnique(arr, comp) {
-            const unique = arr
-            //store the comparison values in array
-            .map(e => e[comp])
-        
-            // store the keys of the unique objects
-            .map((e, i, final) => final.indexOf(e) === i && i)
-        
-            // eliminate the dead keys & store unique objects
-            .filter(e => arr[e])
-        
-            .map(e => arr[e]);
-        
-            return unique;
-        }
 
      render() {
 
-        const animals = this.state.animals
-        const animal = this.state.animal
+        // const animals = this.state.animals
+        // const animal = this.state.animal
         // const uniqueType= this.getUnique(this.state.animals, "class");
         // uniqueType.push({type:'All'})
 
-        const filterDropdown = animals.filter(function(result) {
-            return result.type === animal
-          });
+        // const filterDropdown = animals.filter(function(result) {
+        //     return result.class === animal
+        //   });
+
+
         
-     
         return (
 
         <div >
             {this.state.loading || !this.state.animals ? (
                 <div>loading....</div>
             ) : (
+
             <div>
                 <div className='container '>
                     <ScrollAnimation animateIn="fadeIn">
