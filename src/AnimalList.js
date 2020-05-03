@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 
 // this component display a list of animals and show their characterics to kids
 var animals = []
-var animal = ''
+var animal = 'All'
 var filterDropdown = null
 var uniqueType = null
 
@@ -15,7 +15,7 @@ class AnimalList extends Component {
     state = {
         loading:true,
         animals: null,
-        animal:''
+        animal:'All'
       }
 
 
