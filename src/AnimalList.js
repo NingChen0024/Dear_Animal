@@ -63,7 +63,7 @@ class AnimalList extends Component {
 
         handleChangeAnimal = event => {
         this.setState({ animal: event.target.value })
-        // animal = this.state.animal
+        animal = this.state.animal
         // filterDropdown = animals.filter(function(result) {
         //     return result.class === animal
         //   })
