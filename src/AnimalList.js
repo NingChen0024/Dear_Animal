@@ -5,10 +5,10 @@ import {Link} from 'react-router-dom'
 
 
 // this component display a list of animals and show their characterics to kids
-const animals = null
-const animal = null
-const filterDropdown = null
-const uniqueType = null
+var animals = null
+var animal = null
+var filterDropdown = null
+var uniqueType = null
 
 class AnimalList extends Component {
     
