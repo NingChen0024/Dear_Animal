@@ -53,7 +53,7 @@ class AnimalList extends Component {
         .then(res => {animals = this.state.animals})
         .then(res => {animal = this.state.animal})
         .then(res => {uniqueType = this.getUnique(this.state.animals, "class")})
-        .then(res => {uniqueType.push({class:'All'})})
+        .then(res => {uniqueType.unshift({class:'All'})})
         .then(res => { filterDropdown = animals.filter(function(result) {
                 return result.class === animal
               })})
