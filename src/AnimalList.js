@@ -5,8 +5,8 @@ import {Link} from 'react-router-dom'
 
 
 // this component display a list of animals and show their characterics to kids
-var animals = null
-var animal = null
+var animals = []
+var animal = ''
 var filterDropdown = null
 var uniqueType = null
 
@@ -67,9 +67,7 @@ class AnimalList extends Component {
 
         handleChangeAnimal = event => {
         this.setState({ animal: event.target.value });
-        console.log(this.state.animal)
-        console.log(this.state.animals)
-        console.log(this.state.filterDropdown)
+
       };
 
 
@@ -80,9 +78,9 @@ class AnimalList extends Component {
         // const uniqueType= this.getUnique(this.state.animals, "class");
         // uniqueType.push({type:'All'})
 
-        // filterDropdown = animals.filter(function(result) {
-        //     return result.class === animal
-        //   });
+        filterDropdown = animals.filter(function(result) {
+            return result.class === animal
+          });
 
 
         
