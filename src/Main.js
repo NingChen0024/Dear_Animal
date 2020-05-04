@@ -41,37 +41,9 @@ class Main extends Component{
                           
                           </div>
                         </div>
-                        {/* <div className='col-lg-1'>
-                        <FloatingMenu
-                         slideSpeed={500}
-                         direction="up"
-                         spacing={8}
-                         isOpen={this.state.isOpen}
-                         >
-                         <MainButton
-                              iconResting={<MdAdd style={{ fontSize: 20 }} nativeColor="white" />}
-                              iconActive={<MdClose style={{ fontSize: 20 }} nativeColor="white" />}
-                              backgroundColor="black"
-                              onClick={() => this.setState({ isOpen: !this.state.isOpen })}
-                              size={56}
-                         />
-                              <ChildButton
-                              icon={<MdFavorite style={{ fontSize: 20 }} nativeColor="black" />}
-                              backgroundColor="white"
-                              size={40}
-                              onClick={() => console.log('First button clicked')}
-                         />
-                         <ChildButton
-                              icon={<MdFavorite style={{ fontSize: 20 }} nativeColor="black" />}
-                              backgroundColor="white"
-                              size={40}
-                         />
-                         </FloatingMenu>
-                        </div> */}
-
                     </div>
                </div>
-     </section>
+          </section>
 
 
      
