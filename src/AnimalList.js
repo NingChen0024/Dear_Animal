@@ -105,7 +105,7 @@ class AnimalList extends Component {
                                                 }}>     
 
                                         <div class="container">
-                                            <img src={ require("./images/animal_list/" + {this.animal.aniname} + '_icon.jpeg')} class="img-fluid" />
+                                            <img src={ require('./images/animal_list/' + (animal.aniname) + '_icon.jpeg')} class="img-fluid" />
                                             <p><b>{animal.aniname}</b></p> 
                                         </div>
                                                 
@@ -124,7 +124,7 @@ class AnimalList extends Component {
                                                 }}>     
                                                 
                                         <div class="container">
-                                            <img src={ require("./images/koala_cartoon.png")} class="img-fluid" />
+                                            <img src={ require('./images/animal_list/' + (animal.aniname) + '_icon.jpeg')} class="img-fluid" />
                                             <p><b>{animal.aniname}</b></p> 
                                         </div>
                                                 
