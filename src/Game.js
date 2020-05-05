@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PuzzleComp from './PuzzleComp'
 import ReactDOM from "react-dom";
-
+import {Link} from 'react-router-dom'
 import ScrollAnimation from 'react-animate-on-scroll';
 import ReactDom from 'react-dom';
 import Popup from 'react-popup';
@@ -43,7 +43,7 @@ class Game extends Component{
                                 </div> 
 
                                  <Link to='/animalList'>     
-                                    <a class="btn btn-warning mt-3 unifont"  data-aos-delay="100">Let's go back</a>
+                                    <a class="btn btn-warning mt-3 unifont text-center"  data-aos-delay="100">Let's go back</a>
                                 </Link>                   
                             </div>
                         </div>
