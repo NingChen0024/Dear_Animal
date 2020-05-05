@@ -40,7 +40,11 @@ class Game extends Component{
                             <div >
                                 <div className='text-center puzzle-game-pic' >
                                     <img src={require('./images/animal_list/' + data.aniname + '_icon.jpeg')} class="img-fluid" />
-                                </div>                    
+                                </div> 
+
+                                 <Link to='/animalList'>     
+                                    <a class="btn btn-warning mt-3 unifont"  data-aos-delay="100">Let's go back</a>
+                                </Link>                   
                             </div>
                         </div>
 

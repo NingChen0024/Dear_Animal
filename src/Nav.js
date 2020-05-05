@@ -30,10 +30,6 @@ class Nav extends Component{
                                 <li className="nav-link navItem">Tips</li>
                             </Link>
 
-                            <Link to='/games'>
-                                <li className="nav-link navItem">Games</li>
-                            </Link>
-                       
                             {/* <Link to='/about' >
                                 <li className="nav-link navItem">About Us</li>
                             </Link>  */}
