@@ -128,7 +128,6 @@ class Main extends Component{
                                             
                                                   <span>Aussie Animal Adventurers</span>
                                                 
-                                           
                                         </h3>
                                    </div>
                               </div>

@@ -26,10 +26,11 @@ class Anidetail extends Component{
     render(){
 
         const{data} = this.props.location
+
         return(
             <dev className='anidetailbackground'>
                 <div className='detail-container'>
-                    <img src={require('./images/koala_pho.jpg')} class="img-fluid" />
+                <img src={require('./images/animal_list/' + data.aniname + '_cover.jpeg')} class="img-fluid" />
                     <h1 className="bottom-right text-white unifont">{data.aniname}</h1>
                     <p className="fact-bottom-right">{data.facts}</p>
                 </div>
@@ -131,7 +132,7 @@ class Anidetail extends Component{
                 <div className='container mb-5'>
                     <div className='row'>
                         <div className="col-lg-6 col-md-6 col-12 ">
-                            <img src={require('./images/koala_pho.jpg')} class="img-fluid" />
+                        <img src={require('./images/animal_list/' + data.aniname + '_detail.jpeg')} class="img-fluid" />
                         </div>
 
                         <div className="col-lg-6 col-md-6 col-12 ">
@@ -143,16 +144,23 @@ class Anidetail extends Component{
                 <div className='container mb-5 pb-5'>
                     <div className='row'>
                         <div className="col-lg-3 col-md-3 col-12 back-button">
+
                             <Link to='/animalList'>     
                                 <a class="btn btn-warning mt-3 unifont"  data-aos-delay="100">Let's go back</a>
                             </Link>
+
                         </div>
                         <div className="col-lg-3 col-md-3 col-12 "></div>
                         <div className="col-lg-3 col-md-3 col-12 "></div>
                         <div className="col-lg-3 col-md-3 col-12 forword-button">
-                            <Link to='/animalList'>     
+
+                            <Link to={{
+                                        pathname: "/games",
+                                        data: data
+                                    }}>    
                                 <a class="btn btn-warning mt-3 unifont"  data-aos-delay="100">Let's play a game</a>
                             </Link>
+
                         </div>
                     </div>
                 </div>

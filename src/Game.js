@@ -12,6 +12,8 @@ import Popup from 'react-popup';
 
 class Game extends Component{
     render(){
+
+        const{data} = this.props.location
         return(
             <dev >
                 <div>
@@ -28,7 +30,7 @@ class Game extends Component{
                             <div >
                                 <div className='text-center' >
                                     <div > 
-                                        <PuzzleComp/>     
+                                        <PuzzleComp id={data.aid}/>     
                                     </div>
                                 </div>                    
                             </div>
@@ -37,7 +39,7 @@ class Game extends Component{
                         <div class="col-lg-2 col-md-2 col-12">
                             <div >
                                 <div className='text-center puzzle-game-pic' >
-                                    <img src={ require("./images/puzzleImg.jpg")} class="img-fluid" alt="website"/>
+                                    <img src={require('./images/animal_list/' + data.aniname + '_icon.jpeg')} class="img-fluid" />
                                 </div>                    
                             </div>
                         </div>
@@ -54,7 +56,7 @@ class Game extends Component{
                         <div class="row">
 
                         <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
-                            <h1 class="text-white"ß data-aos-delay="100">We are making the <strong>best </strong> for kids</h1>
+                            <h1 class="text-white" data-aos-delay="100">We are making the <strong>best </strong> for kids</h1>
                         </div>
 
                         <div class="col-lg-3 col-md-6 col-12" data-aos-delay="200">

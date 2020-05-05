@@ -13,10 +13,8 @@ var uniqueType = null
 class AnimalList extends Component {
     
     state = {
-        // loading:true,
-        loading:false,
-        animals: [{aid: 1, aniname: 'Australasian Bittern', anicount: 1480, anistatus: 'Endangered', class: 'Birds', family: 'Ardeidae', facts: 'Distinctive Booming Voice',  size: '1 metre , equal to size of guitar', food: 'Fish, frogs, yabbies, mice, insects', habitat: 'inland, coastal freshwater wetlands', anidescription: 'A large, stocky heron with a thick neck, heavy yellowish bill and relatively short yellow legs. The beige plumage has dark brown streaking and mottling, and there is a buff eye-stripe on the mainly dark head. These bitterns do not roost in trees and only rarely occur in loose flocks of more than five. Smaller, tree-roosting Nankeen Night-herons( see difference in photo), which often occur in flocks, are commonly mistaken for Australasian Bitterns.', threat: 'Salinisation & grazing'}],
-        // animals: null,
+        loading:true,
+        animals: null,
         animal:'All'
       }
 
@@ -37,18 +35,18 @@ class AnimalList extends Component {
         return unique;
     }
 
-    //     async componentDidMount(){
-    //     axios.get('/api/get/allanimals')
-    //     .then(res => this.setState({animals: res.data}))
-    //     .then(res => {animals = this.state.animals})
-    //     .then(res => {animal = this.state.animal})
-    //     .then(res => {uniqueType = this.getUnique(this.state.animals, "class")})
-    //     .then(res => {uniqueType.unshift({class:'All'})})
-    //     .then(res => { filterDropdown = animals.filter(function(result) {
-    //             return result.class === animal
-    //           })})
-    //     .then(res => this.setState({loading: false}))
-    //   }
+        async componentDidMount(){
+        axios.get('/api/get/allanimals')
+        .then(res => this.setState({animals: res.data}))
+        .then(res => {animals = this.state.animals})
+        .then(res => {animal = this.state.animal})
+        .then(res => {uniqueType = this.getUnique(this.state.animals, "class")})
+        .then(res => {uniqueType.unshift({class:'All'})})
+        .then(res => { filterDropdown = animals.filter(function(result) {
+                return result.class === animal
+              })})
+        .then(res => this.setState({loading: false}))
+      }
 
 
         handleChangeAnimal = event => {
@@ -61,12 +59,6 @@ class AnimalList extends Component {
 
 
      render() {        
-
-        const uniqueType = this.getUnique(this.state.animals, "class")
-        uniqueType.push({class:'All'})
-        const filterDropdown = animals.filter(function(result) {
-                        return result.class === animal
-                      })
      
         return (
 
