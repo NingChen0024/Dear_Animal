@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import Puzzle from 'react-image-puzzle';
 import ReactModal from 'react-modal';
-
-import Popup from "reactjs-popup";
+import Modal from 'react-bootstrap/Modal'
 
 // This component is used to render puzzle games and select identified pics
 
@@ -10,22 +9,27 @@ import Popup from "reactjs-popup";
 
 class PuzzleComp extends Component{
 
-    constructor(props) {
-        super(props);
-        this.state = { open: false };
-        this.openModal = this.openModal.bind(this);
-        this.closeModal = this.closeModal.bind(this);
-      }
+    // constructor(props) {
+    //     super(props);
+    //     this.state = { open: false };
+    //     this.openModal = this.openModal.bind(this);
+    //     this.closeModal = this.closeModal.bind(this);
+    //   }
 
-      openModal() {
-        this.setState({ open: true });
-      }
-      closeModal() {
-        this.setState({ open: false });
-      }
+    //   openModal() {
+    //     this.setState({ open: true });
+    //   }
+    //   closeModal() {
+    //     this.setState({ open: false });
+    //   }
     
     render(){
         
+        const [show, setShow] = useState(false);
+
+        const handleClose = () => setShow(false);
+        const handleShow = () => setShow(true);
+
         let images = {
             1:  require('./images/animal_list/Australasian Bittern_icon.jpeg'),
             2:  require('./images/animal_list/Blue Whale_icon.jpeg'),
@@ -56,21 +60,18 @@ class PuzzleComp extends Component{
                     <button className="button" onClick={this.openModal}>
                         Controlled Popup
                     </button>
-                    <Puzzle image= {imageFile} className='gamebackground' onDone={this.openModal}/>
+                    <Puzzle image= {imageFile} className='gamebackground' onDone={handleShow}/>
                     
                     
-                    <Popup
-                        open={this.state.open}
-                        closeOnDocumentClick
-                        onClose={this.closeModal}
-                    >
-                        <div className="modal">
-                            <a className="close" onClick={this.closeModal}>
-                            &times;
-                            </a>
-                            Congrets! You Win!
-                        </div>
-                    </Popup>
+                    <Modal show={show} onHide={handleClose}>
+                     
+                        <Modal.Body>Congrets! You Win!</Modal.Body>
+                        <Modal.Footer>
+                        <Button variant="secondary" onClick={handleClose}>
+                            Close
+                        </Button>
+                        </Modal.Footer>
+                    </Modal>
                 </div>
             </div>
         )
