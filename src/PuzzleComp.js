@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Puzzle from 'react-image-puzzle';
 import ReactModal from 'react-modal';
 import Modal from 'react-bootstrap/Modal'
-import { Button} from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
 // This component is used to render puzzle games and select identified pics
 
 
