@@ -1,12 +1,26 @@
 import React ,{ Component }from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
-
+import Breadcrumb from 'react-bootstrap/Breadcrumb'
+import {Link} from 'react-router-dom'
 
 // this component provide clear instruction of conservation for parents
 
 function ParentCons() {
     return (
       <div >
+
+
+        <div>
+          <Breadcrumb className='Breadcrumb-background'>
+            <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+            
+            <Breadcrumb.Item>
+              <Link to='/parent'>For Parents</Link>
+            </Breadcrumb.Item>
+           
+            <Breadcrumb.Item active>Conservation</Breadcrumb.Item>
+          </Breadcrumb>
+        </div>
         <div className='container'>
           <ScrollAnimation animateIn="fadeIn">
             <div className='mb-5, pb-5'>

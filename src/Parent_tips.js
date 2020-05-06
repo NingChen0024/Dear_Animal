@@ -1,12 +1,24 @@
 import React ,{ Component }from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
-
-
+import Breadcrumb from 'react-bootstrap/Breadcrumb'
+import {Link} from 'react-router-dom'
 // this components provide tips for parents to help endangered animal
 
 function ParentTips() {
     return (
       <div >
+
+        <div>
+          <Breadcrumb className='Breadcrumb-background'>
+            <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+            
+            <Breadcrumb.Item>
+              <Link to='/parent'>For Parents</Link>
+            </Breadcrumb.Item>
+           
+            <Breadcrumb.Item active>Tips</Breadcrumb.Item>
+          </Breadcrumb>
+        </div>
         <div className='container'>
         <ScrollAnimation animateIn="fadeIn">
             <div >

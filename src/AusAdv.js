@@ -1,10 +1,16 @@
 import React ,{ Component }from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
-
+import Breadcrumb from 'react-bootstrap/Breadcrumb'
 function AusAdv() {
     
     return (
       <div >
+        <div>
+            <Breadcrumb className='Breadcrumb-background'>
+                <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+                <Breadcrumb.Item active>Aussie Animal Adventurers</Breadcrumb.Item>
+            </Breadcrumb>
+        </div>
         <div className="container mb-5 pb-5">
             <ScrollAnimation animateIn="fadeIn">
                     <div className="row">

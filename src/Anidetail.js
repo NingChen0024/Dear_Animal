@@ -1,10 +1,5 @@
 import React, { Component } from 'react'
-import PuzzleComp from './PuzzleComp'
-import ScrollAnimation from 'react-animate-on-scroll';
-import ReactDom from 'react-dom';
-import Popup from 'react-popup';
 import {Link} from 'react-router-dom'
-import AnimalList from './AnimalList';
 
 import {
     UserCard,

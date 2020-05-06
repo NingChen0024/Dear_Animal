@@ -3,7 +3,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import ReactPlayer from "react-player"
 import Carousel from 'react-bootstrap/Carousel'
 import axios from 'axios'
-
+import Breadcrumb from 'react-bootstrap/Breadcrumb'
   
 
 
@@ -34,6 +34,12 @@ class KidsTips extends Component {
           <div>loading....</div>
         ) : (
             <div>
+              <div>
+                <Breadcrumb className='Breadcrumb-background'>
+                  <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+                  <Breadcrumb.Item active>Tips</Breadcrumb.Item>
+                </Breadcrumb>
+              </div>
             <div className="container mb-5 pb-5">
                <ScrollAnimation animateIn="fadeIn">
                 <div >

@@ -1,11 +1,17 @@
 import React ,{ Component }from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
-
+import Breadcrumb from 'react-bootstrap/Breadcrumb'
 // this component contains info about wild explore activties
 
 function WildExp() {
     return (
       <div >
+        <div>
+            <Breadcrumb className='Breadcrumb-background'>
+                <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+                <Breadcrumb.Item active>Wild Explorers</Breadcrumb.Item>
+            </Breadcrumb>
+        </div>
         <div className="container mb-5 pb-5">
                 <ScrollAnimation animateIn="fadeIn">
                     <div className="row ">

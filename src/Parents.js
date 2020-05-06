@@ -2,7 +2,7 @@ import React ,{ Component }from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import {Link} from 'react-router-dom'
 import ReactPlayer from "react-player"
-
+import Breadcrumb from 'react-bootstrap/Breadcrumb'
 
 
 // this components contain server link to its sub pages which contain 
@@ -12,6 +12,12 @@ import ReactPlayer from "react-player"
 function Parent() {
     return (
       <div >
+        <div>
+          <Breadcrumb className='Breadcrumb-background'>
+            <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+            <Breadcrumb.Item active>For Parents</Breadcrumb.Item>
+          </Breadcrumb>
+        </div>
 
         <div className='container mb-5 pb-5'>
         

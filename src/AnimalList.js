@@ -2,7 +2,7 @@ import React ,{ Component }from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import axios from 'axios'
 import {Link} from 'react-router-dom'
-
+import Breadcrumb from 'react-bootstrap/Breadcrumb'
 
 // this component display a list of animals and show their characterics to kids
 var animals = []
@@ -68,6 +68,12 @@ class AnimalList extends Component {
             ) : (
 
             <div>
+                <div>
+                    <Breadcrumb className='Breadcrumb-background'>
+                    <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+                    <Breadcrumb.Item active>Animal Friends</Breadcrumb.Item>
+                    </Breadcrumb>
+                </div>
                 <div className='container '>
                     <ScrollAnimation animateIn="fadeIn">
                         <div pt-5></div>

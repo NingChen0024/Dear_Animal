@@ -1,14 +1,7 @@
 import React, { Component } from 'react'
 import PuzzleComp from './PuzzleComp'
-import ReactDOM from "react-dom";
 import {Link} from 'react-router-dom'
-import ScrollAnimation from 'react-animate-on-scroll';
-import ReactDom from 'react-dom';
-import Popup from 'react-popup';
-// import "./scss/main.scss";
-// import Cardgame from "./gamejs/Game/Cardgame";
-// this component display several games to kids
-
+import Breadcrumb from 'react-bootstrap/Breadcrumb'
 
 class Game extends Component{
     render(){
@@ -17,12 +10,20 @@ class Game extends Component{
         return(
             <dev >
                 <div>
-        
+                    <Breadcrumb className='Breadcrumb-background'>
+                    <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+                    <Breadcrumb.Item>
+                        <Link to='/animalList'>Animal Friends</Link>
+                    </Breadcrumb.Item>
+                    <Breadcrumb.Item active>Game</Breadcrumb.Item>
+                    </Breadcrumb>
+                </div>
+                <div>
                     <div class="row pt-5 pb-5">
                 
                         <div class="col-lg-5 col-md-5 col-12">
                             <div >
-                                <h1 className=' kidtipshead pt-5  '>Let's play games</h1>
+                                <h1 className=' kidtipshead pt-5  '>Let's play a game</h1>
                             </div>
                         </div>
 

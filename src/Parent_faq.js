@@ -1,14 +1,27 @@
 import React ,{ Component }from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { parenthesizedExpression } from '@babel/types';
-
+import Breadcrumb from 'react-bootstrap/Breadcrumb'
+import {Link} from 'react-router-dom'
 // This components provide frequent asked questions for parents
 // which helps to provide instructions for kids
 
 
 function ParentFaq() {
     return (
-      <div className='faq-background'>
+      <div>
+
+        <div>
+          <Breadcrumb className='Breadcrumb-background'>
+            <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+            
+            <Breadcrumb.Item>
+              <Link to='/parent'>For Parents</Link>
+            </Breadcrumb.Item>
+           
+            <Breadcrumb.Item active>FAQ</Breadcrumb.Item>
+          </Breadcrumb>
+        </div>
         <div className='container '>
           <ScrollAnimation animateIn="fadeIn">
             <div className='mb-5, pb-5'>
