@@ -63,7 +63,7 @@ class PuzzleComp extends Component{
                             <a className="close" onClick={this.closeModal}>
                             &times;
                             </a>
-                            <p>Congrets! You Win!</p>
+                            Congrets! You Win!
                         </div>
                     </Popup>
                 </div>
