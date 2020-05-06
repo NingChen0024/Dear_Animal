@@ -11,6 +11,8 @@ function AusAdv() {
                 <Breadcrumb.Item active>Aussie Animal Adventurers</Breadcrumb.Item>
             </Breadcrumb>
         </div>
+
+        
         <div className="container mb-5 pb-5">
             <ScrollAnimation animateIn="fadeIn">
                     <div className="row">
