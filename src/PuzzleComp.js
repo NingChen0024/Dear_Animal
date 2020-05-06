@@ -53,11 +53,16 @@ class PuzzleComp extends Component{
 
             <div>
                 <div>
+                    <button className="button" onClick={this.openModal}>
+                        Controlled Popup
+                    </button>
                     <Puzzle image= {imageFile} className='gamebackground' onDone={this.openModal}/>
+                    
+                    
                     <Popup
-                    open={this.state.open}
-                    closeOnDocumentClick
-                    onClose={this.closeModal}
+                        open={this.state.open}
+                        closeOnDocumentClick
+                        onClose={this.closeModal}
                     >
                         <div className="modal">
                             <a className="close" onClick={this.closeModal}>
