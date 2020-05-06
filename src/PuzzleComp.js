@@ -5,7 +5,10 @@ import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button';
 // This component is used to render puzzle games and select identified pics
 
+const [show, setShow] = React.useState(false);
 
+const handleClose = () => setShow(false);
+const handleShow = () => setShow(true);
 
 class PuzzleComp extends Component{
 
@@ -24,11 +27,6 @@ class PuzzleComp extends Component{
     //   }
     
     render(){
-        
-        const [show, setShow] = React.useState(false);
-
-        const handleClose = () => setShow(false);
-        const handleShow = () => setShow(true);
 
         let images = {
             1:  require('./images/animal_list/Australasian Bittern_icon.jpeg'),
@@ -56,20 +54,17 @@ class PuzzleComp extends Component{
         //    12 9 8 7 2 1
 
             <div>
-                <div>
-                    <Puzzle image= {imageFile} className='gamebackground' onDone={handleShow}/>
-                    
-                    
-                    <Modal show={show} onHide={handleClose}>
-                     
-                        <Modal.Body>Congrets! You Win!</Modal.Body>
-                        <Modal.Footer>
-                            <Button variant="secondary" onClick={handleClose}>
+                <Puzzle image= {imageFile} className='gamebackground' onDone={handleShow}/>
+           
+                 <Modal show={show} onHide={handleClose}>                    
+                    <Modal.Body>Congrets! You Win!</Modal.Body>
+                    <Modal.Footer>
+                        <Button variant="secondary" onClick={handleClose}>
                                 Close
-                            </Button>
-                        </Modal.Footer>
-                    </Modal>
-                </div>
+                        </Button>
+                    </Modal.Footer>
+                </Modal>
+               
             </div>
         )
     }
