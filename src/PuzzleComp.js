@@ -28,6 +28,7 @@ class PuzzleComp extends Component{
             10:  require('./images/animal_list/Southern Brown Bandicoot_icon.jpeg'),
             11:  require('./images/animal_list/Southern Right Whale_icon.jpeg'),
             12:  require('./images/animal_list/Squirrel Glider_icon.jpeg'),
+            13:  require('./images/animal_list/Wallaby_icon.jpeg'),
             14:  require('./images/animal_list/Wombat_icon.jpeg')
         }
 
