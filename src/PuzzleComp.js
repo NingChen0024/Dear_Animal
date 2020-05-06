@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Puzzle from 'react-image-puzzle';
 import ReactModal from 'react-modal';
 import Modal from 'react-bootstrap/Modal'
-
+import { Button} from 'react-bootstrap';
 // This component is used to render puzzle games and select identified pics
 
 
@@ -25,7 +25,7 @@ class PuzzleComp extends Component{
     
     render(){
         
-        const [show, setShow] = useState(false);
+        const [show, setShow] = React.useState(false);
 
         const handleClose = () => setShow(false);
         const handleShow = () => setShow(true);
@@ -57,9 +57,6 @@ class PuzzleComp extends Component{
 
             <div>
                 <div>
-                    <button className="button" onClick={this.openModal}>
-                        Controlled Popup
-                    </button>
                     <Puzzle image= {imageFile} className='gamebackground' onDone={handleShow}/>
                     
                     
@@ -67,9 +64,9 @@ class PuzzleComp extends Component{
                      
                         <Modal.Body>Congrets! You Win!</Modal.Body>
                         <Modal.Footer>
-                        <Button variant="secondary" onClick={handleClose}>
-                            Close
-                        </Button>
+                            <Button variant="secondary" onClick={handleClose}>
+                                Close
+                            </Button>
                         </Modal.Footer>
                     </Modal>
                 </div>
