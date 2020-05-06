@@ -2,8 +2,25 @@ import React, { Component } from 'react'
 import PuzzleComp from './PuzzleComp'
 import {Link} from 'react-router-dom'
 import Breadcrumb from 'react-bootstrap/Breadcrumb'
+import Popup from "reactjs-popup";
 
 class Game extends Component{
+
+    constructor(props) {
+        super(props);
+        this.state = { open: false };
+        this.openModal = this.openModal.bind(this);
+        this.closeModal = this.closeModal.bind(this);
+      }
+
+      openModal() {
+        this.setState({ open: true });
+      }
+      closeModal() {
+        this.setState({ open: false });
+      }
+
+
     render(){
 
         const{data} = this.props.location
@@ -48,13 +65,8 @@ class Game extends Component{
                                 </Link>                   
                             </div>
                         </div>
-
                     </div>
-
                 </div>
-                {/* <div>
-                    <Cardgame/>
-                </div> */}
 
                 <footer class="site-footer">
                     <div class="container">
