@@ -5,10 +5,10 @@ import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button';
 // This component is used to render puzzle games and select identified pics
 
-const [show, setShow] = React.useState(false);
+// const [show, setShow] = React.useState(false);
 
-const handleClose = () => setShow(false);
-const handleShow = () => setShow(true);
+// const handleClose = () => setShow(false);
+// const handleShow = () => setShow(true);
 
 class PuzzleComp extends Component{
 
@@ -56,14 +56,14 @@ class PuzzleComp extends Component{
             <div>
                 <Puzzle image= {imageFile} className='gamebackground' onDone={handleShow}/>
            
-                 <Modal show={show} onHide={handleClose}>                    
+                 {/* <Modal show={show} onHide={handleClose}>                    
                     <Modal.Body>Congrets! You Win!</Modal.Body>
                     <Modal.Footer>
                         <Button variant="secondary" onClick={handleClose}>
                                 Close
                         </Button>
                     </Modal.Footer>
-                </Modal>
+                </Modal> */}
                
             </div>
         )
