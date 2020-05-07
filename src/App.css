@@ -1121,6 +1121,7 @@ h3 {
 .row1-style{
   background-color: #ff9933;
   color: white;
+  border-radius: 10px 10px 10px 10px;
 }
 
 .row1-font{
