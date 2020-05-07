@@ -4,10 +4,7 @@ import ReactModal from 'react-modal';
 import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button';
 
-import {
-    PopupboxManager,
-    PopupboxContainer
-  } from 'react-popupbox';
+
 // This component is used to render puzzle games and select identified pics
 
 // const [show, setShow] = React.useState(false);
@@ -16,16 +13,6 @@ import {
 // const handleShow = () => setShow(true);
 
 class PuzzleComp extends Component{
-
-
-    openPopupbox() {
-        const content = (
-          <div>
-            <p >Congrats! You Win!</p>
-          </div>
-        )
-        PopupboxManager.open({ content })
-      }
     
     render(){
 
@@ -56,7 +43,7 @@ class PuzzleComp extends Component{
         //    12 9 8 7 2 1
 
             <div>
-                <Puzzle image= {imageFile} className='gamebackground' onDone={this.openPopupbox}/>
+                <Puzzle image= {imageFile} className='gamebackground' onDone={this.props.func}/>
                 {/* <Puzzle image= {imageFile} className='gamebackground'/> */}
                  {/* <Modal show={show} onHide={handleClose}>                    
                     <Modal.Body>Congrets! You Win!</Modal.Body>

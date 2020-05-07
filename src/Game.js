@@ -3,10 +3,22 @@ import PuzzleComp from './PuzzleComp'
 import {Link} from 'react-router-dom'
 import Breadcrumb from 'react-bootstrap/Breadcrumb'
 
+import {
+    PopupboxManager,
+    PopupboxContainer
+  } from 'react-popupbox';
+
 class Game extends Component{
 
-
-
+   
+    openPopupbox() {
+        const content = (
+          <div>
+            <p >Congrats! You Win!</p>
+          </div>
+        )
+        PopupboxManager.open({ content })
+      }
  
 
     constructor(props) {
@@ -25,6 +37,8 @@ class Game extends Component{
 
 
     render(){
+
+
 
         const{data} = this.props.location
         return(
@@ -51,7 +65,7 @@ class Game extends Component{
                             <div >
                                 <div className='text-center' >
                                     <div > 
-                                        <PuzzleComp id={data.aid}/>     
+                                        <PuzzleComp id={data.aid} func={openPopupbox}/>     
                                     </div>
                                 </div>                    
                             </div>
@@ -70,6 +84,10 @@ class Game extends Component{
                         </div>
                     </div>
                 </div>
+
+
+                <PopupboxContainer />
+
 
                 <footer class="site-footer">
                     <div class="container">
