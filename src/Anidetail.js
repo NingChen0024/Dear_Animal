@@ -1,19 +1,5 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
-
-import {
-    UserCard,
-    ProductCard,
-    TaggedContentCard,
-    FlippingCard,
-    FlippingCardFront,
-    FlippingCardBack,
-    RecipeCard,
-    NewsHeaderCard,
-    CryptoCard,
-    PaymentCard,
-    DropdownCard
-  } from 'react-ui-cards';
 // this component display several games to kids
 
 
@@ -61,6 +47,7 @@ class Anidetail extends Component{
 
                         <div className="col-lg-6 col-md-6 col-12 ">
                             <p className='row2-font'>{data.anidescription}</p>
+
                         </div>
                     </div>
                 </div>
