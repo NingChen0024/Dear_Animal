@@ -48,84 +48,9 @@ class Anidetail extends Component{
                 </div>
 
 
-                <div>
+                <div className='m-5'>
                     <img src={require('./images/animal_list/' + data.aniname + '_cards.jpeg')} className="img-fluid card-image" />
                 </div>
-
-                {/* <div className='container mb-5 mt-3'>
-                    <div className='row'>
-                        <div className="col-lg-4 col-md-4 col-12 unifont">
-                            <ProductCard
-                                    photos={[
-                                        'https://i.imgur.com/t7DTziH.jpg',
-                                        'https://i.imgur.com/kA5lx6t.jpg',
-                                        'https://i.imgur.com/cUsl6Gs.jpg'
-                                    ]}
-                                    productName='Size'
-                                    description={data.size}
-                                
-                                    />               
-                        </div>
-
-                        <div className="col-lg-4 col-md-4 col-12 unifont">
-                            <ProductCard
-                                photos={[
-                                    'https://i.imgur.com/t7DTziH.jpg',
-                                    'https://i.imgur.com/kA5lx6t.jpg',
-                                    'https://i.imgur.com/cUsl6Gs.jpg'
-                                ]}
-                                productName='Food'
-                                description={data.food}
-                              
-                                />
-                        </div>
-
-                        <div className="col-lg-4 col-md-4 col-12 unifont">
-                            <ProductCard
-                                    photos={[
-                                        'https://i.imgur.com/t7DTziH.jpg',
-                                        'https://i.imgur.com/kA5lx6t.jpg',
-                                        'https://i.imgur.com/cUsl6Gs.jpg'
-                                    ]}
-                                    productName='Habitat'
-                                    description={data.habitat}
-                                
-                                    />
-                        </div>
-                    </div>
-                </div> */}
-
-
-
-                {/* <div className='container mb-5 mt-3'>
-                    <div className='row'>
-                        <div className="col-lg-4 col-md-4 col-12 unifont card">
-                                 
-                                <div class="container">
-                                    <img src={require('./images/animal_list/Red-tailed Black-Cockatoo_icon.jpeg')} class="img-fluid card-image" />
-                                    <h2 className='unifont'>Size</h2>
-                                    <p><b>{data.size}</b></p> 
-                                </div>
-                                        
-                        </div>
-
-                        <div className="col-lg-4 col-md-4 col-12 unifont card">
-                                <div class="container">
-                                    <img src={require('./images/animal_list/Red-tailed Black-Cockatoo_icon.jpeg')} class="img-fluid card-image" />
-                                    <h2 className='unifont'>Food</h2>
-                                    <p><b>{data.food}</b></p> 
-                                </div>
-                        </div>
-
-                        <div className="col-lg-4 col-md-4 col-12 unifont card">
-                                <div class="container">
-                                    <img src={require('./images/animal_list/Red-tailed Black-Cockatoo_icon.jpeg')} class="img-fluid card-image" />
-                                    <h2 className='unifont'>Habitat</h2>
-                                    <p><b>{data.habitat}</b></p> 
-                                </div>
-                        </div>
-                    </div>
-                </div> */}
 
 
                 <div className='container mb-5'>
@@ -145,7 +70,7 @@ class Anidetail extends Component{
                         <div className="col-lg-3 col-md-3 col-12 back-button">
 
                             <Link to='/animalList'>     
-                                <a class="btn btn-warning mt-3 unifont"  data-aos-delay="100">Let's go back</a>
+                                <a class="btn btn-warning btn-lg mt-3 unifont"  data-aos-delay="100">Let's go back</a>
                             </Link>
 
                         </div>
@@ -157,7 +82,7 @@ class Anidetail extends Component{
                                         pathname: "/games",
                                         data: data
                                     }}>    
-                                <a class="btn btn-warning mt-3 unifont"  data-aos-delay="100">Let's play a game</a>
+                                <a class="btn btn-warning btn-lg mt-3 unifont"  data-aos-delay="100">Let's play a game</a>
                             </Link>
 
                         </div>

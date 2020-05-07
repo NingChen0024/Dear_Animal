@@ -2,9 +2,12 @@ import React, { Component } from 'react'
 import PuzzleComp from './PuzzleComp'
 import {Link} from 'react-router-dom'
 import Breadcrumb from 'react-bootstrap/Breadcrumb'
-import Popup from "reactjs-popup";
 
 class Game extends Component{
+
+
+
+ 
 
     constructor(props) {
         super(props);
@@ -61,7 +64,7 @@ class Game extends Component{
                                 </div> 
 
                                  <Link to='/animalList'>     
-                                    <a class="btn btn-warning mt-3 unifont text-center"  data-aos-delay="100">Let's go back</a>
+                                    <a class="btn btn-warning btn-lg mt-3 unifont text-center"  data-aos-delay="100">Let's go back</a>
                                 </Link>                   
                             </div>
                         </div>
