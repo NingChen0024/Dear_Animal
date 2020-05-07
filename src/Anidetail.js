@@ -49,7 +49,7 @@ class Anidetail extends Component{
 
 
                 <div>
-                    <img src={require('./images/animal_list/' + data.aniname + '_cards.jpeg')} class="img-fluid" />
+                    <img src={require('./images/animal_list/' + data.aniname + '_cards.jpeg')} className="img-fluid card-image" />
                 </div>
 
                 {/* <div className='container mb-5 mt-3'>
