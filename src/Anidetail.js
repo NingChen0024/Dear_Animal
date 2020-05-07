@@ -47,7 +47,12 @@ class Anidetail extends Component{
                     </div>
                 </div>
 
-                <div className='container mb-5 mt-3'>
+
+                <div>
+                    <img src={require('./images/animal_list/' + data.aniname + '_cards.jpeg')} class="img-fluid" />
+                </div>
+
+                {/* <div className='container mb-5 mt-3'>
                     <div className='row'>
                         <div className="col-lg-4 col-md-4 col-12 unifont">
                             <ProductCard
@@ -59,8 +64,7 @@ class Anidetail extends Component{
                                     productName='Size'
                                     description={data.size}
                                 
-                                    />
-                                            
+                                    />               
                         </div>
 
                         <div className="col-lg-4 col-md-4 col-12 unifont">
@@ -89,7 +93,7 @@ class Anidetail extends Component{
                                     />
                         </div>
                     </div>
-                </div>
+                </div> */}
 
 
 
