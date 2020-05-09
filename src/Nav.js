@@ -30,9 +30,9 @@ class Nav extends Component{
                                 <li className="nav-link navItem">Tips</li>
                             </Link>
 
-                            {/* <Link to='/about' >
+                            <Link to='/about' >
                                 <li className="nav-link navItem">About Us</li>
-                            </Link>  */}
+                            </Link> 
 
                             {/* <div class="dropdown">
                                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
