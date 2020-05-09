@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
+import ReactAudioPlayer from 'react-audio-player';
 // this component displays animal details to kids
 
 var audio = null
@@ -19,10 +20,11 @@ class Anidetail extends Component{
             var foo = require('./sounds/' + data.aniname + '.mp3')
             console.log("no")
             this.setState({sound:true})
-            audio = new Audio('./sounds/' + data.aniname + '.mp3')
-            start = () => {
-                audio.play()
-            }
+            audio = './sounds/' + data.aniname + '.mp3'
+            // audio = new Audio('./sounds/' + data.aniname + '.mp3')
+            // start = () => {
+            //     audio.play()
+            // }
             console.log('try'+this.state.sound)
         }catch(e){
             this.setState({sound:false})
@@ -90,7 +92,12 @@ class Anidetail extends Component{
 
                         <div className="col-lg-6 col-md-6 col-12 ">
                             <p className='row2-font'>{data.anidescription}</p>
-                            <button onClick={start} className='btn btn-warning btn-lg mt-3 unifont'>Let's hear his voice!</button>
+                            {/* <button onClick={start} className='btn btn-warning btn-lg mt-3 unifont'>Let's hear his voice!</button> */}
+                            <ReactAudioPlayer
+                            src= {audio}
+                            autoPlay
+                            controls
+                            />
                         </div>
                     </div>
                 </div>
