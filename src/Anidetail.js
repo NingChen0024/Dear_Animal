@@ -11,9 +11,9 @@ class Anidetail extends Component{
         sound: false
     }
 
-    componentDidMount (){
+    componentWillMount (){
 
-        name = this.props.location
+        var name = this.props.location
         try{
             var foo = require('./sounds/' + name.aniname + '.mp3')
             this.setState({sound:true})
