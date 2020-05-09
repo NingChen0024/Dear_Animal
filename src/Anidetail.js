@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
-// this component display several games to kids
+// this component displays animal details to kids
 
 var audio = null
 var start = null
@@ -11,22 +11,39 @@ class Anidetail extends Component{
         sound: false
     }
 
-    render(){
+    componentDidMount (){
 
-        const{data} = this.props.location
+        name = this.props.location
         try{
-            var foo = require('./sounds/' + data.aniname + '.mp3')
+            var foo = require('./sounds/' + name.aniname + '.mp3')
             this.setState({sound:true})
-            audio = new Audio('./sounds/' + data.aniname + '.mp3')
+            audio = new Audio('./sounds/' + name.aniname + '.mp3')
             start = () => {
                 audio.play()
             }
-
             console.log('try'+this.state.sound)
         }catch(e){
             this.setState({sound:false})
             console.log('catch'+ this.state.sound)
         }
+
+    }
+
+    render(){
+
+        const{data} = this.props.location
+        // try{
+        //     var foo = require('./sounds/' + data.aniname + '.mp3')
+        //     this.setState({sound:true})
+        //     audio = new Audio('./sounds/' + data.aniname + '.mp3')
+        //     start = () => {
+        //         audio.play()
+        //     }
+        //     console.log('try'+this.state.sound)
+        // }catch(e){
+        //     this.setState({sound:false})
+        //     console.log('catch'+ this.state.sound)
+        // }
 
         return(
             <div>
