@@ -15,7 +15,9 @@ class Anidetail extends Component{
 
         var name = this.props.location
         try{
+            console.log('./sounds/' + name.aniname + '.mp3')
             var foo = require('./sounds/' + name.aniname + '.mp3')
+            console.log("no")
             this.setState({sound:true})
             audio = new Audio('./sounds/' + name.aniname + '.mp3')
             start = () => {
