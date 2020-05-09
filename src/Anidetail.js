@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
 // this component display several games to kids
 
+var audio = null
+var start = null
 
 class Anidetail extends Component{
 
@@ -14,11 +16,11 @@ class Anidetail extends Component{
         const{data} = this.props.location
         try{
             var foo = require('./sounds/' + data.aniname + '.mp3')
-            let audio = new Audio('./sounds/' + data.aniname + '.mp3')
-            const start = () => {
+            this.setState({sound:true})
+            audio = new Audio('./sounds/' + data.aniname + '.mp3')
+            start = () => {
                 audio.play()
             }
-            this.setState({sound:true})
         }catch(e){
             this.setState({sound:false})
         }
@@ -28,7 +30,7 @@ class Anidetail extends Component{
 
             {this.state.sound ? (
                 
-                <dev className='anidetailbackground'>
+            <dev className='anidetailbackground'>
                 <div className='detail-container'>
                 <img src={require('./images/animal_list/' + data.aniname + '_cover.jpeg')} class="img-fluid" />
                     <h1 className="bottom-right text-white unifont">{data.aniname}</h1>
@@ -127,7 +129,7 @@ class Anidetail extends Component{
 
             ) : (
 
-                <dev className='anidetailbackground'>
+            <dev className='anidetailbackground'>
                 <div className='detail-container'>
                 <img src={require('./images/animal_list/' + data.aniname + '_cover.jpeg')} class="img-fluid" />
                     <h1 className="bottom-right text-white unifont">{data.aniname}</h1>
