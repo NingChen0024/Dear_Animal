@@ -21,8 +21,11 @@ class Anidetail extends Component{
             start = () => {
                 audio.play()
             }
+
+            console.log('try'+this.state.sound)
         }catch(e){
             this.setState({sound:false})
+            console.log('catch'+ this.state.sound)
         }
 
         return(
