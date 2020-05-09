@@ -13,7 +13,7 @@ class Anidetail extends Component{
 
     componentWillMount (){
 
-        var name = this.props.location
+        const {name} = this.props.location
         try{
             console.log('./sounds/' + name.aniname + '.mp3')
             var foo = require('./sounds/' + name.aniname + '.mp3')
