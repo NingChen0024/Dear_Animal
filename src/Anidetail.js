@@ -73,7 +73,6 @@ class Anidetail extends Component{
                             <div className='sound'>
                                 <ReactAudioPlayer
                                 src= {audio}
-                                autoPlay
                                 controls
                                 />
                             </div>
