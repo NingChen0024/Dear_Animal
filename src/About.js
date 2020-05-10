@@ -26,9 +26,12 @@ class About extends Component {
 
       return (
       <div >
-        <h3>My Google Maps Demo</h3>
+        {/* <h3>My Google Maps Demo</h3>
         <form id="postCodeForm"><input type="text" id="postCode"/><button type="submit">Search</button></form>
-        <div id="map"></div>
+        <div id="map"></div> */}
+
+
+
         <div className='container'>
           <div ref={(div) => { this.vizContainer = div }}> 
           </div>   
