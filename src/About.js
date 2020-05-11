@@ -5,10 +5,18 @@ import React ,{ Component }from 'react';
 class About extends Component {
 
 
+    state = {
+      loaded:false
+    }
 
     componentDidMount() {  
       this.initViz()  
-      window.location.reload()
+      // if(!this.state.loaded) {
+      //   this.setState({loaded:true})
+      //   window.location.reload(false);
+      //   console.log(this.state.loaded)
+      // }
+
     }  
 
       initViz() {
@@ -19,8 +27,8 @@ class About extends Component {
             width:'100%',
             height:'1100px',
             autoflow:'auto',
-            onFirstInteractive: function () {
-               
+            onFirstInteractive: function () { 
+              
             }
         };
 
@@ -33,7 +41,8 @@ class About extends Component {
       return (
       <div >
         <h3>My Google Maps Demo</h3>
-        <form id="postCodeForm"><input type="text" id="postCode"/><button type="submit">Search</button></form>
+        <form id="postCodeForm"><input type="text" id="postCode"/>
+        <button type="submit" >Search</button></form>
         <div id="map"></div>
 
 
