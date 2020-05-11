@@ -1,5 +1,7 @@
 /* global google */
 import React ,{ Component }from 'react'; 
+
+// import {mapScript} from './mapScript.js'
 class About extends Component {
 
 
