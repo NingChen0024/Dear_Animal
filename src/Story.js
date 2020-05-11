@@ -29,7 +29,7 @@ class Story extends Component{
             card_three:'Sunlight',
             myInterval : null,
             time: 60,
-            coin: 'tail',
+            coin: 'head',
             rating: 0,
             showRating: false
 
@@ -157,7 +157,7 @@ class Story extends Component{
                                         'pause':<div className='row mb-5 mt-5'>
                                                 <div class="col-lg-5 col-md-5 col-5">
                                                 </div>
-                                                <div class="col-lg-5 col-md-5 col-5">
+                                                <div class="col-lg-5 col-md-5 col-5 mb-5 pb-5 mt-5 pt-2">
                                                 <ReactLoading type={"spinningBubbles"} color={'orange'} height={'40%'} width={'40%'} className='button-refresh'/>
                                                 </div>
                                             </div>
