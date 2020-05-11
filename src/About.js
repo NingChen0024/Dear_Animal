@@ -8,6 +8,7 @@ class About extends Component {
 
     componentDidMount() {  
       this.initViz()  
+      window.location.reload(false)
     }  
 
       initViz() {
