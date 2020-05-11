@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import {Timer} from 'react-compound-timer'
+import StarRatings from 'react-star-ratings';
+import ReactLoading from 'react-loading'
+
 var data = [['Blue-billed Duck', 
             'Regent Honeyeater', 
             'Plains-wanderer', 
@@ -20,15 +22,22 @@ class Story extends Component{
 
     constructor(props){
         super(props)
+        this.changeRating = this.changeRating.bind(this);
         this.state = {
             card_one:'Blue-billed Duck',
             card_two:'Family',
             card_three:'Sunlight',
             myInterval : null,
             time: 60,
-            coin: true
+            coin: 'tail',
+            rating: 0,
+            showRating: false
 
         }
+    }
+
+    changeRating(newRating) {
+        this.setState({rating: newRating})
     }
 
     onRefreshClicked =() => {
@@ -56,32 +65,44 @@ class Story extends Component{
                 time : this.state.time-1,
         })}else{
             clearInterval(this.state.myInterval)
+            this.setState({showRating:true})
         }
     }
+
     startTimer = () => {
         clearInterval(this.state.myInterval)
         this.setState({myInterval : setInterval(this.countDown,1000)})
     }
-    stopTimer = () => {
+
+    pauseTimer = () => {
         clearInterval(this.state.myInterval)
     }
 
-    restartTimer = () => {
+    stopTimer = () => {
         clearInterval(this.state.myInterval)
-        this.setState({time: 60})
-        this.setState({myInterval : setInterval(this.countDown,1000)})
+        this.setState({time: 60, showRating:false})
     }
     
-    toss = () => {
+    changeCoinState = () => {
         var min = Math.ceil(0)
         var max = Math.floor(1)
         var res = Math.floor(Math.random() * (max - min + 1)) + min
         if (res){
-          this.setState({coin:true})
+                    
+            this.setState({coin:'tail'})
         }
         else {
-            this.setState({coin:false})
+
+            this.setState({coin:'head'})
         }
+    }
+
+    toss = () => {
+            this.setState({coin:'pause'})
+            console.log(this.state.coin)
+            setTimeout(this.changeCoinState, 3000)
+    
+         
       }
 
     render(){
@@ -97,24 +118,48 @@ class Story extends Component{
                             <div className='button-refresh'>
                                 <p className='timer-number m-5'>{this.state.time}</p>
                                 <button onClick={this.startTimer} className='btn btn-success mr-3 unifont'>Start</button>
-                                <button onClick={this.stopTimer} className='btn btn-danger mr-3 unifont'>Stop</button>
-                                <button onClick={this.restartTimer} className='btn btn-primary mr-3 unifont'>Restart</button>
+                                <button onClick={this.pauseTimer} className='btn btn-danger mr-3 unifont'>Pause</button>
+                                <button onClick={this.stopTimer} className='btn btn-primary mr-3 unifont'>Stop</button>
                                 
+                            </div>
+                            <div>
+                                {this.state.showRating ? (
+                                <div className='button-refresh mt-4'>
+                                    <StarRatings
+                                        rating={this.state.rating}
+                                        starRatedColor="red"
+                                        starHoverColor='orange'
+                                        starDimension='40px'
+                                        changeRating={this.changeRating}
+                                        numberOfStars={5}
+                                        name='rating'
+                                    />
+                                </div>
+                                ):(
+                                <div>
+
+                                </div>)}
                             </div>
                         </div>
 
                         <div className="col-lg-6 col-md-6 col-12 mb-4">
                             <div className='button-refresh'>
-                                <p>
-                                    {this.state.coin ? (
-                                    <div>
-                                        <img src={ require("./images/son.png")} class="img-fluid" alt="working girl"/>
-                                    </div>
-                                    ):(
-                                    <div>
-                                       <img src={ require("./images/father.png")} class="img-fluid" alt="working girl"/>
-                                    </div>)}   
-                                </p>
+                                            
+                                <div>
+                                    {
+                                        {
+                                        'head': <div>
+                                                <img src={ require("./images/son.png")} class="img-fluid" alt="working girl"/>
+                                            </div>,
+                                        'tail': <div>
+                                                <img src={ require("./images/father.png")} class="img-fluid" alt="working girl"/>
+                                            </div>,
+                                        'pause':<div>
+                                                <ReactLoading type={"spinningBubbles"} color={'orange'} height={'15%'} width={'15%'} className='button-refresh'/>
+                                            </div>
+                                        }[this.state.coin]
+                                    }
+                                </div>
                                 <button onClick={this.toss} className='btn btn-info unifont'>toss a coin</button>
                                 
                             </div>

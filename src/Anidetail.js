@@ -33,8 +33,9 @@ class Anidetail extends Component{
             {this.state.sound ? (
                 
             <dev className='anidetailbackground'>
+
                 <div className='detail-container'>
-                <img src={require('./images/animal_list/' + data.aniname + '_cover.jpeg')} class="img-fluid" />
+                    <img src={require('./images/animal_list/' + data.aniname + '_cover.jpeg')} class="img-fluid" />
                     <h1 className="bottom-right text-white unifont">{data.aniname}</h1>
                     <p className="fact-bottom-right">{data.facts}</p>
                 </div>
@@ -105,32 +106,27 @@ class Anidetail extends Component{
                 </div>
                 
                 <footer class="site-footer">
-                <div class="container">
-                    <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
+                                <h1 class="text-white"  data-aos-delay="100">We are making the <strong>best </strong> for kids</h1>
+                            </div>
 
-                    <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
-                        <h1 class="text-white"  data-aos-delay="100">We are making the <strong>best </strong> for kids</h1>
+                            <div class="col-lg-3 col-md-6 col-12"  data-aos-delay="200">
+                                <h4 class="my-4">Contact Info</h4>
+                                <p>
+                                    <a href="#">
+                                        <i class="fa fa-envelope mr-2 footer-icon"></i>
+                                        dearanimal@gmail.com
+                                    </a>
+                                </p>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-12"  data-aos-delay="300">
+                                <h4 class="my-4">Copyright &copy; Black Panther</h4>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="col-lg-3 col-md-6 col-12"  data-aos-delay="200">
-                        <h4 class="my-4">Contact Info</h4>
-
-                        <p>
-                        <a href="#">
-                            <i class="fa fa-envelope mr-2 footer-icon"></i>
-                            dearanimal@gmail.com
-                        </a>
-                        </p>
-
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-12"  data-aos-delay="300">
-                        <h4 class="my-4">Copyright &copy; Black Panther</h4>
-                    </div>
-
-                    
-                    </div>
-                </div>
                 </footer>
             </dev>
 

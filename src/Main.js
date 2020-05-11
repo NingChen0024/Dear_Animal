@@ -118,7 +118,7 @@ class Main extends Component{
                               </div>
 
                               <div class="carousel-item " data-aos="fade-up">
-                                   <Link to='/natureCall'>
+                                   <Link to='/ausAdv'>
                                         <img src={ require("./images/project/Project_three.jpg")} class="img-fluid d-block w-100" alt="project image"/>
                                    </Link>
                                    <div class="project-info">
