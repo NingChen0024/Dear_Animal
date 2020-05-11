@@ -8,7 +8,6 @@ class About extends Component {
 
     componentDidMount() {  
       this.initViz()  
-      window.location.reload(false)
     }  
 
       initViz() {
@@ -29,7 +28,7 @@ class About extends Component {
     }
 
     render() {
-
+      window.location.reload(false)
       return (
       <div >
         <h3>My Google Maps Demo</h3>
