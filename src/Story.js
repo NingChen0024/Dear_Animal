@@ -100,7 +100,7 @@ class Story extends Component{
     toss = () => {
             this.setState({coin:'pause'})
             console.log(this.state.coin)
-            setTimeout(this.changeCoinState, 3000)
+            setTimeout(this.changeCoinState, 2000)
     
          
       }
@@ -154,8 +154,12 @@ class Story extends Component{
                                         'tail': <div>
                                                 <img src={ require("./images/father.png")} class="img-fluid" alt="working girl"/>
                                             </div>,
-                                        'pause':<div>
-                                                <ReactLoading type={"spinningBubbles"} color={'orange'} height={'15%'} width={'15%'} className='button-refresh'/>
+                                        'pause':<div className='row mb-5 mt-5'>
+                                                <div class="col-lg-5 col-md-5 col-5">
+                                                </div>
+                                                <div class="col-lg-5 col-md-5 col-5">
+                                                <ReactLoading type={"spinningBubbles"} color={'orange'} height={'40%'} width={'40%'} className='button-refresh'/>
+                                                </div>
                                             </div>
                                         }[this.state.coin]
                                     }
