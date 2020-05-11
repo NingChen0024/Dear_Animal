@@ -13,8 +13,11 @@ class About extends Component {
         vizContainer = this.vizContainer;  
         var options = {
             hideTabs: true,
+            width:'100%',
+            height:'1100px',
+            autoflow:'auto',
             onFirstInteractive: function () {
-                console.log("Run this code when the viz has finished loading.");
+               
             }
         };
 
