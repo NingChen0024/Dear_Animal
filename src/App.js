@@ -22,6 +22,7 @@ import { HashRouter } from 'react-router-dom'
 import ReactDom from 'react-dom';
 import Popup from 'react-popup';
 import Anidetail from './Anidetail';
+import Stroy from './Story'
 
 class App extends Component{
 
@@ -48,6 +49,7 @@ class App extends Component{
                 <Route path='/parentCons' exact component={ParentCons}/>
                 <Route path='/animalList' exact component={AniamlList}/>
                 <Route path='/animalDetail' exact component={Anidetail}/>
+                <Route path='/story' exact component={Stroy}/>
               </Switch>
             </ScrollToTop>
           </div>

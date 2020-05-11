@@ -110,7 +110,7 @@ class KidsTips extends Component {
                         </div>
                     </div>
                 </footer>
-                </div>
+            </div>
         )}
         </div>
  
