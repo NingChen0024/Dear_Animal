@@ -84,7 +84,7 @@ class KidsTips extends Component {
               <div class="carousel-inner">
 
               <div class="carousel-item active">
-                  <img src={ require('./images/tips/10.jpg')} />
+                  <img src={ require('./images/koala_pho.jpeg')} />
                   <div class="carousel-caption d-none d-md-block">
                     <div className='tips-style unifont'>
                       <h1 className='tips-font'>When you touch a cute koala, remember to wash your hands!</h1>            
