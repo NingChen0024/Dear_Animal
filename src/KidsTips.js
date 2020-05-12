@@ -40,10 +40,10 @@ class KidsTips extends Component {
                   <Breadcrumb.Item active>Tips</Breadcrumb.Item>
                 </Breadcrumb>
               </div>
-            <div className="mb-5 pb-5">
+            <div >
                <ScrollAnimation animateIn="fadeIn">
                 <div >
-                    <h1 className=' parentshead pt-5 pr-5 '>Tips for you! </h1>
+                    <h1 className=' parentshead pt-5 pr-5 mb-5 '>Tips for you! </h1>
                 </div>
                </ScrollAnimation>
 
@@ -84,7 +84,7 @@ class KidsTips extends Component {
               <div class="carousel-inner">
 
               <div class="carousel-item active">
-                  <img src={ require('./images/animal_list/Australasian Bittern_cover.jpeg')} className="d-block w-100"/>
+                  <img src={ require('./images/tips/10.jpg')} className="d-block w-100"/>
                   <div class="carousel-caption d-none d-md-block">
                     <div className='tips-style unifont'>
                       <h1 className='tips-font'>When you touch a cute koala, remember to wash your hands!</h1>            
