@@ -84,10 +84,12 @@ class KidsTips extends Component {
               <div class="carousel-inner">
              {
               this.state.pid.map(tip => (
-                <div class="carousel-item active">
+                <div class="carousel-item ">
                   <img src={ require('./images/tips/' + tip.kid + '.jpg')} />
                   <div class="carousel-caption d-none d-md-block">
-                    <h1>{tip.content}</h1>                  
+                    <div className='tips-style unifont'>
+                      <h1>{tip.content}</h1>            
+                    </div>      
                   </div>
                 </div>
                 ))
