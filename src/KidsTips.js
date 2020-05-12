@@ -87,7 +87,7 @@ class KidsTips extends Component {
                   <img src={ require('./images/tips/10.jpg')} />
                   <div class="carousel-caption d-none d-md-block">
                     <div className='tips-style unifont'>
-                      <h1>When you touch a cute koala, remember to wash your hands!</h1>            
+                      <h1 className='tips-font'>When you touch a cute koala, remember to wash your hands!</h1>            
                     </div>      
                   </div>
                 </div>
@@ -98,7 +98,7 @@ class KidsTips extends Component {
                   <img src={ require('./images/tips/' + tip.kid + '.jpg')} />
                   <div class="carousel-caption d-none d-md-block">
                     <div className='tips-style unifont'>
-                      <h1>{tip.content}</h1>            
+                      <h1 className='tips-font'>{tip.content}</h1>            
                     </div>      
                   </div>
                 </div>
