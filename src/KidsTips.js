@@ -82,6 +82,16 @@ class KidsTips extends Component {
 
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
+
+              <div class="carousel-item active">
+                  <img src={ require('./images/tips/10.jpg')} />
+                  <div class="carousel-caption d-none d-md-block">
+                    <div className='tips-style unifont'>
+                      <h1>When you touch a cute koala, remember to wash your hands!</h1>            
+                    </div>      
+                  </div>
+                </div>
+
              {
               this.state.pid.map(tip => (
                 <div class="carousel-item ">
