@@ -47,7 +47,7 @@ class KidsTips extends Component {
                 </div>
                 </ScrollAnimation>
 
-             <div class="row mt-5 mb-3">
+             {/* <div class="row mt-5 mb-3">
                 <div class="col-lg-2 col-md-2 col-12">                  
                 </div>
 
@@ -64,22 +64,46 @@ class KidsTips extends Component {
                     
                     </div>
                 </div>
-            </div>
+            </div> */}
 
 
-            <Carousel>
+            {/* <Carousel>
                {
                  this.state.pid.map(tip => (
                    <Carousel.Item>
                    <img src={ require("./images/kidtipsimg.png")} class="kidtipsImg" alt="office"/>
                    <Carousel.Caption>
                      <h1 className='kidtipsfont'>{tip.content}</h1>
-                   
                    </Carousel.Caption>
                  </Carousel.Item>
                  ))
                }
-             </Carousel>
+             </Carousel> */}
+
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+             {
+              this.state.pid.map(tip => (
+                <div class="carousel-item active">
+                  <img src={ require('./images/tips/' + tip.kid + '.jpg')} />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h1>{tip.content}</h1>                  
+                  </div>
+                </div>
+                ))
+             }
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+          </div>
+
+
 
            </div>
                 <footer class="site-footer">

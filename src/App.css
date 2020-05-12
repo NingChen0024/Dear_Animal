@@ -1165,6 +1165,16 @@ h3 {
   text-align: center;
 }
 
+.row3-font{
+  font-family: 'Sniglet'; 
+  font-size: 20px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 400; 
+  color: rgb(235, 134, 41);
+  text-align: center;
+}
+
 .back-button{
   position: relative;
   left: 0px;

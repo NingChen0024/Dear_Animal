@@ -22,7 +22,6 @@ class Main extends Component{
         <section className="hero hero-bg d-flex justify-content-center align-items-center" id='list'>
                <div className="container">
                     <div className="row">
-
                         <div className="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
                               <div className="hero-text">
 
@@ -65,7 +64,7 @@ class Main extends Component{
                          </div>
                          <div class="about-image" data-aos="fade-up" data-aos-delay="200">
 
-                          <img src={ require("./images/kangaroo_cartoon.png")} class="img-fluid mb-5" alt="office"/>
+                              <img src={ require("./images/kangaroo_cartoon.png")} class="img-fluid mb-5" alt="office"/>
                          
                         </div>
                     </div>
@@ -126,7 +125,7 @@ class Main extends Component{
 
                                         <h3>
                                             
-                                                  <span>Aussie Animal Adventurers</span>
+                                             <span>Aussie Animal Adventurers</span>
                                                 
                                         </h3>
                                    </div>
@@ -163,18 +162,6 @@ class Main extends Component{
                     </div>
 
                     <div class="col-lg-6 col-md-7 col-12 pt-3">
-                         {/* <div >
-          
-                              <div className='text-center' >
-                                   <div >
-                                        <ReactPlayer
-                                             url="https://www.youtube.com/watch?v=ALhA9WGqG0k"
-                                        />
-                                   </div>
-                              </div>
-                         
-                         </div> */}
-
                          <iframe width="448" height="252" 
                          src="https://www.youtube.com/embed/ALhA9WGqG0k" 
                          frameborder="0" 
