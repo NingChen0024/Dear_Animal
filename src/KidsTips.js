@@ -40,12 +40,12 @@ class KidsTips extends Component {
                   <Breadcrumb.Item active>Tips</Breadcrumb.Item>
                 </Breadcrumb>
               </div>
-            <div className="container mb-5 pb-5">
+            <div className="mb-5 pb-5">
                <ScrollAnimation animateIn="fadeIn">
                 <div >
                     <h1 className=' parentshead pt-5 pr-5 '>Tips for you! </h1>
                 </div>
-                </ScrollAnimation>
+               </ScrollAnimation>
 
              {/* <div class="row mt-5 mb-3">
                 <div class="col-lg-2 col-md-2 col-12">                  

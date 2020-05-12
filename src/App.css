@@ -925,7 +925,6 @@ h3 {
 
 
 .custom-kid-btn.btn-kid-bg {
-  background: #df99ff;
   color: white;
   border-color: transparent;
   transition: all .3s ease;
@@ -1225,6 +1224,17 @@ h3 {
 }
 
 .tips-style{
+  border-radius: 10px 10px 10px 10px;
   background-color: white
+}
+
+.tips-font{
+  font-family: 'Sniglet'; 
+  font-size: 30px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 700; 
+  color:  #ff9933;
+  text-align: center;
 }
 
