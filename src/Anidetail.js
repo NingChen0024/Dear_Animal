@@ -71,6 +71,7 @@ class Anidetail extends Component{
 
                         <div className="col-lg-6 col-md-6 col-12 ">
                             <p className='row2-font'>{data.anidescription}</p>
+                            <p className='row2-font mt-5'>{data.aniname}&nbsp;sound</p>
                             <div className='sound'>
                                 <ReactAudioPlayer
                                 src= {audio}
