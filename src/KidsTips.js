@@ -84,7 +84,7 @@ class KidsTips extends Component {
               <div class="carousel-inner">
 
               <div class="carousel-item active">
-                  <img src={ require('./images/koala_pho.jpeg')} />
+                  <img src={ require('./images/animal_list/Australasian Bittern_cover.jpeg')} className="d-block w-100"/>
                   <div class="carousel-caption d-none d-md-block">
                     <div className='tips-style unifont'>
                       <h1 className='tips-font'>When you touch a cute koala, remember to wash your hands!</h1>            
@@ -95,7 +95,7 @@ class KidsTips extends Component {
              {
               this.state.pid.map(tip => (
                 <div class="carousel-item ">
-                  <img src={ require('./images/tips/' + tip.kid + '.jpg')} />
+                  <img src={ require('./images/tips/' + tip.kid + '.jpg')} className="d-block w-100"/>
                   <div class="carousel-caption d-none d-md-block">
                     <div className='tips-style unifont'>
                       <h1 className='tips-font'>{tip.content}</h1>            
