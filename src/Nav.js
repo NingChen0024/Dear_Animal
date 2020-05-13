@@ -29,9 +29,9 @@ class Nav extends Component{
                                 <li className="nav-link navItem">Tips</li>
                             </Link>
 
-                            <Link to='/about' >
+                            {/* <Link to='/about' >
                                 <li className="nav-link navItem">About Us</li>
-                            </Link> 
+                            </Link>  */}
 
                             <Link to='/story' >
                                 <li className="nav-link navItem">Story</li>
