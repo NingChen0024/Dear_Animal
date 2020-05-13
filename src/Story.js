@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import StarRatings from 'react-star-ratings';
 import ReactLoading from 'react-loading'
+import Breadcrumb from 'react-bootstrap/Breadcrumb'
 
 var data = [['Blue-billed Duck', 
             'Regent Honeyeater', 
@@ -72,6 +73,7 @@ class Story extends Component{
     startTimer = () => {
         clearInterval(this.state.myInterval)
         this.setState({myInterval : setInterval(this.countDown,1000)})
+        this.setState({showRating:false})
     }
 
     pauseTimer = () => {
@@ -79,8 +81,14 @@ class Story extends Component{
     }
 
     stopTimer = () => {
+
+        if (this.state.time !== 60){
+            clearInterval(this.state.myInterval)
+            this.setState({time: 60, showRating:true})
+        }else{
         clearInterval(this.state.myInterval)
         this.setState({time: 60, showRating:false})
+        }
     }
     
     changeCoinState = () => {
@@ -110,6 +118,12 @@ class Story extends Component{
         return(
 
             <div>
+                 <div>
+                    <Breadcrumb >
+                    <Breadcrumb.Item href="/" >Home</Breadcrumb.Item>
+                    <Breadcrumb.Item active>Story</Breadcrumb.Item>
+                    </Breadcrumb>
+                </div>
                 <h1 className='parentshead pt-5 pr-5'>let's tell a story</h1>
 
                 <div className='container'>

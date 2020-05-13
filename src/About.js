@@ -11,12 +11,6 @@ class About extends Component {
 
     componentDidMount() {  
       this.initViz()  
-      // if(!this.state.loaded) {
-      //   this.setState({loaded:true})
-      //   window.location.reload(false);
-      //   console.log(this.state.loaded)
-      // }
-
     }  
 
       initViz() {

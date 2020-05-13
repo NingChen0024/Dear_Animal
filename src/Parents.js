@@ -9,17 +9,122 @@ import Breadcrumb from 'react-bootstrap/Breadcrumb'
 // more specified imforemation, and it provides a video plugin
 
 
-function Parent() {
+class Parent extends Component {
+
+
+    componentDidMount() {  
+      this.initViz()  
+    }  
+
+    initViz() {
+     
+      const url = "https://public.tableau.com/views/FirstexplanationPART2/Dashboard3?:display_count=y&publish=yes&:origin=viz_share_link",
+      vizContainer = this.vizContainer;  
+      var options = {
+          hideTabs: true,
+          width:'100%',
+          height:'900px',
+          autoflow:'auto',
+          onFirstInteractive: function () { 
+            
+          }
+      };
+
+      var viz = new window.tableau.Viz(vizContainer, url, options);
+    }
+
+  render(){
     return (
       <div >
-        <div>
-          <Breadcrumb className='Breadcrumb-background'>
-            <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-            <Breadcrumb.Item active>For Parents</Breadcrumb.Item>
-          </Breadcrumb>
+       
+
+        <div className='detail-container'>
+
+          <nav aria-label="breadcrumb" className='top-left'>
+            <ol class="breadcrumb secondary-color">
+              <li class="breadcrumb-item"><a class="white-text white-font" href="/">Home</a></li>
+              <li class="breadcrumb-item active "><a class="white-text white-font" >For Parents</a></li>
+            </ol>
+          </nav>
+          <img src={require('./images/parents/cover.jpg')} class="img-fluid" />
+          <h1 className="top-center text-white unifont">ANIMALS, HABITAT &amp; THREATS</h1>
+          <Link to='/threat'>
+            <p className="fact-bottom-right">Visualize to know more</p>
+          </Link>
         </div>
 
-        <div className='container mb-5 pb-5'>
+        <div className='row'>
+          <p></p>
+        </div>
+
+        <div className='row'>
+          <div className='detail-container col-lg-4 col-md-4 col-12'>
+            <img src={require('./images/parents/tips.jpg')} class="img-fluid" />
+            <h1 className="top-center-tips text-white unifont">Tips</h1>
+            <Link to='/parentTips'>
+              <p className="fact-bottom-right-tips">To know more</p>
+            </Link>
+          </div>
+
+          <div className='detail-container col-lg-4 col-md-4 col-12'>
+            <img src={require('./images/parents/conservation.jpg')} class="img-fluid" />
+            <h1 className="top-center-conservation text-white unifont">conservation</h1>
+            <Link to='/parentCons'>
+              <p className="fact-bottom-right-conservation">To know more</p>
+            </Link>
+          </div>
+
+          <div className='detail-container col-lg-4 col-md-4 col-12'>
+            <img src={require('./images/parents/measures.jpg')} class="img-fluid" />
+            <h1 className="top-center-measures text-white unifont">measures</h1>
+            <Link to='/parentRescure'>
+              <p className="fact-bottom-right-measures">To know more</p>
+            </Link>
+          </div>
+
+          <div className='row'>
+            <p></p>
+          </div>
+          
+        </div>
+
+        <div className='container'>
+          <div ref={(div) => { this.vizContainer = div }}> 
+          </div>   
+        </div>  
+
+
+
+         <div className='row'>
+
+            <div className='detail-container col-lg-1 col-md-1 col-12'>
+              <p></p>
+            </div>
+
+            <div className='detail-container col-lg-5 col-md-5 col-12'>
+              <img src={require('./images/parents/map.jpg')} class="img-fluid" />
+              <h1 className="top-center-map text-white unifont">Map</h1>
+              <Link to='/map'>
+                <p className="fact-bottom-right-map">To know more</p>
+              </Link>
+            </div>
+
+            <div className='detail-container col-lg-5 col-md-5 col-12'>
+              <img src={require('./images/parents/prediction.jpg')} class="img-fluid" />
+              <h1 className="top-center-prediction  unifont">Prediction</h1>
+             
+              <Link to='/prediction'>
+                <p className="fact-bottom-right-prediction">To know more</p>
+              </Link>
+            </div>
+
+            <div className='row'>
+              <p></p>
+            </div>  
+
+        </div>
+
+        {/* <div className='container mb-5 pb-5'>
         
         <div class="row">
     
@@ -123,7 +228,8 @@ function Parent() {
      
 
 
-        </div>
+        </div> */}
+
         <footer class="site-footer">
             <div class="container">
                 <div class="row">
@@ -153,7 +259,7 @@ function Parent() {
             </div>
         </footer>
       </div>
-    );
+    )}
   }
 
   export default Parent

@@ -23,6 +23,9 @@ import ReactDom from 'react-dom';
 import Popup from 'react-popup';
 import Anidetail from './Anidetail';
 import Stroy from './Story'
+import Threat from './Threat';
+import ParentMap from './Map'
+import Prediction from './Prediction';
 
 class App extends Component{
 
@@ -50,6 +53,9 @@ class App extends Component{
                 <Route path='/animalList' exact component={AniamlList}/>
                 <Route path='/animalDetail' exact component={Anidetail}/>
                 <Route path='/story' exact component={Stroy}/>
+                <Route path='/threat' exact component={Threat}/>
+                <Route path='/map' exact component={ParentMap}/>
+                <Route path='/prediction' exact component={Prediction}/>
               </Switch>
             </ScrollToTop>
           </div>

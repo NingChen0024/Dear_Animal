@@ -1237,3 +1237,132 @@ h3 {
   text-align: center;
 }
 
+.top-center {
+  font-size: 60px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 700; 
+  position: absolute;
+  bottom: 60%;
+  right: 20%;
+}
+
+.top-left {
+  font-variant: normal; 
+  font-weight: 700; 
+  position: absolute;
+  color: white;
+  bottom: 90%;
+  right: 83%;
+}
+
+.white-font{
+  color: white;
+}
+
+.fact-bottom-right {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  position: absolute;
+  bottom: 55%;
+  right: 40%;
+}
+
+
+.top-center-tips{
+  font-size: 30px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 700; 
+  position: absolute;
+  bottom: 20%;
+  right: 45%;
+}
+
+.fact-bottom-right-tips{
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  position: absolute;
+  bottom: 5%;
+  right: 35%;
+}
+
+.top-center-conservation{
+  font-size: 30px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 700; 
+  position: absolute;
+  bottom: 20%;
+  right: 30%;
+}
+
+.fact-bottom-right-conservation{
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  position: absolute;
+  bottom: 5%;
+  right: 35%;
+}
+
+.top-center-measures{
+  font-size: 30px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 700; 
+  position: absolute;
+  bottom: 20%;
+  right: 35%;
+}
+
+.fact-bottom-right-measures{
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  position: absolute;
+  bottom: 5%;
+  right: 35%;
+}
+
+.top-center-map{
+  font-size: 30px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 700; 
+  position: absolute;
+  bottom: 35%;
+  right: 45%;
+}
+
+.fact-bottom-right-map{
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  position: absolute;
+  bottom: 25%;
+  right: 40%;
+}
+
+
+.top-center-prediction{
+  font-size: 30px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 700; 
+  position: absolute;
+  color:black;
+  bottom: 35%;
+  right: 40%;
+}
+
+.fact-bottom-right-prediction{
+  color:black;
+  font-weight: 700;
+  font-size: 20px;
+  position: absolute;
+  bottom: 25%;
+  right: 40%;
+}
