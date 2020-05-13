@@ -49,7 +49,7 @@ class Parent extends Component {
           <img src={require('./images/parents/cover.jpg')} class="img-fluid" />
           <h1 className="top-center text-white unifont">ANIMALS, HABITAT &amp; THREATS</h1>
           <Link to='/threat'>
-            <p className="fact-bottom-right">Visualize to know more</p>
+            <p className="fact-bottom-right-parent">Visualize to know more</p>
           </Link>
         </div>
 

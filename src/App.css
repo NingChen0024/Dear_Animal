@@ -1260,6 +1260,15 @@ h3 {
   color: white;
 }
 
+.fact-bottom-right-parent {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  position: absolute;
+  bottom: 55%;
+  right: 40%;
+}
+
 
 .top-center-tips{
   font-size: 30px; 
