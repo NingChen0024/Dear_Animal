@@ -20,10 +20,10 @@ function NatureCall() {
 
                             <div className="col-lg-9 mx-auto col-md-10 col-12 mt-lg-5 text-center fade-up" >
 
-                            <h4 className='m-3'>Exploring</h4>
+                            <h4 className=' unifont'>Exploring</h4>
 
                             <h1 className='m-4 eventshead pt-5'>Nature's Calling</h1>
-                            <h4>Nature’s Calling on all the senses to explore, play and learn about wildlife and the natural environment. What will you discover?</h4>
+                            <h4 className='unifont'>Nature’s Calling on all the senses to explore, play and learn about wildlife and the natural environment. What will you discover?</h4>
                             </div>
                     </div>
                 </ScrollAnimation>
@@ -32,21 +32,21 @@ function NatureCall() {
                 <img src={ require("./images/project/Project_two_inside.jpg")} class="img-fluid" alt="interview process"/>
             </div>
 
-            <p className ='font-weight-bold m-4'>
+            <p className ='m-4 unifont'>
                 Being surrounded by nature inspires a sense of wonder,
                 intrigue and curiosity in young children.
             </p>
-            <p className ='font-weight-bold m-4'>
+            <p className =' m-4 unifont'>
                 In Nature’s Calling, children will feel safe, secure and
                 supported to explore the natural environment of the Habitat
                 Haven zoo habitat.
             </p>
-            <p className ='font-weight-bold m-4'>
+            <p className =' m-4 unifont'>
                 This full-day, play-based experience is a unique and
                 immersive learning experience, drawing on your children’s
                 natural instincts to explore the world around them.
             </p>
-            <p className ='font-weight-bold m-4'>
+            <p className =' m-4 unifont'>
                 With a unique education workshop, exploring the self-
                 guided walking trails, a guided safari bus tour or joining a
                 keeper talk there is plenty to keep the children intrigued.
@@ -57,24 +57,24 @@ function NatureCall() {
                 <table className="table table-striped">
                 <tbody>
                     <tr>
-                        <td className="table-active" colspan="5">Activity</td>
-                        <td className="table-active">Duration</td>
+                        <td className="table-active unifont" colspan="5">Activity</td>
+                        <td className="table-active unifont">Duration</td>
                     </tr>
                     <tr>
-                        <td className="table-primary" colspan="5">Welcome and introduction to your day (arrivals between 9.50 - 10.05am)</td>
-                        <td className="table-primary">10 minutes</td>
+                        <td className="table-primary unifont" colspan="5">Welcome and introduction to your day (arrivals between 9.50 - 10.05am)</td>
+                        <td className="table-primary unifont">10 minutes</td>
                     </tr>
                     <tr>
-                        <td className='table-warning' colspan="5">Session with Werribee Open Range Zoo teacher</td>
-                        <td className='table-warning'>30 minutes</td>
+                        <td className='table-warning unifont' colspan="5">Session with Werribee Open Range Zoo teacher</td>
+                        <td className='table-warning unifont'>30 minutes</td>
                     </tr>
                     <tr>
-                        <td className='table-info' colspan="5">Safari bus tour</td>
-                        <td className='table-info'>30 minutes</td>
+                        <td className='table-info unifont' colspan="5">Safari bus tour</td>
+                        <td className='table-info unifont'>30 minutes</td>
                     </tr>
                     <tr>
-                        <td className='table-primary' colspan="5">Self-guided walking trails and options to join educational keeper talks</td>
-                        <td className='table-primary'>1 – 4 hours</td>
+                        <td className='table-primary unifont' colspan="5">Self-guided walking trails and options to join educational keeper talks</td>
+                        <td className='table-primary unifont' >1 – 4 hours</td>
                     </tr>
                 </tbody>
                 </table>
