@@ -164,9 +164,11 @@ class Story extends Component{
                                         {
                                         'head': <div>
                                                 <img src={ require("./images/son.png")} class="img-fluid" alt="working girl"/>
+                                                <p className='coin-tossing-font'>Kid's turn</p>
                                             </div>,
                                         'tail': <div>
                                                 <img src={ require("./images/father.png")} class="img-fluid" alt="working girl"/>
+                                                <p className='coin-tossing-font'>Parent's turn</p>
                                             </div>,
                                         'pause':<div className='row mb-5 mt-5'>
                                                 <div class="col-lg-5 col-md-5 col-5">

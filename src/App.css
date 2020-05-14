@@ -1247,6 +1247,11 @@ h3 {
   background-color: white
 }
 
+.coin-tossing-font{
+  font-family: 'Sniglet'; 
+  font-weight: 700; 
+}
+
 .tips-font{
   font-family: 'Sniglet'; 
   font-size: 30px; 
