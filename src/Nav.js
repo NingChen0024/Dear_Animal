@@ -10,8 +10,11 @@ class Nav extends Component{
             <nav className="navbar navbar-expand-lg">
                 <div className="container">
                     <a className="navbar-brand" href="./">
-                        <i className ='navIcon'> Dear Animals </i>
-                     </a>
+                        <div className='row'>
+                            <img src={require('./images/icon.png')} class="img-fluid icon-dim" />
+                            <p className ='navIcon'> Dear Animals </p>
+                        </div>
+                    </a>
 
                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                             aria-label="Toggle navigation">
@@ -38,7 +41,7 @@ class Nav extends Component{
                             </Link> 
 
                             <Link to="/parent" >
-                                <li className="nav-link navItem"> For Parents</li>
+                                <li className="nav-link navItem"> Parents</li>
                             </Link>
                         </ul>
                     </div>
