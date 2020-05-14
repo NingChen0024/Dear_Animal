@@ -100,7 +100,9 @@ class AnimalList extends Component {
                             </select>
                         </label>
 
-                        <div className='row mb-3'></div>
+                        <div className='row mb-3'>
+                            <p></p>
+                        </div>
 
                         <div className='container view-rows'>
                             {this.state.animal === 'All' ? 
