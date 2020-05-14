@@ -190,21 +190,21 @@ class Story extends Component{
                         <div className='card m-4'>
                             <div class="container">
                                 <img src={require('./images/question_mark.gif')} className='story-img'/>
-                                <p className='card-name'><b>{this.state.card_one}</b></p> 
+                                <p className='card-name'>{this.state.card_one}</p> 
                             </div>
                         </div>
 
                         <div className='card m-4'>
                             <div class="container">
                                 <img src={require('./images/question_mark.gif')} className='story-img'/>
-                                <p className='card-name'><b>{this.state.card_two}</b></p> 
+                                <p className='card-name'>{this.state.card_two}</p> 
                             </div>
                         </div>
 
                         <div className='card m-4'>
                             <div class="container">
                                 <img src={require('./images/question_mark.gif')} className='story-img'/>
-                                <p className='card-name'><b>{this.state.card_three}</b></p> 
+                                <p className='card-name'>{this.state.card_three}</p> 
                             </div>
                         </div>
                     </div>
