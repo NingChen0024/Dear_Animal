@@ -117,7 +117,7 @@ class AnimalList extends Component {
 
                                         <div class="container">
                                             <img src={require('./images/animal_list/' + animal.aniname + '_icon.jpeg')} class="img-fluid card-image" />
-                                            <p className='nuifont'><b>{animal.aniname}</b></p> 
+                                            <p className='nuifont'>{animal.aniname}</p> 
                                         </div>
                                                 
                                         </Link>
@@ -136,7 +136,7 @@ class AnimalList extends Component {
                                                 
                                         <div class="container">
                                             <img src={require('./images/animal_list/' + animal.aniname + '_icon.jpeg')} class="img-fluid card-image" />
-                                            <p className='nuifont'><b>{animal.aniname}</b></p> 
+                                            <p className='nuifont'>{animal.aniname}</p> 
                                         </div>
                                                 
                                     </Link>
