@@ -62,8 +62,7 @@ class Prediction extends Component {
                 estimation of the next 20 years using a 90% confidence interval and the count 
                 is gradually increasing due to all the threats that are present to the fauna 
                 species. That is why it is required to take strict measures to protect these animals.
-            </p> 
-          
+            </p>          
         </div>
         <footer class="site-footer">
           <div class="container">

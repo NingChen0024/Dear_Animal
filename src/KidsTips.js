@@ -43,7 +43,7 @@ class KidsTips extends Component {
             <div >
                <ScrollAnimation animateIn="fadeIn">
                 <div >
-                    <h1 className=' tipshead pt-3 pr-5 mb-3 '>Tips for you! </h1>
+                    <h1 className=' tipshead pr-5 mb-3 '>Tips for you! </h1>
                 </div>
                </ScrollAnimation>
 
