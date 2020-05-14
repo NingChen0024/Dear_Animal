@@ -37,22 +37,22 @@ class Anidetail extends Component{
                 <div className='detail-container'>
                     <img src={require('./images/animal_list/' + data.aniname + '_cover.jpeg')} class="img-fluid" />
                     <h1 className="bottom-right text-white unifont">{data.aniname}</h1>
-                    <p className="fact-bottom-right">{data.facts}</p>
+                    <p className="fact-bottom-right unifont">{data.facts}</p>
                 </div>
                 
                 <div className="container row1-style mt-5 mb-3 ">
                     <div className="row">
 
                         <div className="col-lg-4 col-md-4 col-12 ">
-                            <p className='row1-font'>Type:{data.class}</p>
+                            <p className='row1-font'>Type:&nbsp;{data.class}</p>
                         </div>
                             
                         <div className="col-lg-4 col-md-4 col-12">
-                            <p className='row1-font'>Total Count:{data.anicount}</p>
+                            <p className='row1-font'>Total Count:&nbsp;{data.anicount}</p>
                         </div>
 
                         <div className="col-lg-4 col-md-4 col-12 ">
-                            <p className='row1-font'>Status:{data.anistatus}</p>
+                            <p className='row1-font'>Status:&nbsp;{data.anistatus}</p>
                         </div>
                     </div>
                 </div>
@@ -201,32 +201,17 @@ class Anidetail extends Component{
                 </div>
                 
                 <footer class="site-footer">
-                <div class="container">
+                    <div class="container">
                     <div class="row">
+                        <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
+                                <h2 class="text-white" data-aos-delay="100">We are making the <strong>best </strong> for kids</h2>
+                        </div>
 
-                    <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
-                        <h1 class="text-white"  data-aos-delay="100">We are making the <strong>best </strong> for kids</h1>
+                        <div class="col-lg-4 col-md-6 col-12" data-aos-delay="300">
+                                <h4 class="my-4">Copyright &copy; Black Panther</h4>
+                        </div>          
                     </div>
-
-                    <div class="col-lg-3 col-md-6 col-12"  data-aos-delay="200">
-                        <h4 class="my-4">Contact Info</h4>
-
-                        <p>
-                        <a href="#">
-                            <i class="fa fa-envelope mr-2 footer-icon"></i>
-                            dearanimal@gmail.com
-                        </a>
-                        </p>
-
                     </div>
-
-                    <div class="col-lg-4 col-md-6 col-12"  data-aos-delay="300">
-                        <h4 class="my-4">Copyright &copy; Black Panther</h4>
-                    </div>
-
-                    
-                    </div>
-                </div>
                 </footer>
             </dev>
 

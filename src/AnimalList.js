@@ -78,7 +78,7 @@ class AnimalList extends Component {
                     <ScrollAnimation animateIn="fadeIn">
                         <div pt-5></div>
                         <div >
-                            <h1 className=' kidtipshead pt-5'>Hey there want to be my friend ?</h1>
+                            <h1 className=' kidtipshead pt-5'>Hey there want to know more about me ?</h1>
                         </div>
                     </ScrollAnimation>
 
@@ -86,7 +86,7 @@ class AnimalList extends Component {
                     <form >
                         <br />
                         <br />
-                        <label>                     
+                        <label className='filter-style'>                     
                             <select
                                 value={this.state.animal}
                                 onChange={this.handleChangeAnimal}
@@ -113,7 +113,7 @@ class AnimalList extends Component {
 
                                         <div class="container">
                                             <img src={require('./images/animal_list/' + animal.aniname + '_icon.jpeg')} class="img-fluid card-image" />
-                                            <p><b>{animal.aniname}</b></p> 
+                                            <p className='nuifont'><b>{animal.aniname}</b></p> 
                                         </div>
                                                 
                                         </Link>
@@ -132,7 +132,7 @@ class AnimalList extends Component {
                                                 
                                         <div class="container">
                                             <img src={require('./images/animal_list/' + animal.aniname + '_icon.jpeg')} class="img-fluid card-image" />
-                                            <p><b>{animal.aniname}</b></p> 
+                                            <p className='nuifont'><b>{animal.aniname}</b></p> 
                                         </div>
                                                 
                                     </Link>
@@ -145,30 +145,15 @@ class AnimalList extends Component {
 
                 <footer class="site-footer">
                     <div class="container">
-                        <div class="row">
-
+                    <div class="row">
                         <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
-                            <h1 class="text-white"  data-aos-delay="100">We are making the <strong>best </strong> for kids</h1>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-12"  data-aos-delay="200">
-                            <h4 class="my-4">Contact Info</h4>
-
-                            <p>
-                            <a href="#">
-                                <i class="fa fa-envelope mr-2 footer-icon"></i>
-                                dearanimal@gmail.com
-                            </a>
-                            </p>
-
+                                <h2 class="text-white" data-aos-delay="100">We are making the <strong>best </strong> for kids</h2>
                         </div>
 
                         <div class="col-lg-4 col-md-6 col-12" data-aos-delay="300">
-                            <h4 class="my-4">Copyright &copy; Black Panther</h4>
-                        </div>
-
-                        
-                        </div>
+                                <h4 class="my-4">Copyright &copy; Black Panther</h4>
+                        </div>          
+                    </div>
                     </div>
                 </footer>
             </div>

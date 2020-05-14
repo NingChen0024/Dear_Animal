@@ -153,7 +153,7 @@ class Main extends Component{
                <div class="row">
 
                     <div class="col-lg-6 col-md-5 col-12">
-                    <h2 class="mb-4 unifont" data-aos="fade-up">Let's sing a <strong>lovely</strong> song !</h2>
+                    
                         <div class="contact-image" data-aos="fade-up">
 
                           <img src={ require("./images/Wombat_cartoon.gif")} class="img-fluid wombatSongImg" alt="website"/>
@@ -162,10 +162,10 @@ class Main extends Component{
                     </div>
 
                     <div class="col-lg-6 col-md-7 col-12 pt-3">
-                         <iframe width="448" height="252" 
-                         src="https://www.youtube.com/embed/ALhA9WGqG0k" 
-                         frameborder="0" 
-                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                         <h2 class="mb-4 unifont" data-aos="fade-up">Let's create a <strong>lovely</strong> story !</h2>
+                         <Link to='/story'>     
+                              <a class="btn btn-warning btn-lg mt-3 unifont text-center"  data-aos-delay="100">Let's go! </a>
+                         </Link>
                     </div>
 
                </div>
@@ -173,34 +173,19 @@ class Main extends Component{
      </section>
 
 
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row">
+     <footer class="site-footer">
+          <div class="container">
+          <div class="row">
+               <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
+                    <h2 class="text-white" data-aos-delay="100">We are making the <strong>best </strong> for kids</h2>
+               </div>
 
-          <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
-            <h1 class="text-white" data-aos="fade-up" data-aos-delay="100">We are making the <strong>best </strong> for kids</h1>
+               <div class="col-lg-4 col-md-6 col-12" data-aos-delay="300">
+                    <h4 class="my-4">Copyright &copy; Black Panther</h4>
+               </div>          
           </div>
-
-          <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="200">
-            <h4 class="my-4">Contact Info</h4>
-
-            <p>
-              <a href="#">
-                <i class="fa fa-envelope mr-2 footer-icon"></i>
-                dearanimal@gmail.com
-              </a>
-            </p>
-
           </div>
-
-          <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="300">
-               <h4 class="my-4">Copyright &copy; Black Panther</h4>
-          </div>
-
-          
-        </div>
-      </div>
-    </footer>
+     </footer>
     </div>
     )
     }

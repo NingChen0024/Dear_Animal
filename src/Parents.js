@@ -12,27 +12,7 @@ import Breadcrumb from 'react-bootstrap/Breadcrumb'
 class Parent extends Component {
 
 
-    componentDidMount() {  
-      this.initViz()  
-    }  
-
-    initViz() {
-     
-      const url = "https://public.tableau.com/views/FirstexplanationPART2/Dashboard3?:display_count=y&publish=yes&:origin=viz_share_link",
-      vizContainer = this.vizContainer;  
-      var options = {
-          hideTabs: true,
-          width:'100%',
-          height:'900px',
-          autoflow:'auto',
-          onFirstInteractive: function () { 
-            
-          }
-      };
-
-      var viz = new window.tableau.Viz(vizContainer, url, options);
-    }
-
+   
   render(){
     return (
       <div >
@@ -49,7 +29,7 @@ class Parent extends Component {
           <img src={require('./images/parents/cover.jpg')} class="img-fluid" />
           <h1 className="top-center text-white unifont">ANIMALS, HABITAT &amp; THREATS</h1>
           <Link to='/threat'>
-            <p className="fact-bottom-right-parent">Visualize to know more</p>
+            <a class="custom-btn btn-bg btn mt-5 unifont fact-bottom-right-parent" data-aos-delay="100">Visualize to know more</a>
           </Link>
         </div>
 
@@ -58,28 +38,30 @@ class Parent extends Component {
         </div>
 
         <div className='row'>
+     
           <div className='detail-container col-lg-4 col-md-4 col-12'>
-            <img src={require('./images/parents/tips.jpg')} class="img-fluid" />
-            <h1 className="top-center-tips text-white unifont">Tips</h1>
             <Link to='/parentTips'>
-              <p className="fact-bottom-right-tips">To know more</p>
+              <img src={require('./images/parents/tips.jpg')} class="img-fluid" />
             </Link>
+            <h1 className="top-center-tips text-white unifont">Tips</h1>
+
           </div>
+      
 
           <div className='detail-container col-lg-4 col-md-4 col-12'>
-            <img src={require('./images/parents/conservation.jpg')} class="img-fluid" />
-            <h1 className="top-center-conservation text-white unifont">conservation</h1>
             <Link to='/parentCons'>
-              <p className="fact-bottom-right-conservation">To know more</p>
+              <img src={require('./images/parents/conservation.jpg')} class="img-fluid" />
             </Link>
+            <h1 className="top-center-conservation text-white unifont">conservation</h1>
+         
           </div>
 
           <div className='detail-container col-lg-4 col-md-4 col-12'>
-            <img src={require('./images/parents/measures.jpg')} class="img-fluid" />
-            <h1 className="top-center-measures text-white unifont">measures</h1>
             <Link to='/parentRescure'>
-              <p className="fact-bottom-right-measures">To know more</p>
+              <img src={require('./images/parents/measures.jpg')} class="img-fluid" />
             </Link>
+            <h1 className="top-center-measures text-white unifont">measures</h1>
+          
           </div>
 
           <div className='row'>
@@ -88,39 +70,37 @@ class Parent extends Component {
           
         </div>
 
-        <div className='container'>
-          <div ref={(div) => { this.vizContainer = div }}> 
-          </div>   
-        </div>  
-
-
 
          <div className='row'>
 
-            <div className='detail-container col-lg-1 col-md-1 col-12'>
-              <p></p>
-            </div>
 
-            <div className='detail-container col-lg-5 col-md-5 col-12'>
-              <img src={require('./images/parents/map.jpg')} class="img-fluid" />
-              <h1 className="top-center-map text-white unifont">Map</h1>
-              <Link to='/map'>
-                <p className="fact-bottom-right-map">To know more</p>
+
+            <div className='detail-container col-lg-4 col-md-4 col-12'>
+              <Link to='/habitat'>
+                <img src={require('./images/parents/habitat.jpg')} class="img-fluid" />
               </Link>
+              <h1 className="top-center-map text-white unifont">Habitat</h1>
+             
+        
+            </div>
+       
+
+            <div className='detail-container col-lg-4 col-md-4 col-12'>
+              <Link to='/map'>
+                <img src={require('./images/parents/map.jpg')} class="img-fluid" />
+              </Link>
+              <h1 className="top-center-map text-white unifont">Map</h1>
+          
             </div>
 
-            <div className='detail-container col-lg-5 col-md-5 col-12'>
+            <div className='detail-container col-lg-4 col-md-4 col-12'>
+              <Link to='/prediction'>
               <img src={require('./images/parents/prediction.jpg')} class="img-fluid" />
+              </Link>
               <h1 className="top-center-prediction  unifont">Prediction</h1>
              
-              <Link to='/prediction'>
-                <p className="fact-bottom-right-prediction">To know more</p>
-              </Link>
             </div>
-
-            <div className='row'>
-              <p></p>
-            </div>  
+ 
 
         </div>
 
@@ -231,32 +211,17 @@ class Parent extends Component {
         </div> */}
 
         <footer class="site-footer">
-            <div class="container">
-                <div class="row">
+              <div class="container">
+              <div class="row">
+                  <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
+                        <h2 class="text-white"  data-aos-delay="100">We are making the <strong>best </strong> for kids</h2>
+                  </div>
 
-                <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
-                    <h1 class="text-white"ß data-aos-delay="100">We are making the <strong>best </strong> for kids</h1>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-12" data-aos-delay="200">
-                    <h4 class="my-4">Contact Info</h4>
-
-                    <p>
-                    <a href="#">
-                        <i class="fa fa-envelope mr-2 footer-icon"></i>
-                        dearanimal@gmail.com
-                    </a>
-                    </p>
-
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-12" data-aos-delay="300">
-                    <h4 class="my-4">Copyright &copy; Black Panther</h4>
-                </div>
-
-                
-                </div>
-            </div>
+                  <div class="col-lg-4 col-md-6 col-12"  data-aos-delay="300">
+                        <h4 class="my-4">Copyright &copy; Black Panther</h4>
+                  </div>          
+              </div>
+              </div>
         </footer>
       </div>
     )}

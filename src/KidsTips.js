@@ -43,7 +43,7 @@ class KidsTips extends Component {
             <div >
                <ScrollAnimation animateIn="fadeIn">
                 <div >
-                    <h1 className=' parentshead pt-5 pr-5 mb-5 '>Tips for you! </h1>
+                    <h1 className=' tipshead pt-3 pr-5 mb-3 '>Tips for you! </h1>
                 </div>
                </ScrollAnimation>
 
@@ -118,34 +118,19 @@ class KidsTips extends Component {
 
 
            </div>
-                <footer class="site-footer">
-                    <div class="container">
-                        <div class="row">
+            <footer class="site-footer">
+              <div class="container">
+              <div class="row">
+                  <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
+                        <h2 class="text-white" data-aos-delay="100">We are making the <strong>best </strong> for kids</h2>
+                  </div>
 
-                        <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
-                            <h1 class="text-white"  data-aos-delay="100">We are making the <strong>best </strong> for kids</h1>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-12"  data-aos-delay="200">
-                            <h4 class="my-4">Contact Info</h4>
-
-                            <p>
-                            <a href="#">
-                                <i class="fa fa-envelope mr-2 footer-icon"></i>
-                                dearanimal@gmail.com
-                            </a>
-                            </p>
-
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12" data-aos-delay="300">
-                            <h4 class="my-4">Copyright &copy; Black Panther</h4>
-                        </div>
-
-                        
-                        </div>
-                    </div>
-                </footer>
+                  <div class="col-lg-4 col-md-6 col-12" data-aos-delay="300">
+                        <h4 class="my-4">Copyright &copy; Black Panther</h4>
+                  </div>          
+              </div>
+              </div>
+            </footer>
             </div>
         )}
         </div>

@@ -33,8 +33,8 @@ function ParentTips() {
             </div>
           </ScrollAnimation>
           <div className='container parent-text-space mb-5 pb-5'>
-            <h3 className='mt-5'>1. Learn about endangered species in your area.</h3>
-            <p className ='font-weight-bold m-4'>
+            <h3 className='mt-5 unifont'>1. Learn about endangered species in your area.</h3>
+            <p className ='font-weight-bold m-4 unifont'>
               Teach your friends and family about the wonderful wildlife, birds, 
               fish and plants that live near you. The first step to protecting 
               endangered species is learning about how interesting and important 
@@ -45,8 +45,8 @@ function ParentTips() {
               network to receive updates and action alerts.
             </p>  
 
-            <h3 className='mt-5'>2. Visit a national wildlife refuge, park or other open space</h3>
-            <p className ='font-weight-bold m-4'>
+            <h3 className='mt-5 unifont'>2. Visit a national wildlife refuge, park or other open space</h3>
+            <p className ='font-weight-bold m-4 unifont'>
               These protected lands provide habitat to many native wildlife, birds, 
               fish and plants. Scientists tell us the best way to protect endangered 
               species is to protect the places where they live. Get involved by 
@@ -55,8 +55,8 @@ function ParentTips() {
               recreation creates millions of jobs and supports local businesses. 
             </p>  
 
-            <h3 className='mt-5'>3. Make your home wildlife friendly.</h3>
-            <p className ='font-weight-bold m-4'>
+            <h3 className='mt-5 unifont'>3. Make your home wildlife friendly.</h3>
+            <p className ='font-weight-bold m-4 unifont'>
               Secure garbage in shelters or cans with locking lids, feed pets 
               indoors and lock pet doors at night to avoid attracting wild animals 
               into your home. Reduce your use of water in your home and garden so 
@@ -69,8 +69,8 @@ function ParentTips() {
               check out these tips from the US Fish and Wildlife Service.
             </p>  
 
-            <h3 className='mt-5'>4. Native plants provide food and shelter for native wildlife.</h3>
-            <p className ='font-weight-bold m-4'>
+            <h3 className='mt-5 unifont'>4. Native plants provide food and shelter for native wildlife.</h3>
+            <p className ='font-weight-bold m-4 unifont'>
               Attracting native insects like bees and butterflies can help pollinate 
               your plants. The spread of non-native species has greatly impacted 
               native populations around the world. Invasive species compete with 
@@ -78,8 +78,8 @@ function ParentTips() {
               native species directly, forcing native species towards extinction. 
             </p>  
 
-            <h3 className='mt-5'>5. Herbicides and pesticides may keep yards looking nice but they are in fact hazardous pollutants that affect wildlife at many levels.</h3>
-            <p className ='font-weight-bold m-4'>
+            <h3 className='mt-5 unifont'>5. Herbicides and pesticides may keep yards looking nice but they are in fact hazardous pollutants that affect wildlife at many levels.</h3>
+            <p className ='font-weight-bold m-4 unifont'>
               Many herbicides and pesticides take a long time to degrade and build 
               up in the soils or throughout the food chain. Predators such as hawks, 
               owls and coyotes can be harmed if they eat poisoned animals. 
@@ -88,8 +88,8 @@ function ParentTips() {
               high levels of herbicides and pesticides in their habitat. 
             </p> 
 
-            <h3 className='mt-5'>6. Slow down when driving.</h3>
-            <p className ='font-weight-bold m-4'>
+            <h3 className='mt-5 unifont'>6. Slow down when driving.</h3>
+            <p className ='font-weight-bold m-4 unifont'>
               Many animals live in developed areas and this means they must na
               vigate a landscape full of human hazards. One of the biggest 
               obstacles to wildlife living in developed areas is roads. 
@@ -98,8 +98,8 @@ function ParentTips() {
               and about, slow down and keep an eye out for wildlife.
             </p> 
 
-            <h3 className='mt-5'>7. Recycle and buy sustainable products. </h3>
-            <p className ='font-weight-bold m-4'>
+            <h3 className='mt-5 unifont'>7. Recycle and buy sustainable products. </h3>
+            <p className ='font-weight-bold m-4 unifont'>
               Buy recycled paper, sustainable products like bamboo and Forest 
               Stewardship Council wood products to protect forest species. 
               Never buy furniture made from wood from rainforests. Recycle 
@@ -109,8 +109,8 @@ function ParentTips() {
               cut down to plant palm plantations.
             </p> 
             
-            <h3 className='mt-5'>8. Never purchase products made from threatened or endangered species. </h3>
-            <p className ='font-weight-bold m-4'>
+            <h3 className='mt-5 unifont'>8. Never purchase products made from threatened or endangered species. </h3>
+            <p className ='font-weight-bold m-4 unifont'>
               Overseas trips can be exciting and fun, and everyone wants a 
               souvenir. But sometimes the souvenirs are made from species 
               nearing extinction. Avoid supporting the market in illegal 
@@ -128,32 +128,17 @@ function ParentTips() {
 
         
       </div>
-      <footer class="site-footer">
+        <footer class="site-footer">
             <div class="container">
-                <div class="row">
-
+            <div class="row">
                 <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
-                    <h1 class="text-white"ß data-aos-delay="100">We are making the <strong>best </strong> for kids</h1>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-12" data-aos-delay="200">
-                    <h4 class="my-4">Contact Info</h4>
-
-                    <p>
-                    <a href="#">
-                        <i class="fa fa-envelope mr-2 footer-icon"></i>
-                        dearanimal@gmail.com
-                    </a>
-                    </p>
-
+                      <h2 class="text-white" data-aos-delay="100">We are making the <strong>best </strong> for kids</h2>
                 </div>
 
                 <div class="col-lg-4 col-md-6 col-12" data-aos-delay="300">
-                    <h4 class="my-4">Copyright &copy; Black Panther</h4>
-                </div>
-
-                
-                </div>
+                      <h4 class="my-4">Copyright &copy; Black Panther</h4>
+                </div>          
+            </div>
             </div>
         </footer>
       </div>

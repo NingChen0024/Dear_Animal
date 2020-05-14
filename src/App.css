@@ -618,7 +618,7 @@ background: var(--secondary-color);
 
 .site-footer {
 background: var(--dark-color);
-padding: 7em 0 6em 0;
+padding: 5em 0 4em 0;
 clear: both;	
 }
 
@@ -800,6 +800,16 @@ h3 {
 
 }
 
+.tipshead{
+  font-family: 'Sniglet'; 
+  font-size: 30px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 700; 
+  text-align: center;
+
+}
+
 .parentshead3{
   font-family: 'Book Antiqua'; 
   font-size: 50px; 
@@ -811,7 +821,7 @@ h3 {
 }
 
 .parentshead2{
-  font-family: "Book Antiqua"; 
+  font-family: "Sniglet"; 
   font-size: 50px; 
   font-style: normal; 
   font-variant: normal; 
@@ -1008,11 +1018,11 @@ h3 {
   }
 
   .parentText{
-    font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif; 
+    font-family: "Sniglet"; 
     font-size: 20px; 
     font-style: normal; 
     font-variant: normal; 
-    font-weight: 600; 
+    font-weight: 200; 
     line-height: 26.4px; 
   }
 
@@ -1031,7 +1041,7 @@ h3 {
 }
 
 .card {
-  border: 4px solid rgb(235, 134, 41);
+  border: 4px solid #a880ff;;
   float: left;
   display: flex;
   border-radius: 10px 10px 10px 10px;
@@ -1041,6 +1051,10 @@ h3 {
   width: 28%;
   overflow: hidden; 
   background-color: #fdfcfd
+}
+
+.filter-style{
+  float: right;
 }
 
 
@@ -1084,7 +1098,9 @@ h3 {
   margin: auto;
 }
 
-
+.Breadcrumb-font{
+  font-weight: 700; 
+}
 
 .detail-container {
   position: relative;
@@ -1104,7 +1120,7 @@ h3 {
 
 .fact-bottom-right {
   color: white;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 20px;
   position: absolute;
   bottom: 25%;
@@ -1265,7 +1281,7 @@ h3 {
   font-weight: 700;
   font-size: 20px;
   position: absolute;
-  bottom: 55%;
+  bottom: 50%;
   right: 40%;
 }
 

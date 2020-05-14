@@ -6,7 +6,9 @@ import * as serviceWorker from './serviceWorker';
 import Table from './Table'
 import Nav from './Nav'
 import Form from './Form'
-
+// import '@fortawesome/fontawesome-free/css/all.min.css'; 
+// import 'bootstrap-css-only/css/bootstrap.min.css'; 
+// import 'mdbreact/dist/css/mdb.css';
 
 // the root app componnet is rendered for index.js
 
