@@ -72,11 +72,11 @@ class Game extends Component{
                     <div class="container">
                     <div class="row">
                         <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
-                                <h2 class="text-white" data-aos-delay="100">We are making the <strong>best </strong> for kids</h2>
+                                <h2 class="text-white" data-aos-delay="100"> Educate &amp; &nbsp;<strong>Encourage</strong> </h2>
                         </div>
 
                         <div class="col-lg-4 col-md-6 col-12" data-aos-delay="300">
-                                <h4 class="my-4">Copyright &copy; Black Panther</h4>
+                                <h4 class="my-3">Copyright &copy; 2020 Black Panther</h4>
                         </div>          
                     </div>
                     </div>

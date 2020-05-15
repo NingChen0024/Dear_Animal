@@ -618,7 +618,7 @@ background: var(--secondary-color);
 
 .site-footer {
 background: var(--dark-color);
-padding: 5em 0 4em 0;
+padding: 2em 0 2em 0;
 clear: both;	
 }
 
@@ -1214,7 +1214,7 @@ h3 {
 
 .story-img{
   display: block;
-  max-width:60%;
+  max-width:40%;
   margin-left: auto;
   margin-right: auto;
   height:auto;
@@ -1261,6 +1261,17 @@ h3 {
   color:  #ff9933;
   text-align: center;
 }
+
+.story-title{
+  font-family: 'Sniglet'; 
+  font-size: 45px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 700; 
+  color:  #ff9933;
+  text-align: center;
+}
+
 
 .top-center {
   font-size: 60px; 
@@ -1393,7 +1404,5 @@ h3 {
 }
 
 .icon-dim{
-
-  max-width:10%;
-
+    max-width:10%;
 }

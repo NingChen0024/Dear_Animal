@@ -128,17 +128,24 @@ class Story extends Component{
 
                 <div className='container'>
                     <div className='row'>
-                        <div className="col-lg-6 col-md-6 col-12 mb-4 mt-5 pt-5">
+                        <div className="col-lg-4 col-md-4 col-12 mb-4 mt-5 pt-5">
                             <div className='button-refresh'>
                                 <p className='timer-number m-5'>{this.state.time}</p>
                                 <button onClick={this.startTimer} className='btn btn-success mr-3 unifont'>Start</button>
                                 <button onClick={this.pauseTimer} className='btn btn-danger mr-3 unifont'>Pause</button>
                                 <button onClick={this.stopTimer} className='btn btn-primary mr-3 unifont'>Stop</button>
                                 
+                            </div>                       
+                        </div>
+                        
+                        <div className="col-lg-4 col-md-4 col-12 mb-4 mt-5 pt-5">
+                            <div className='mt-3 '>
+                                <p></p>
                             </div>
                             <div>
                                 {this.state.showRating ? (
-                                <div className='button-refresh mt-4'>
+                                <div className='button-refresh '>
+                                    <h1 className='unifont story-title'>Do you like the story?</h1>
                                     <StarRatings
                                         rating={this.state.rating}
                                         starRatedColor="red"
@@ -151,19 +158,18 @@ class Story extends Component{
                                 </div>
                                 ):(
                                 <div>
-
                                 </div>)}
                             </div>
                         </div>
 
-                        <div className="col-lg-6 col-md-6 col-12 mb-4">
+                        <div className="col-lg-4 col-md-4 col-12 mb-4">
                             <div className='button-refresh'>
                                             
                                 <div>
                                     {
                                         {
                                         'head': <div>
-                                                <img src={ require("./images/son.png")} class="img-fluid" alt="working girl"/>
+                                                <img src={ require("./images/son.png")} class="img-fluid " alt="working girl"/>
                                                 <p className='coin-tossing-font'>Kid's turn</p>
                                             </div>,
                                         'tail': <div>
@@ -191,7 +197,7 @@ class Story extends Component{
                     <div className='row'>
                         <div className='card m-4'>
                             <div class="container">
-                                <img src={require('./images/question_mark.gif')} className='story-img'/>
+                                <img src={require('./images/question_mark.gif')} className='story-img '/>
                                 <p className='card-name'>{this.state.card_one}</p> 
                             </div>
                         </div>
@@ -221,16 +227,15 @@ class Story extends Component{
                     <div class="container">
                     <div class="row">
                         <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
-                                <h2 class="text-white"  data-aos-delay="100">We are making the <strong>best </strong> for kids</h2>
+                                <h2 class="text-white" data-aos-delay="100"> Educate &amp; &nbsp;<strong>Encourage</strong> </h2>
                         </div>
 
-                        <div class="col-lg-4 col-md-6 col-12"  data-aos-delay="300">
-                                <h4 class="my-4">Copyright &copy; Black Panther</h4>
+                        <div class="col-lg-4 col-md-6 col-12" data-aos-delay="300">
+                                <h4 class="my-3">Copyright &copy; 2020 Black Panther</h4>
                         </div>          
                     </div>
                     </div>
                 </footer>
-
             </div>
 
             
