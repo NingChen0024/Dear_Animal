@@ -36,7 +36,7 @@ class Threat extends Component {
                 <Breadcrumb.Item>
                     <Link to='/parent'>For Parents</Link>
                 </Breadcrumb.Item>
-                <Breadcrumb.Item active>Threats</Breadcrumb.Item>
+                <Breadcrumb.Item active>Habitat</Breadcrumb.Item>
             </Breadcrumb>
         </div>
         <div className="container mb-5 pb-5">

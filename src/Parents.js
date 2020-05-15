@@ -28,7 +28,7 @@ class Parent extends Component {
           </nav>
           <img src={require('./images/parents/cover.jpg')} class="img-fluid" />
           <h1 className="top-center text-white unifont">ANIMALS, HABITAT &amp; THREATS</h1>
-          <Link to='/threat'>
+          <Link to='/threatCover'>
             <a class="custom-btn btn-bg btn mt-5 unifont fact-bottom-right-parent" data-aos-delay="100">Visualize to know more</a>
           </Link>
         </div>
@@ -36,6 +36,34 @@ class Parent extends Component {
         <div className='row'>
           <p></p>
         </div>
+
+
+
+        <div className='row'>
+
+          <div className='detail-container col-lg-4 col-md-4 col-12'>
+            <Link to='/threat'>
+              <img src={require('./images/parents/habitat.jpg')} class="img-fluid" />
+            </Link>
+            <h1 className="top-center-map text-white unifont">Threat</h1>
+          </div>
+
+          <div className='detail-container col-lg-4 col-md-4 col-12'>
+            <Link to='/map'>
+              <img src={require('./images/parents/map.jpg')} class="img-fluid" />
+            </Link>
+            <h1 className="top-center-map text-white unifont">Map</h1>
+          </div>
+
+          <div className='detail-container col-lg-4 col-md-4 col-12'>
+            <Link to='/prediction'>
+            <img src={require('./images/parents/prediction.jpg')} class="img-fluid" />
+            </Link>
+            <h1 className="top-center-prediction  unifont">Prediction</h1>         
+          </div>
+          
+        </div>
+
 
         <div className='row'>
      
@@ -71,38 +99,6 @@ class Parent extends Component {
         </div>
 
 
-         <div className='row'>
-
-
-
-            <div className='detail-container col-lg-4 col-md-4 col-12'>
-              <Link to='/habitat'>
-                <img src={require('./images/parents/habitat.jpg')} class="img-fluid" />
-              </Link>
-              <h1 className="top-center-map text-white unifont">Habitat</h1>
-             
-        
-            </div>
-       
-
-            <div className='detail-container col-lg-4 col-md-4 col-12'>
-              <Link to='/map'>
-                <img src={require('./images/parents/map.jpg')} class="img-fluid" />
-              </Link>
-              <h1 className="top-center-map text-white unifont">Map</h1>
-          
-            </div>
-
-            <div className='detail-container col-lg-4 col-md-4 col-12'>
-              <Link to='/prediction'>
-              <img src={require('./images/parents/prediction.jpg')} class="img-fluid" />
-              </Link>
-              <h1 className="top-center-prediction  unifont">Prediction</h1>
-             
-            </div>
- 
-
-        </div>
 
         {/* <div className='container mb-5 pb-5'>
         

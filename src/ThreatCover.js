@@ -4,7 +4,7 @@ import Breadcrumb from 'react-bootstrap/Breadcrumb'
 import {Link} from 'react-router-dom'
 // this component contains info about wild explore activties
 
-class Habitat extends Component {
+class ThreatCover extends Component {
 
 
     componentDidMount() {  
@@ -37,7 +37,7 @@ class Habitat extends Component {
                 <Breadcrumb.Item>
                     <Link to='/parent'>For Parents</Link>
                 </Breadcrumb.Item>
-                <Breadcrumb.Item active>Habitat</Breadcrumb.Item>
+                <Breadcrumb.Item active>Threat</Breadcrumb.Item>
             </Breadcrumb>
         </div>
         <div className="container mb-5 pb-5">
@@ -50,12 +50,6 @@ class Habitat extends Component {
             </ScrollAnimation> 
         </div>
 
-
-
-        <div className='container'>
-          <div ref={(div) => { this.vizContainer = div }}> 
-          </div>   
-        </div>  
         <div className='container mb-5'>
             <p className ='font-weight-bold m-4 unifont'>
                 Through data visualization, this interface allows viewers to understand the 
@@ -83,6 +77,12 @@ class Habitat extends Component {
                 <strong>*NOTE: User can hover over the graphs and click them to get more information.</strong>
             </p>  
         </div>
+
+        <div className='container'>
+          <div ref={(div) => { this.vizContainer = div }}> 
+          </div>   
+        </div>  
+        
         <footer class="site-footer">
           <div class="container">
           <div class="row">
@@ -100,4 +100,4 @@ class Habitat extends Component {
     )}
   }
 
-  export default Habitat
+  export default ThreatCover

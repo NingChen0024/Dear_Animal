@@ -25,7 +25,7 @@ import Stroy from './Story'
 import Threat from './Threat';
 import ParentMap from './Map'
 import Prediction from './Prediction';
-import Habitat from './Habitat'
+import ThreatCover from './ThreatCover'
 class App extends Component{
 
   render(){
@@ -54,7 +54,7 @@ class App extends Component{
                 <Route path='/threat' exact component={Threat}/>
                 <Route path='/map' exact component={ParentMap}/>
                 <Route path='/prediction' exact component={Prediction}/>
-                <Route path='/habitat' exact component={Habitat}/>
+                <Route path='/threatCover' exact component={ThreatCover}/>
               </Switch>
             </ScrollToTop>
           </div>

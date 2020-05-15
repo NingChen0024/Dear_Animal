@@ -4,6 +4,9 @@ import {Link} from 'react-router-dom'
 // import {mapScript} from './mapScript.js'
 class ParentMap extends Component {
 
+    reload = () => {
+        window.location.reload()
+    }
 
     render() {
      
@@ -20,11 +23,30 @@ class ParentMap extends Component {
                 </Breadcrumb>
             </div>
 
-            <h2>Lets explore the endangered animals near You !!</h2>
-            <h3>Please enter your pincode</h3>
-            <form id="postCodeForm"><input type="text" id="postCode"/>
-            <button type="submit" >Search</button></form>
-            <div id="map"></div>
+            <h2 className=' parentshead pt-5  mb-5'>Lets explore the endangered animals near You !!</h2>
+            <div className='row mb-5'>
+                <div className="col-lg-1 col-md-1 col-12">
+
+                </div>
+                <div className="col-lg-7 col-md-7 col-12 mt-3">
+                    {/* <button type="submit" className='btn btn-primary ' >Show Map</button> */}
+                </div>
+                <div className="col-lg-4 col-md-4 col-12">
+               
+                    <form id="postCodeForm" className="form-inline">
+                        <div className='form-group row mb-2 mx-sm-3'>
+                            
+                            <input type="text" class="form-control" id="postCode" placeholder="Enter your pincode"/>
+                            
+                        </div>
+                        
+                        <button type="submit" className="btn btn-primary mb-2 " >Search</button>
+                    </form>
+                </div>
+                
+                
+            </div>
+            <div id="map" className='mb-5'></div>
             
             <footer class="site-footer">
                 <div class="container">
