@@ -4,9 +4,7 @@ import {Link} from 'react-router-dom'
 // import {mapScript} from './mapScript.js'
 class ParentMap extends Component {
 
-    reload = () => {
-        window.location.reload()
-    }
+  
 
     render() {
      
@@ -23,13 +21,17 @@ class ParentMap extends Component {
                 </Breadcrumb>
             </div>
 
+            
             <h2 className=' parentshead pt-5  mb-5'>Lets explore the endangered animals near You !!</h2>
+            
+            
+
             <div className='row mb-5'>
                 <div className="col-lg-1 col-md-1 col-12">
-
+                
                 </div>
-                <div className="col-lg-7 col-md-7 col-12 mt-3">
-                    {/* <button type="submit" className='btn btn-primary ' >Show Map</button> */}
+                <div className="col-lg-7 col-md-7 col-12 ">
+                    <button className="btn btn-primary " onClick={() => window.location.reload(false)}>Show the map!</button>
                 </div>
                 <div className="col-lg-4 col-md-4 col-12">
                

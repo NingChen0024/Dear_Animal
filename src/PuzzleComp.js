@@ -30,20 +30,20 @@ class PuzzleComp extends Component{
     render(){
 
         let images = {
-            1:  require('./images/animal_list/Australasian Bittern_icon.jpeg'),
-            2:  require('./images/animal_list/Blue Whale_icon.jpeg'),
-            3:  require('./images/animal_list/Blue Billed Duck_icon.jpeg'),
-            4:  require('./images/animal_list/Koala_icon.jpeg'),
-            5:  require('./images/animal_list/Leatherback Turtle_icon.jpeg'),
-            6:  require('./images/animal_list/Macquarie Perch_icon.jpeg'),
-            7:  require('./images/animal_list/Plains wanderer_icon.jpeg'),
-            8:  require('./images/animal_list/Red-tailed Black-Cockatoo_icon.jpeg'),
-            9:  require('./images/animal_list/Regent Honeyeater_icon.jpeg'),
-            10:  require('./images/animal_list/Southern Brown Bandicoot_icon.jpeg'),
-            11:  require('./images/animal_list/Southern Right Whale_icon.jpeg'),
-            12:  require('./images/animal_list/Squirrel Glider_icon.jpeg'),
-            13:  require('./images/animal_list/Wallaby_icon.jpeg'),
-            14:  require('./images/animal_list/Wombat_icon.jpeg')
+            1:  require('./images/animal_list/Australasian Bittern_game.jpeg'),
+            2:  require('./images/animal_list/Blue Whale_game.jpeg'),
+            3:  require('./images/animal_list/Blue Billed Duck_game.jpeg'),
+            4:  require('./images/animal_list/Koala_game.jpeg'),
+            5:  require('./images/animal_list/Leatherback Turtle_game.jpeg'),
+            6:  require('./images/animal_list/Macquarie Perch_game.jpeg'),
+            7:  require('./images/animal_list/Plains wanderer_game.jpeg'),
+            8:  require('./images/animal_list/Red-tailed Black-Cockatoo_game.jpeg'),
+            9:  require('./images/animal_list/Regent Honeyeater_game.jpeg'),
+            10:  require('./images/animal_list/Southern Brown Bandicoot_game.jpeg'),
+            11:  require('./images/animal_list/Southern Right Whale_game.jpeg'),
+            12:  require('./images/animal_list/Squirrel Glider_game.jpeg'),
+            13:  require('./images/animal_list/Wallaby_game.jpeg'),
+            14:  require('./images/animal_list/Wombat_game.jpeg')
         }
 
         var aid = this.props.id; // en

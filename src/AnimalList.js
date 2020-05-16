@@ -71,7 +71,7 @@ class AnimalList extends Component {
                 <div>
                     <Breadcrumb className='Breadcrumb-background'>
                     <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-                    <Breadcrumb.Item active>Animal Friends</Breadcrumb.Item>
+                    <Breadcrumb.Item active>Animals</Breadcrumb.Item>
                     </Breadcrumb>
                 </div>
                 <div className='container '>

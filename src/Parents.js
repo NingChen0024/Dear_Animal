@@ -38,66 +38,66 @@ class Parent extends Component {
         </div>
 
 
+        <div className='container mb-5'>
+          <div className='row mb-3'>
 
-        <div className='row'>
+            <div className='detail-container col-lg-4 col-md-4 col-12'>
+              <Link to='/threat'>
+                <img src={require('./images/parents/habitat.jpg')} class="img-fluid" />
+              </Link>
+              <h1 className="top-center-tips text-white unifont">Threat</h1>
+            </div>
 
-          <div className='detail-container col-lg-4 col-md-4 col-12'>
-            <Link to='/threat'>
-              <img src={require('./images/parents/habitat.jpg')} class="img-fluid" />
-            </Link>
-            <h1 className="top-center-map text-white unifont">Threat</h1>
-          </div>
+            <div className='detail-container col-lg-4 col-md-4 col-12'>
+              <Link to='/map'>
+                <img src={require('./images/parents/map.jpg')} class="img-fluid" />
+              </Link>
+              <h1 className="top-center-tips text-white unifont">Map</h1>
+            </div>
 
-          <div className='detail-container col-lg-4 col-md-4 col-12'>
-            <Link to='/map'>
-              <img src={require('./images/parents/map.jpg')} class="img-fluid" />
-            </Link>
-            <h1 className="top-center-map text-white unifont">Map</h1>
-          </div>
-
-          <div className='detail-container col-lg-4 col-md-4 col-12'>
-            <Link to='/prediction'>
-            <img src={require('./images/parents/prediction.jpg')} class="img-fluid" />
-            </Link>
-            <h1 className="top-center-prediction  unifont">Prediction</h1>         
-          </div>
-          
-        </div>
-
-
-        <div className='row'>
-     
-          <div className='detail-container col-lg-4 col-md-4 col-12'>
-            <Link to='/parentTips'>
-              <img src={require('./images/parents/tips.jpg')} class="img-fluid" />
-            </Link>
-            <h1 className="top-center-tips text-white unifont">Tips</h1>
+            <div className='detail-container col-lg-4 col-md-4 col-12'>
+              <Link to='/prediction'>
+              <img src={require('./images/parents/prediction.jpg')} class="img-fluid" />
+              </Link>
+              <h1 className="top-center-conservation  unifont">Prediction</h1>         
+            </div>
 
           </div>
+
+
+          <div className='row mb-3'>
       
+            <div className='detail-container col-lg-4 col-md-4 col-12'>
+              <Link to='/parentTips'>
+                <img src={require('./images/parents/tips.jpg')} class="img-fluid" />
+              </Link>
+              <h1 className="top-center-tips text-white unifont">Tips</h1>
 
-          <div className='detail-container col-lg-4 col-md-4 col-12'>
-            <Link to='/parentCons'>
-              <img src={require('./images/parents/conservation.jpg')} class="img-fluid" />
-            </Link>
-            <h1 className="top-center-conservation text-white unifont">conservation</h1>
-         
-          </div>
+            </div>
+        
 
-          <div className='detail-container col-lg-4 col-md-4 col-12'>
-            <Link to='/parentRescure'>
-              <img src={require('./images/parents/measures.jpg')} class="img-fluid" />
-            </Link>
-            <h1 className="top-center-measures text-white unifont">measures</h1>
+            <div className='detail-container col-lg-4 col-md-4 col-12'>
+              <Link to='/parentCons'>
+                <img src={require('./images/parents/conservation.jpg')} class="img-fluid" />
+              </Link>
+              <h1 className="top-center-conservation text-white unifont">conservation</h1>
           
-          </div>
+            </div>
 
-          <div className='row'>
-            <p></p>
+            <div className='detail-container col-lg-4 col-md-4 col-12'>
+              <Link to='/parentRescure'>
+                <img src={require('./images/parents/measures.jpg')} class="img-fluid" />
+              </Link>
+              <h1 className="top-center-conservation text-white unifont">measures</h1>
+            
+            </div>
+
+            <div className='row'>
+              <p></p>
+            </div>
+            
           </div>
-          
         </div>
-
 
 
         {/* <div className='container mb-5 pb-5'>

@@ -9,6 +9,10 @@ class About extends Component {
       loaded:false
     }
 
+    refresh = () => {
+      window.location.reload(false)
+    }
+
     componentDidMount() {  
       this.initViz()  
     }  
@@ -36,11 +40,18 @@ class About extends Component {
       return (
       <div >
         <h3>My Google Maps Demo</h3>
+
+        <button onclick={
+          this.refresh()
+        }>new</button>
+
+        
         <form id="postCodeForm"><input type="text" id="postCode"/>
-        <button type="submit" >Search</button></form>
+        <button type="submit" onclick={
+          this.refresh()
+        }>Search</button></form>
+      
         <div id="map"></div>
-
-
 
         <div className='container'>
           <div ref={(div) => { this.vizContainer = div }}> 
