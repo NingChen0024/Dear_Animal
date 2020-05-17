@@ -902,19 +902,22 @@ h3 {
 
 .tips-custom-btn {
   background: transparent;
-  border: 2px solid var(--dark-color);
+  border: black;
+  border-style: solid;
+  border-width: 2px;
   border-radius: var(--border-radius-large);
   padding: 15px 25px 15px 25px;
-  color: var(--dark-color);
-  font-family: var(--title-font-family);
+  color: black;
   font-size: 30px;
-  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: 'Sniglet';
   font-weight: 700;  
   white-space: nowrap;
   }
   
+  
   .tips-custom-btn.tips-btn-bg {
   background: var(--white-color);
+  
   color: #ff80bf;
   border-color: transparent;
   transition: all .3s ease;
@@ -1261,7 +1264,7 @@ h3 {
 
 .card-name{
   font-family: 'Sniglet'; 
-  font-size: 40px; 
+  font-size: 30px; 
   font-style: normal; 
   font-variant: normal; 
   text-align: center;
@@ -1319,7 +1322,7 @@ h3 {
   font-variant: normal; 
   font-weight: 700; 
   position: absolute;
-  bottom: 60%;
+  bottom: 55%;
   right: 20%;
 }
 
@@ -1341,7 +1344,7 @@ h3 {
   font-weight: 700;
   font-size: 20px;
   position: absolute;
-  bottom: 50%;
+  bottom: 45%;
   right: 40%;
 }
 
@@ -1483,3 +1486,28 @@ h3 {
 .link-color{
   color:blue
 }
+
+.story-des{
+  text-align: center;
+
+}
+
+.story-desc-img{
+  display: block;
+  max-width:70%;
+ 
+  margin-left: auto;
+  margin-right: auto;
+  height:auto;
+}
+
+.story-desc-font{
+  font-family: 'Sniglet'; 
+  font-size: 20px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 600; 
+  text-align: center;
+}
+
+

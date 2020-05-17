@@ -26,6 +26,10 @@ import Threat from './Threat';
 import ParentMap from './Map'
 import Prediction from './Prediction';
 import ThreatCover from './ThreatCover'
+import GameDes from './GameDes'
+
+
+
 class App extends Component{
 
   render(){
@@ -55,6 +59,8 @@ class App extends Component{
                 <Route path='/map' exact component={ParentMap}/>
                 <Route path='/prediction' exact component={Prediction}/>
                 <Route path='/threatCover' exact component={ThreatCover}/>
+                <Route path='/gameDes' exact component={GameDes}/>
+
               </Switch>
             </ScrollToTop>
           </div>

@@ -25,7 +25,7 @@ function ParentCons() {
           <ScrollAnimation animateIn="fadeIn">
             <div className='mb-5, pb-5'>
 
-                <h1 className=' parentshead2 pt-5 mt-5 mb-5 unifont'>Conservation methods for animals</h1>
+                <h1 className=' parentshead2 mb-5 unifont'>Conservation methods for animals</h1>
 
                 <div className='row mt-5 mp-5'>
                     <div class="col-lg-7 col-md-7 col-12 mb-4 mt-3">
@@ -34,15 +34,14 @@ function ParentCons() {
                     </div>
                     
                     <div class="col-lg-5 col-md-5 col-12 mb-4"  >
-                        <h2 className='unifont'>What are the safety measures to save injured Koala?</h2>
-
-                        <p class="mt-3 mb-4 unifont">following management actions are undertaken to conserve the koala and their habitat</p>
+                        <h2 className='unifont'>Best methods to protect Mammals</h2>
 
                         <ul class="list-detail unifont">
-                            <li><span>Restrain your dog and keep it away from the koala.</span></li>
-                            <li><span>approach the koala from behind and place a washing basket over the koala.</span></li>
-                            <li><span>Put something heavy on top of the basket to stop the koala moving away and climbing a tree.</span></li>
-                            <li><span>Ensure the koala is left in a quiet and stresss free environment.</span></li>
+                            <li><span>Research and monitoring the presence of mammals.</span></li>
+                            <li><span>Fire management.</span></li>
+                            <li><span>Maintenance of the predator-proof fence.</span></li>
+                            <li><span>Control of predators and competitors.</span></li>
+                            <li><span>weed control.</span></li>
                         </ul> 
                     </div>
                 </div>
@@ -55,15 +54,13 @@ function ParentCons() {
                     </div>
                     
                     <div class="col-lg-5 col-md-5 col-12 mb-4"  >
-                        <h2 className='unifont'>What are the safety measures to save injured Wallaby?</h2>
-
-                        <p class="mt-3 mb-4 unifont">How to protect wallaby?</p>
+                        <h2 className='unifont'>Important methods to save birds</h2>
 
                         <ul class="list-detail unifont">
-                            <li><span>Protecting Proserpine rock-wallaby habitat through voluntary conservation agreements and council open space habitat.</span></li>
-                            <li><span>Controlling feral and domestic animals conducting weed control in Proserpine rock-wallaby habitat.</span></li>
-                            <li><span>Implementing grazing and fire management appropriate for the Proserpine rock-wallaby.</span></li>
-                            <li><span>Installing fences (eg. solid as opposed to mesh) that allow wallabies to escape from predators.</span></li>
+                            <li><span>We can plant as many trees as possible to provide natural shelter for birds.</span></li>
+                            <li><span>Be sure to extinguish the fire with water in the wild after using fire.</span></li>
+                            <li><span>You can make simple bird nests and put some nuts in nests and put them on tress.</span></li>
+                            <li><span>Do nothing, wait for them to leave quietly when birds come under the roof to avoid rain.</span></li>
                         </ul> 
                     </div>
                 </div>
@@ -76,16 +73,16 @@ function ParentCons() {
                     </div>
                     
                     <div class="col-lg-5 col-md-5 col-12 mb-4 "  >
-                        <h2 className='unifont'>What are the basic protective measures for wombat?</h2>
+                        <h2 className='unifont'>Effective methods to conserve fish</h2>
 
-                        <p class="mt-3 mb-4 unifont">ollowing management actions are undertaken to conserve the wombats and their habitat</p>
+                       
 
                         <ul class="list-detail unifont">
-                            <li><span>Research and monitoring of the wombats</span></li>
-                            <li><span>Fire management.</span></li>
-                            <li><span>Pmaintenance of the predator-proof fence.</span></li>
-                            <li><span>Control of predators and competitors.</span></li>
-                            <li><span>weed control..</span></li>
+                            <li><span>Overfishing should be avoided.</span></li>
+                            <li><span>Important to decrease in habitat loss and degradation.</span></li>
+                            <li><span>Be aware of the continuous climate change.</span></li>
+                            <li><span>Keep an eye on the increase in pollution and use effectively.</span></li>
+                            <li><span>Help to Increase in the population of Freshwater and marine fishes.</span></li>
                         </ul> 
                     </div>
                 </div>

@@ -124,15 +124,15 @@ class Story extends Component{
                    
                     
                 
-                 <div className="col-lg-10 col-md-10 col-12">
+                 <div className="col-lg-9 col-md-9 col-12">
                     <Breadcrumb >
                     <Breadcrumb.Item href="/" >Home</Breadcrumb.Item>
-                    <Breadcrumb.Item active>Story</Breadcrumb.Item>
+                    <Breadcrumb.Item active>Storytelling</Breadcrumb.Item>
                     </Breadcrumb>
                 </div>
                 <div className="col-lg-2 col-md-2 col-12 mt-2">
-                    <Link to='/story'>     
-                        <a class="btn btn-warning unifont" >How to play the game?</a>
+                    <Link to='/gameDes'>     
+                        <a class="btn btn-danger unifont text-white story-desc-font" >How to play the game?</a>
                     </Link>
                 </div>
                 </div>
@@ -200,7 +200,7 @@ class Story extends Component{
                                     <div className='mt-5'>
 
                                     </div>
-                                    <h1 className='unifont story-title mt-4'>let's tell a story! </h1>
+                                    <h1 className='unifont story-title mt-4'>Hey there time to make a story together! </h1>
                                 </div>)}
                             </div>
                         </div>
@@ -244,7 +244,7 @@ class Story extends Component{
                 </div>
 
                 <div className='button-refresh mb-5 pb-5'>
-                    <a className='btn btn-warning btn-lg mt-3 unifont' onClick = {() => this.onRefreshClicked()}>Play Again!</a>
+                    <a className='btn btn-warning btn-lg mt-3 unifont text-white story-desc-font' onClick = {() => this.onRefreshClicked()}>Know your cards!</a>
                 </div>
 
 

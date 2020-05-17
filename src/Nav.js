@@ -37,7 +37,7 @@ class Nav extends Component{
                             </Link>
 
                             <Link to='/story' >
-                                <li className="nav-link navItem">Story</li>
+                                <li className="nav-link navItem">Storytelling</li>
                             </Link> 
 
                             <Link to="/parent" >
