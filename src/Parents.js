@@ -214,7 +214,7 @@ class Parent extends Component {
                 </div>
 
                 <div class="col-lg-4 col-md-6 col-12" data-aos-delay="300">
-                      <h4 class="my-3">Copyright &copy; 2020 Black Panther</h4>
+                      <h3 class="my-3 text-white copy-font">Copyright &copy; 2020 Black Panther</h3>
                 </div>          
             </div>
             </div>

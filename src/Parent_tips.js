@@ -23,7 +23,7 @@ function ParentTips() {
         <ScrollAnimation animateIn="fadeIn">
             <div >
 
-              <h1 className=' parentshead pt-5'>10 Easy Things You Can Do to Save Endangered Species</h1>
+              <h1 className=' parentshead '>10 Easy Things You Can Do to Save Endangered Species</h1>
             
               
               <div  class="parent-image text-center zoom-in mt-5">
@@ -129,18 +129,18 @@ function ParentTips() {
         
       </div>
       <footer class="site-footer">
-          <div class="container">
-          <div class="row">
-               <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
-                    <h2 class="text-white" data-aos-delay="100"> Educate &amp; &nbsp;<strong>Encourage</strong> </h2>
-               </div>
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
+                      <h2 class="text-white" data-aos-delay="100"> Educate &amp; &nbsp;<strong>Encourage</strong> </h2>
+                </div>
 
-               <div class="col-lg-4 col-md-6 col-12" data-aos-delay="300">
-                    <h4 class="my-3">Copyright &copy; 2020 Black Panther</h4>
-               </div>          
-          </div>
-          </div>
-     </footer>
+                <div class="col-lg-4 col-md-6 col-12" data-aos-delay="300">
+                      <h3 class="my-3 text-white copy-font">Copyright &copy; 2020 Black Panther</h3>
+                </div>          
+            </div>
+            </div>
+        </footer>
       </div>
     );
   }

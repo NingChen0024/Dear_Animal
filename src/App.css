@@ -1113,7 +1113,7 @@ h3 {
 /* select buttom */
 
 .custom-select {
-  border: 2px solid rgb(235, 134, 41);
+  border: 2px solid #ffb32c;
   position: relative;
   font-family: Arial;
   display: inline-block;
@@ -1470,4 +1470,16 @@ h3 {
   font-variant: normal; 
   font-weight: 600; 
   text-align: center;
+}
+
+.copy-font{
+  font-size: 20px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 600; 
+  text-align: center;
+}
+
+.link-color{
+  color:blue
 }

@@ -39,11 +39,11 @@ class Threat extends Component {
                 <Breadcrumb.Item active>Threat</Breadcrumb.Item>
             </Breadcrumb>
         </div>
-        <div className="container mb-5 pb-5">
+        <div className="container">
             <ScrollAnimation animateIn="fadeIn">
                 <div className="row ">
                     <div className="col-lg-9 mx-auto col-md-10 col-12 mt-lg-5 text-center fade-up" >
-                        <h1 className='m-4 unifont pt-5'>WHAT ARE THE MAJOR THREATS TO FAUNA SPECIES?</h1>
+                        <h1 className='unifont'>WHAT ARE THE MAJOR THREATS TO FAUNA SPECIES?</h1>
                     </div>
                 </div>
             </ScrollAnimation> 
@@ -67,22 +67,22 @@ class Threat extends Component {
                 visit: 
             </p> 
             <p className='container unifont'> 
-                <a href='https://www.environment.gov.au/biodiversity/threatened/publications/threatened-species-strategy'>https://www.environment.gov.au/biodiversity/threatened/publications/threatened-species-strategy</a>
+                <a className='link-color' href='https://www.environment.gov.au/biodiversity/threatened/publications/threatened-species-strategy'>https://www.environment.gov.au/biodiversity/threatened/publications/threatened-species-strategy</a>
             </p> 
         </div>
         <footer class="site-footer">
-          <div class="container">
-          <div class="row">
-               <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
-                    <h2 class="text-white" data-aos-delay="100"> Educate &amp; &nbsp;<strong>Encourage</strong> </h2>
-               </div>
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
+                      <h2 class="text-white" data-aos-delay="100"> Educate &amp; &nbsp;<strong>Encourage</strong> </h2>
+                </div>
 
-               <div class="col-lg-4 col-md-6 col-12" data-aos-delay="300">
-                    <h4 class="my-3">Copyright &copy; 2020 Black Panther</h4>
-               </div>          
-          </div>
-          </div>
-      </footer>
+                <div class="col-lg-4 col-md-6 col-12" data-aos-delay="300">
+                      <h3 class="my-3 text-white copy-font">Copyright &copy; 2020 Black Panther</h3>
+                </div>          
+            </div>
+            </div>
+        </footer>
       </div>  
     )}
   }
