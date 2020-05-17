@@ -40,7 +40,7 @@ class Game extends Component{
                 
                         <div class="col-lg-5 col-md-5 col-12">
                             <div >
-                                <h1 className=' kidtipshead pt-5  '>Let's play a game</h1>
+                                <h1 className=' kidtipshead pt-5  '>Let's solve a puzzle</h1>
                             </div>
                         </div>
 

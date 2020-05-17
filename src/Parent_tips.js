@@ -24,8 +24,7 @@ function ParentTips() {
             <div >
 
               <h1 className=' parentshead '>10 Easy Things You Can Do to Save Endangered Species</h1>
-            
-              
+
               <div  class="parent-image text-center zoom-in mt-5">
                 <img src={ require("./images/project/parents_tips.jpg")} class="img-fluid" alt="interview process"/>
               </div>
