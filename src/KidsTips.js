@@ -49,8 +49,9 @@ class KidsTips extends Component {
 
     
             <div className='container'>
+              <div className='row'>
               <div className='col-lg-4 col-md-4 col-12'>
-              <img src={ require('./images/tips/3.jpg')} className="d-block w-100"/>
+              
               </div>
               <div className='col-lg-4 col-md-4 col-12'>
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -89,7 +90,8 @@ class KidsTips extends Component {
               </div>
             </div>
             <div className='col-lg-4 col-md-4 col-12'>
-            <img src={ require('./images/tips/3.jpg')} className="d-block w-100"/>
+         
+            </div>
             </div>
           </div>
 
