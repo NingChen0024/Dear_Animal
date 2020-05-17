@@ -246,6 +246,11 @@ color: var(--white-color);
 .section-padding {
 padding: 8em 0;
 }
+
+.section-padding2 {
+  padding: 30em 0;
+  }
+
 .section-padding-half {
 padding: 4em 0;
 }
@@ -391,7 +396,7 @@ overflow: hidden;
 }
 
 .hero-bg {
-background: linear-gradient(170deg, #e699ff 64%, var(--white-color) 30%);
+background: linear-gradient(170deg, #e699ff 40%, var(--white-color) 64%);
 }
 
 .hero-image {
@@ -399,6 +404,40 @@ position: relative;
 top: 2em;
 }
 
+.hero2 {
+  position: relative;
+  padding: 5em 0;
+  overflow: hidden;
+  }
+
+.hero-bg2 {
+  background: linear-gradient(-170deg, var(--white-color) 30%, #ffb366
+  64% );
+}
+
+
+.hero3 {
+  position: relative;
+  padding: 5em 0;
+  overflow: hidden;
+  }
+
+.hero-bg3 {
+  background: linear-gradient(170deg,  #ffb366 30%, var(--white-color)
+  64% );
+}
+
+.hero4 {
+  position: relative;
+  padding: 10em 0;
+  overflow: hidden;
+  }
+
+.hero-bg4 {
+  background: linear-gradient(-170deg,  var(--white-color) 30%,  #ff80bf
+  64% );
+}
+  
 
 
 /*---------------------------------------
@@ -802,7 +841,7 @@ h3 {
 
 .tipshead{
   font-family: 'Sniglet'; 
-  font-size: 50px; 
+  font-size: 30px; 
   font-style: normal; 
   font-variant: normal; 
   font-weight: 700; 
@@ -1011,7 +1050,7 @@ h3 {
 
   .wombatSongImg{
     display: block;
-    max-width:60%;
+    max-width:70%;
     margin-left: auto;
     margin-right: auto;
     height:auto;
@@ -1254,7 +1293,7 @@ h3 {
 
 .tips-font{
   font-family: 'Sniglet'; 
-  font-size: 10px; 
+  font-size: 20px; 
   font-style: normal; 
   font-variant: normal; 
   font-weight: 400; 

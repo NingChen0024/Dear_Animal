@@ -22,16 +22,24 @@ class ParentMap extends Component {
             </div>
 
             
-            <h2 className=' parentshead pt-5  mb-5'>Lets explore the endangered animals near You !!</h2>
+            <h2 className=' parentshead   mb-5'>Lets explore the endangered animals near You !!</h2>
             
             
 
             <div className='row mb-5'>
                 <div className="col-lg-1 col-md-1 col-12">
-                
+                    
                 </div>
-                <div className="col-lg-7 col-md-7 col-12 ">
-                    <button className="btn btn-primary " onClick={() => window.location.reload(false)}>Show the map!</button>
+                <div className="col-lg-5 col-md-5 col-12 mb-5 unifont">
+                    <div className='row'>
+                        <h5 className='unifont'>Click&nbsp;</h5>
+                        <button className="btn btn-warning" onClick={() => window.location.reload(false)}>show map</button>
+                        <h5 className='unifont'> &nbsp;then entering your pincode</h5>
+                    </div>
+                </div>
+                <div className="col-lg-2 col-md-2 col-12 ">
+                    
+                    {/* <button className="btn btn-primary " onClick={() => window.location.reload(false)}>Show map!</button> */}
                 </div>
                 <div className="col-lg-4 col-md-4 col-12">
                
@@ -42,7 +50,7 @@ class ParentMap extends Component {
                             
                         </div>
                         
-                        <button type="submit" className="btn btn-primary mb-2 " >Search</button>
+                        <button type="submit" className="btn btn-warning mb-2 " >Search</button>
                     </form>
                 </div>
                 

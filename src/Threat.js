@@ -17,7 +17,7 @@ class Threat extends Component {
         var options = {
             hideTabs: true,
             width:'100%',
-            height:'400px',
+            height:'600px',
             autoflow:'auto',
             onFirstInteractive: function () { 
               
@@ -36,7 +36,7 @@ class Threat extends Component {
                 <Breadcrumb.Item>
                     <Link to='/parent'>For Parents</Link>
                 </Breadcrumb.Item>
-                <Breadcrumb.Item active>Habitat</Breadcrumb.Item>
+                <Breadcrumb.Item active>Threat</Breadcrumb.Item>
             </Breadcrumb>
         </div>
         <div className="container mb-5 pb-5">
@@ -56,7 +56,7 @@ class Threat extends Component {
           </div>   
         </div>  
         <div className='container mb-5'>
-            <p className ='font-weight-bold m-4'>
+            <p className ='font-weight-bold m-4 unifont'>
                 According to the graph, inappropriate fire regimes are having the maximum 
                 effect on the animals, followed by a clearing of vegetation, feral pigs and 
                 urban development these are the major threat to the life of fauna. These are 
@@ -66,7 +66,7 @@ class Threat extends Component {
                 more about the strategies please 
                 visit: 
             </p> 
-            <p className='container'> 
+            <p className='container unifont'> 
                 <a href='https://www.environment.gov.au/biodiversity/threatened/publications/threatened-species-strategy'>https://www.environment.gov.au/biodiversity/threatened/publications/threatened-species-strategy</a>
             </p> 
         </div>

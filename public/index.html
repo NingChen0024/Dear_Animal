@@ -56,14 +56,16 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/node_modules/jquery/dist/jquery.js"></script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAKe8MrApmoUMAB4eACxl8_-UJCdzhCIw&callback=initMap">
-    </script>
+  
     <!-- <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script> -->
     <script src="js/smoothscroll.js"></script>
     <script src="js/custom.js"></script>
     
-    <script src="./results.js"></script>
+    <script src="js/results.js"></script>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAKe8MrApmoUMAB4eACxl8_-UJCdzhCIw&callback=initMap">
+    </script>
 
     <script>
       function initMap() {
@@ -106,10 +108,10 @@
                 // name.push(animalData[i]['Vernacular name - original'])
                 var name = animalData[postCode][i]['Vernacular name - original'];
                 var address = animalData[postCode][i]['address'];
-                console.log(window.name, address);
-                marker = new google.maps.Marker({ position: { title: window.name + address, lat: parseFloat(animalData[postCode][i]['Latitude']), lng: parseFloat(animalData[postCode][i]['Longitude']) }, map: map });
+                console.log(name, address);
+                marker = new google.maps.Marker({ position: { title: name + address, lat: parseFloat(animalData[postCode][i]['Latitude']), lng: parseFloat(animalData[postCode][i]['Longitude']) }, map: map, icon: 'js/custom.png' });
 
-                content = '<h3>' + window.name + '</h3><p>' + address + '</p><a href="https://www.google.com/maps/dir//'+address+'" target="_blank">Directions</a>';
+                content = '<h3>' + name + '</h3><p>' + address + '</p><a href="https://www.google.com/maps/dir//'+address+'" target="_blank">Directions</a>';
 
 
                 google.maps.event.addListener(marker, 'click', (function (marker, content, infowindow) {

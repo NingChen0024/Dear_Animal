@@ -46,7 +46,7 @@ class Main extends Component{
 
 
      
-     <section class="about section-padding pb-0 about-background" id="tips">
+     <section class="about section-padding hero2 hero-bg2 " id="tips">
           <div class="container">
                <div class="row">
 
@@ -73,9 +73,36 @@ class Main extends Component{
           </div>
      </section>
 
+    
+     <section class="testimonial section-padding2 hero3 hero-bg3" id='last'>
+          <div class="container">
+               <div class="row ">
 
-  
-     <section class="project section-padding fade-up" id="acts">
+                    <div class="col-lg-6 col-md-5 col-12">
+                    
+                        <div class="contact-image" data-aos="fade-up">
+
+                          <img src={ require("./images/Wombat_cartoon.gif")} class="img-fluid wombatSongImg mt-5" alt="website"/>
+                         
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-7 col-12 pt-3 mt-5">
+                         <h1 class="mb-4 unifont pt-5" data-aos="fade-up">Let's create a <strong>lovely</strong> story !</h1>
+                         {/* <Link to='/story'>     
+                              <a class="btn btn-warning btn-lg mt-5 unifont text-center"  data-aos-delay="100">Let's go! </a>
+                         </Link> */}
+
+                         <Link to='/story'>     
+                              <a class="tips-custom-btn tips-btn-bg btn unifont" data-aos="fade-up">Let's go!</a>
+                         </Link>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+     <section class=" section-padding fade-up hero4 hero-bg4" id="acts">
           <h2 class="mb-5 text-center unifont" data-aos="fade-up">
                Please take a look through all<strong> amazing activities</strong>
           </h2>
@@ -145,32 +172,6 @@ class Main extends Component{
                     </div>
           
           </section>
-
-
-    
-     <section class="testimonial section-padding" id='last'>
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-lg-6 col-md-5 col-12">
-                    
-                        <div class="contact-image" data-aos="fade-up">
-
-                          <img src={ require("./images/Wombat_cartoon.gif")} class="img-fluid wombatSongImg" alt="website"/>
-                         
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-md-7 col-12 pt-3">
-                         <h2 class="mb-4 unifont" data-aos="fade-up">Let's create a <strong>lovely</strong> story !</h2>
-                         <Link to='/story'>     
-                              <a class="btn btn-warning btn-lg mt-3 unifont text-center"  data-aos-delay="100">Let's go! </a>
-                         </Link>
-                    </div>
-
-               </div>
-          </div>
-     </section>
 
 
      <footer class="site-footer">

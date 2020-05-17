@@ -17,7 +17,7 @@ class Prediction extends Component {
         var options = {
             hideTabs: true,
             width:'100%',
-            height:'400px',
+            height:'600px',
             autoflow:'auto',
             onFirstInteractive: function () { 
               

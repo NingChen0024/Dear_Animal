@@ -41,8 +41,8 @@ function ParentRes() {
 
             <p className ='font-weight-bold m-4 parentText Sniglet'>
                 1. Wear a safety vest with reflective bands to increase your visibility. 
-                The wearing of a vest alsoallows the public and authorities to realise that
-                you are acting in an official capacity. This isparticularly important if you are 
+                The wearing of a vest also allows the public and authorities to realise that
+                you are acting in an official capacity. This is particularly important if you are 
                 carrying a rifle or must euthanase an animal in some way. It also makes it easier 
                 for other rescuers to find you.
             </p>  

@@ -38,7 +38,7 @@ class Parent extends Component {
         </div>
 
 
-        <div className='container mb-5'>
+        <div className='mb-5'>
           <div className='row mb-3'>
 
             <div className='detail-container col-lg-4 col-md-4 col-12'>
@@ -59,7 +59,7 @@ class Parent extends Component {
               <Link to='/prediction'>
               <img src={require('./images/parents/prediction.jpg')} class="img-fluid" />
               </Link>
-              <h1 className="top-center-conservation  unifont">Prediction</h1>         
+              <h1 className="top-center-conservation text-white unifont">Prediction</h1>         
             </div>
 
           </div>
@@ -80,7 +80,7 @@ class Parent extends Component {
               <Link to='/parentCons'>
                 <img src={require('./images/parents/conservation.jpg')} class="img-fluid" />
               </Link>
-              <h1 className="top-center-conservation text-white unifont">conservation</h1>
+              <h1 className="top-center-conservation text-white unifont">Conservation</h1>
           
             </div>
 
@@ -88,7 +88,7 @@ class Parent extends Component {
               <Link to='/parentRescure'>
                 <img src={require('./images/parents/measures.jpg')} class="img-fluid" />
               </Link>
-              <h1 className="top-center-conservation text-white unifont">measures</h1>
+              <h1 className="top-center-conservation text-white unifont">Measures</h1>
             
             </div>
 
