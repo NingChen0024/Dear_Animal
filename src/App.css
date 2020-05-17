@@ -1254,10 +1254,10 @@ h3 {
 
 .tips-font{
   font-family: 'Sniglet'; 
-  font-size: 30px; 
+  font-size: 10px; 
   font-style: normal; 
   font-variant: normal; 
-  font-weight: 700; 
+  font-weight: 400; 
   color:  #ff9933;
   text-align: center;
 }
