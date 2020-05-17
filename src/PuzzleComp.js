@@ -21,7 +21,8 @@ class PuzzleComp extends Component{
     openPopupbox() {
         const content = (
           <div>
-            <p className='popupfont'>Congratulations! You win!</p>
+            <p className='popupfont'>Congratulations! </p>
+            <p className='popupfont story-des'>You win!</p>
           </div>
         )
         PopupboxManager.open({ content })
