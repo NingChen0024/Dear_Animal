@@ -47,74 +47,47 @@ class KidsTips extends Component {
                 </div>
                </ScrollAnimation>
 
-             {/* <div class="row mt-5 mb-3">
-                <div class="col-lg-2 col-md-2 col-12">                  
-                </div>
+    
+            <div className='container'>
+              <div className='col-lg-4 col-md-4'></div>
+              <div className='col-lg-4 col-md-4'>
+              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
 
-                <div class="col-lg-10 col-md-10 col-12">
-                    <div >
-
-                        <div className='text-center' >
-                            <div >
-                                    <ReactPlayer
-                                        url="https://www.youtube.com/watch?v=7k8CcAU2Lt0"
-                                    />
-                            </div>
-                        </div>
-                    
+                <div class="carousel-item active">
+                    <img src={ require('./images/tips/3.jpg')} className="d-block w-100"/>
+                    <div class="carousel-caption d-none d-md-block">
+                      <div className='tips-style unifont'>
+                        <h1 className='tips-font'>Don't think that cute koalas and wombats love snacks as much as you do. If they eat something that is not with them, they will get sick!</h1>            
+                      </div>      
                     </div>
-                </div>
-            </div> */}
-
-
-            {/* <Carousel>
-               {
-                 this.state.pid.map(tip => (
-                   <Carousel.Item>
-                   <img src={ require("./images/kidtipsimg.png")} class="kidtipsImg" alt="office"/>
-                   <Carousel.Caption>
-                     <h1 className='kidtipsfont'>{tip.content}</h1>
-                   </Carousel.Caption>
-                 </Carousel.Item>
-                 ))
-               }
-             </Carousel> */}
-
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner">
-
-              <div class="carousel-item active">
-                  <img src={ require('./images/tips/3.jpg')} className="d-block w-100"/>
-                  <div class="carousel-caption d-none d-md-block">
-                    <div className='tips-style unifont'>
-                      <h1 className='tips-font'>Don't think that cute koalas and wombats love snacks as much as you do. If they eat something that is not with them, they will get sick!</h1>            
-                    </div>      
                   </div>
-                </div>
 
-             {
-              this.state.pid.map(tip => (
-                <div class="carousel-item ">
-                  <img src={ require('./images/tips/' + tip.kid + '.jpg')} className="d-block w-100"/>
-                  <div class="carousel-caption d-none d-md-block">
-                    <div className='tips-style unifont'>
-                      <h1 className='tips-font'>{tip.content}</h1>            
-                    </div>      
+              {
+                this.state.pid.map(tip => (
+                  <div class="carousel-item ">
+                    <img src={ require('./images/tips/' + tip.kid + '.jpg')} className="d-block w-100"/>
+                    <div class="carousel-caption d-none d-md-block">
+                      <div className='tips-style unifont'>
+                        <h1 className='tips-font'>{tip.content}</h1>            
+                      </div>      
+                    </div>
                   </div>
+                  ))
+              }
                 </div>
-                ))
-             }
-              </div>
-              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+            </div>
+            </div>
+            <div className='col-lg-4 col-md-4'></div>
           </div>
-
 
 
            </div>
