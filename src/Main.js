@@ -52,10 +52,10 @@ class Main extends Component{
 
                     <div class="col-lg-7 mx-auto col-md-10 col-12 ">
                          <div class="about-info">
-                              <h2 class="mb-4 unifont" data-aos="fade-up">We know you want to help your <strong>animals friends !</strong></h2>
+                              <h2 class=" unifont" data-aos="fade-up">We know you want to help your <strong>animals friends !</strong></h2>
                               <div class="row">
-                                   <p class="mb-3 col-lg-8 col-md-8 kids-tip-font unifont" data-aos="fade-up">Several ways to help your animal friends!</p>
-                                   <div className=' mt-3 col-md-4 col-lg-4'>
+                                   <p class=" col-lg-8 col-md-8 kids-tip-font unifont" data-aos="fade-up">Several ways to help your animal friends!</p>
+                                   <div className='pt-5 col-md-4 col-lg-4'>
                                         <Link to='/kidsTips'>     
                                              <a class="tips-custom-btn tips-btn-bg btn unifont" data-aos="fade-up">Show Me!</a>
                                         </Link>
@@ -64,7 +64,7 @@ class Main extends Component{
                          </div>
                          <div class="about-image" data-aos="fade-up" data-aos-delay="200">
 
-                              <img src={ require("./images/kangaroo_cartoon.png")} class="img-fluid mb-5" alt="office"/>
+                              <img src={ require("./images/kangaroo_cartoon.png")} class="img-fluid main-img" alt="office"/>
                          
                         </div>
                     </div>
@@ -88,7 +88,7 @@ class Main extends Component{
                     </div>
 
                     <div class="col-lg-6 col-md-7 col-12 pt-3 mt-5">
-                         <h1 class="mb-4 unifont pt-5" data-aos="fade-up">Let's create a <strong>lovely</strong> story !</h1>
+                         <h1 class="mb-4 unifont " data-aos="fade-up">Let's create a <strong>lovely</strong> story !</h1>
                          {/* <Link to='/story'>     
                               <a class="btn btn-warning btn-lg mt-5 unifont text-center"  data-aos-delay="100">Let's go! </a>
                          </Link> */}

@@ -56,6 +56,9 @@ class Game extends Component{
 
                         <div class="col-lg-2 col-md-2 col-12">
                             <div >
+                                <div>
+                                    <h2 className='unifont'>{data.aniname}</h2>
+                                </div>
                                 <div className='text-center puzzle-game-pic' >
                                     <img src={require('./images/animal_list/' + data.aniname + '_game.jpeg')} class="img-fluid" />
                                 </div> 

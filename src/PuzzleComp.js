@@ -56,7 +56,7 @@ class PuzzleComp extends Component{
         //    12 9 8 7 2 1
 
             <div>
-                <Puzzle image= {imageFile} className='gamebackground' onDone={this.openPopupbox}/>
+                <Puzzle image= {imageFile} className='gamebackground ml-3' onDone={this.openPopupbox}/>
                 <PopupboxContainer />
                
             </div>
