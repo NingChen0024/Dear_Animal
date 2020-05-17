@@ -59,7 +59,7 @@ class Parent extends Component {
               <Link to='/prediction'>
               <img src={require('./images/parents/prediction.jpg')} class="img-fluid" />
               </Link>
-              <h1 className="top-center-conservation text-white unifont">Prediction</h1>         
+              <h1 className="top-center-conservation text-white unifont">Forecasting</h1>         
             </div>
 
           </div>

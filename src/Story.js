@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import StarRatings from 'react-star-ratings';
 import ReactLoading from 'react-loading'
 import Breadcrumb from 'react-bootstrap/Breadcrumb'
+import {Link} from 'react-router-dom'
 
 var data = [['Blue-billed Duck', 
             'Regent Honeyeater', 
@@ -118,25 +119,63 @@ class Story extends Component{
         return(
 
             <div>
-                 <div>
+                <div className='container'>
+                <div className='row'>
+                   
+                    
+                
+                 <div className="col-lg-10 col-md-10 col-12">
                     <Breadcrumb >
                     <Breadcrumb.Item href="/" >Home</Breadcrumb.Item>
                     <Breadcrumb.Item active>Story</Breadcrumb.Item>
                     </Breadcrumb>
                 </div>
-                <h1 className='parentshead pt-5 pr-5'>let's tell a story</h1>
+                <div className="col-lg-2 col-md-2 col-12 mt-2">
+                    <Link to='/story'>     
+                        <a class="btn btn-warning unifont" >How to play the game?</a>
+                    </Link>
+                </div>
+                </div>
+                {/* <h1 className='parentshead pt-5 pr-5'>let's tell a story</h1> */}
 
+                </div>
                 <div className='container'>
+                {/* <div className='row'>
+                    <div className="col-lg-9 col-md-9 col-12"></div>
+                    <Link to='/story'>     
+                        <a class="btn btn-warning unifont" >How to play the game?</a>
+                    </Link>
+                </div> */}
                     <div className='row'>
-                        <div className="col-lg-4 col-md-4 col-12 mb-4 mt-5 pt-5">
+                    <div className="col-lg-4 col-md-4 col-12 mb-4">
                             <div className='button-refresh'>
-                                <p className='timer-number m-5'>{this.state.time}</p>
-                                <button onClick={this.startTimer} className='btn btn-success mr-3 unifont'>Start</button>
-                                <button onClick={this.pauseTimer} className='btn btn-danger mr-3 unifont'>Pause</button>
-                                <button onClick={this.stopTimer} className='btn btn-primary mr-3 unifont'>Stop</button>
+                                            
+                                <div>
+                                    {
+                                        {
+                                        'head': <div>
+                                                <img src={ require("./images/son.png")} className="img-fluid coin-img2" />
+                                                <p className='coin-tossing-font'>Kid's turn</p>
+                                            </div>,
+                                        'tail': <div>
+                                                <img src={ require("./images/father.png")} className="img-fluid coin-img" />
+                                                <p className='coin-tossing-font'>Parent's turn</p>
+                                            </div>,
+                                        'pause':<div className='row mb-5 mt-5'>
+                                                <div class="col-lg-5 col-md-5 col-5">
+                                                </div>
+                                                <div class="col-lg-5 col-md-5 col-5 mb-5 pb-5 mt-5 pt-2">
+                                                <ReactLoading type={"spinningBubbles"} color={'orange'} height={'40%'} width={'40%'} className='button-refresh'/>
+                                                </div>
+                                            </div>
+                                        }[this.state.coin]
+                                    }
+                                </div>
+                                <button onClick={this.toss} className='btn btn-info unifont'>toss a coin</button>
                                 
-                            </div>                       
+                            </div>
                         </div>
+
                         
                         <div className="col-lg-4 col-md-4 col-12 mb-4 mt-5 pt-5">
                             <div className='mt-3 '>
@@ -158,38 +197,24 @@ class Story extends Component{
                                 </div>
                                 ):(
                                 <div>
+                                    <div className='mt-5'>
+
+                                    </div>
+                                    <h1 className='unifont story-title mt-4'>let's tell a story! </h1>
                                 </div>)}
                             </div>
                         </div>
 
-                        <div className="col-lg-4 col-md-4 col-12 mb-4">
+                        <div className="col-lg-4 col-md-4 col-12 mb-4 mt-5 pt-5">
                             <div className='button-refresh'>
-                                            
-                                <div>
-                                    {
-                                        {
-                                        'head': <div>
-                                                <img src={ require("./images/son.png")} className="img-fluid coin-img" />
-                                                <p className='coin-tossing-font'>Kid's turn</p>
-                                            </div>,
-                                        'tail': <div>
-                                                <img src={ require("./images/father.png")} className="img-fluid coin-img" />
-                                                <p className='coin-tossing-font'>Parent's turn</p>
-                                            </div>,
-                                        'pause':<div className='row mb-5 mt-5'>
-                                                <div class="col-lg-5 col-md-5 col-5">
-                                                </div>
-                                                <div class="col-lg-5 col-md-5 col-5 mb-5 pb-5 mt-5 pt-2">
-                                                <ReactLoading type={"spinningBubbles"} color={'orange'} height={'40%'} width={'40%'} className='button-refresh'/>
-                                                </div>
-                                            </div>
-                                        }[this.state.coin]
-                                    }
-                                </div>
-                                <button onClick={this.toss} className='btn btn-info unifont'>toss a coin</button>
+                                <p className='timer-number m-5'>{this.state.time}</p>
+                                <button onClick={this.startTimer} className='btn btn-success mr-3 unifont'>Start</button>
+                                <button onClick={this.pauseTimer} className='btn btn-danger mr-3 unifont'>Pause</button>
+                                <button onClick={this.stopTimer} className='btn btn-primary mr-3 unifont'>Stop</button>
                                 
-                            </div>
+                            </div>                       
                         </div>
+                  
                     </div>
                 </div>
 

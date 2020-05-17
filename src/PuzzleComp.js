@@ -21,7 +21,7 @@ class PuzzleComp extends Component{
     openPopupbox() {
         const content = (
           <div>
-            <p className='popupfont'>Congrats! You win!</p>
+            <p className='popupfont'>Congratulations! You win!</p>
           </div>
         )
         PopupboxManager.open({ content })
@@ -57,15 +57,6 @@ class PuzzleComp extends Component{
 
             <div>
                 <Puzzle image= {imageFile} className='gamebackground' onDone={this.openPopupbox}/>
-                {/* <Puzzle image= {imageFile} className='gamebackground'/> */}
-                 {/* <Modal show={show} onHide={handleClose}>                    
-                    <Modal.Body>Congrets! You Win!</Modal.Body>
-                    <Modal.Footer>
-                        <Button variant="secondary" onClick={handleClose}>
-                                Close
-                        </Button>
-                    </Modal.Footer>
-                </Modal> */}
                 <PopupboxContainer />
                
             </div>

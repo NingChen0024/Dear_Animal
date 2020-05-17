@@ -94,7 +94,7 @@ class Main extends Component{
                          </Link> */}
 
                          <Link to='/story'>     
-                              <a class="tips-custom-btn tips-btn-bg btn unifont" data-aos="fade-up">Let's go!</a>
+                              <a class="tips-custom-btn tips-btn-bg btn unifont button-refresh" data-aos="fade-up">Let's go!</a>
                          </Link>
                     </div>
 

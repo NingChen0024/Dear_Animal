@@ -31,10 +31,10 @@ class ParentMap extends Component {
                     
                 </div>
                 <div className="col-lg-5 col-md-5 col-12 mb-5 unifont">
-                    <div className='row'>
-                        <h5 className='unifont'>Click&nbsp;</h5>
-                        <button className="btn btn-warning" onClick={() => window.location.reload(false)}>show map</button>
-                        <h5 className='unifont'> &nbsp;then entering your pincode</h5>
+                    <div className='row ml-4'>
+                        <h5 className='unifont mt-1'>Click&nbsp;</h5>
+                        <button className="btn btn-warning mb-1" onClick={() => window.location.reload(false)}>show map</button>
+                        <h5 className='unifont mt-1'> &nbsp;then entering your pincode</h5>
                     </div>
                 </div>
                 <div className="col-lg-2 col-md-2 col-12 ">
@@ -50,7 +50,7 @@ class ParentMap extends Component {
                             
                         </div>
                         
-                        <button type="submit" className="btn btn-warning mb-2 " >Search</button>
+                        <button type="submit" className="btn btn-warning mb-2 unifont" >Search</button>
                     </form>
                 </div>
                 

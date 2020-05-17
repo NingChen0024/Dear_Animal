@@ -37,14 +37,14 @@ class ThreatCover extends Component {
                 <Breadcrumb.Item>
                     <Link to='/parent'>For Parents</Link>
                 </Breadcrumb.Item>
-                <Breadcrumb.Item active>Threat</Breadcrumb.Item>
+                <Breadcrumb.Item active>Habitat</Breadcrumb.Item>
             </Breadcrumb>
         </div>
-        <div className="container mb-5 pb-5">
+        <div className="container mb-5 ">
             <ScrollAnimation animateIn="fadeIn">
                 <div className="row ">
                     <div className="col-lg-9 mx-auto col-md-10 col-12 mt-lg-5 text-center fade-up" >
-                        <h1 className=' unifont pt-5'>WHAT ARE THE MAJOR THREATS TO FAUNA SPECIES?</h1>
+                        <h1 className=' unifont'>LET'S KNOW MORE ABOUT THESE ENDANGERED ANIMALS AND THEIR HABITAT</h1>
                     </div>
                 </div>
             </ScrollAnimation> 
