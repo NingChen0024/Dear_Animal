@@ -48,12 +48,12 @@ class KidsTips extends Component {
                </ScrollAnimation>
 
     
-            <div className='container'>
+            <div className='container mb-5'>
               <div className='row'>
-              <div className='col-lg-3 col-md-3 col-12'>
+              <div className='col-lg-2 col-md-2 col-12'>
               
               </div>
-              <div className='col-lg-6 col-md-6 col-12'>
+              <div className='col-lg-8 col-md-8 col-12'>
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                   <div class="carousel-inner">
 
@@ -89,7 +89,7 @@ class KidsTips extends Component {
                   </a>
               </div>
             </div>
-            <div className='col-lg-3 col-md-3 col-12'>
+            <div className='col-lg-2 col-md-2 col-12'>
          
             </div>
             </div>
