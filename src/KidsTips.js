@@ -50,10 +50,10 @@ class KidsTips extends Component {
     
             <div className='container'>
               <div className='row'>
-              <div className='col-lg-4 col-md-4 col-12'>
+              <div className='col-lg-3 col-md-3 col-12'>
               
               </div>
-              <div className='col-lg-4 col-md-4 col-12'>
+              <div className='col-lg-6 col-md-6 col-12'>
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                   <div class="carousel-inner">
 
@@ -89,7 +89,7 @@ class KidsTips extends Component {
                   </a>
               </div>
             </div>
-            <div className='col-lg-4 col-md-4 col-12'>
+            <div className='col-lg-3 col-md-3 col-12'>
          
             </div>
             </div>
