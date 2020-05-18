@@ -46,9 +46,20 @@ class Game extends Component{
                                 <div>
                                     <p className='game-desc'>{data.gamedesc}</p>
                                 </div>
-                                <Link to='/animalList'>     
-                                    <a class="btn btn-warning btn-lg mt-3 unifont game-desc-btn"  data-aos-delay="100">Let's go back</a>
-                                </Link> 
+
+
+                                <div className='row'>
+                                    <div className='col-lg-4 col-md-4'></div>
+                                    <div className='col-lg-4 col-md-4'>
+                                        <Link to='/animalList'>     
+                                            <a class="btn btn-warning btn-lg mt-3 unifont game-desc-btn"  data-aos-delay="100">Let's go back</a>
+                                        </Link> 
+                                    </div>
+                                    <div className='col-lg-4 col-md-4'></div>
+
+                                </div>
+
+
                             </div>
                         </div>
 
