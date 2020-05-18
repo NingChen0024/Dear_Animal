@@ -15,7 +15,7 @@ class ParentMap extends Component {
                 <Breadcrumb className='Breadcrumb-background'>
                     <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
                     <Breadcrumb.Item>
-                        <Link to='/parent'>For Parents</Link>
+                        <Link to='/parent'>Parents</Link>
                     </Breadcrumb.Item>
                     <Breadcrumb.Item active>Map</Breadcrumb.Item>
                 </Breadcrumb>
@@ -34,7 +34,7 @@ class ParentMap extends Component {
                     <div className='row ml-4'>
                         <h5 className='unifont mt-1'>Click&nbsp;</h5>
                         <button className="btn btn-warning mb-1" onClick={() => window.location.reload(false)}>show map</button>
-                        <h5 className='unifont mt-1'> &nbsp;then entering your pincode</h5>
+                        <h5 className='unifont mt-1'> &nbsp;then enter your pincode</h5>
                     </div>
                 </div>
                 <div className="col-lg-2 col-md-2 col-12 ">

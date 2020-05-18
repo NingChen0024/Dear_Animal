@@ -23,7 +23,7 @@ class Parent extends Component {
           <nav aria-label="breadcrumb" className='top-left'>
             <ol class="breadcrumb secondary-color">
               <li class="breadcrumb-item"><a class="white-text white-font" href="/">Home</a></li>
-              <li class="breadcrumb-item active "><a class="white-text white-font" >For Parents</a></li>
+              <li class="breadcrumb-item active "><a class="white-text white-font" >Parents</a></li>
             </ol>
           </nav>
           <img src={require('./images/parents/cover.jpg')} class="img-fluid" />

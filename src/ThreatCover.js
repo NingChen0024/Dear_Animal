@@ -35,7 +35,7 @@ class ThreatCover extends Component {
             <Breadcrumb className='Breadcrumb-background'>
                 <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
                 <Breadcrumb.Item>
-                    <Link to='/parent'>For Parents</Link>
+                    <Link to='/parent'>Parents</Link>
                 </Breadcrumb.Item>
                 <Breadcrumb.Item active>Habitat</Breadcrumb.Item>
             </Breadcrumb>
