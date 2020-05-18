@@ -74,7 +74,7 @@ class Game extends Component{
                         </div>
 
                         <div class="col-lg-2 col-md-2 col-12">
-                            <div >
+                            <div className='mt-5 pt-5'>
                                 <div>
                                     <h2 className='unifont'>{data.aniname}</h2>
                                 </div>
