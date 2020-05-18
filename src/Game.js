@@ -43,8 +43,11 @@ class Game extends Component{
                                 <h1 className=' kidtipshead pt-5  '>Let's solve a puzzle</h1>
                             </div>
                             <div>
-                                <p>{data.gamedesc}</p>
+                                <p className='game-desc'>{data.gamedesc}</p>
                             </div>
+                            <Link to='/animalList'>     
+                                <a class="btn btn-warning btn-lg mt-3 unifont text-center"  data-aos-delay="100">Let's go back</a>
+                            </Link> 
                         </div>
 
                         <div class="col-lg-4 col-md-4 col-12">
@@ -66,8 +69,8 @@ class Game extends Component{
                                     <img src={require('./images/animal_list/' + data.aniname + '_game.jpeg')} class="img-fluid" />
                                 </div> 
 
-                                 <Link to='/animalList'>     
-                                    <a class="btn btn-warning btn-lg mt-3 unifont text-center"  data-aos-delay="100">Let's go back</a>
+                                 <Link to='/kidsTips'>     
+                                    <a class="btn btn-warning btn-lg mt-3 unifont text-center"  data-aos-delay="100">Let's get tips</a>
                                 </Link>                   
                             </div>
                         </div>
