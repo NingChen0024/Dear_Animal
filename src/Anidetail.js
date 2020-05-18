@@ -65,8 +65,9 @@ class Anidetail extends Component{
 
                 <div className='container mb-5'>
                     <div className='row'>
+
                         <div className="col-lg-6 col-md-6 col-12 ">
-                        <img src={require('./images/animal_list/' + data.aniname + '_detail.jpeg')} class="img-fluid" />
+                            <img src={require('./images/animal_list/' + data.aniname + '_detail.jpeg')} class="img-fluid" />
                         </div>
 
                         <div className="col-lg-6 col-md-6 col-12 ">
@@ -76,7 +77,7 @@ class Anidetail extends Component{
                                 <ReactAudioPlayer
                                 src= {audio}
                                 controls
-                                />
+                            />
                             </div>
                         </div>
                     </div>
