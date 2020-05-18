@@ -42,12 +42,14 @@ class Game extends Component{
                             <div >
                                 <h1 className=' kidtipshead pt-5  '>Let's solve a puzzle</h1>
                             </div>
-                            <div>
-                                <p className='game-desc'>{data.gamedesc}</p>
+                            <div className='container'>
+                                <div>
+                                    <p className='game-desc'>{data.gamedesc}</p>
+                                </div>
+                                <Link to='/animalList'>     
+                                    <a class="btn btn-warning btn-lg mt-3 unifont game-desc-btn"  data-aos-delay="100">Let's go back</a>
+                                </Link> 
                             </div>
-                            <Link to='/animalList'>     
-                                <a class="btn btn-warning btn-lg mt-3 unifont text-center"  data-aos-delay="100">Let's go back</a>
-                            </Link> 
                         </div>
 
                         <div class="col-lg-4 col-md-4 col-12">
