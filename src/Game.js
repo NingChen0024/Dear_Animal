@@ -42,6 +42,9 @@ class Game extends Component{
                             <div >
                                 <h1 className=' kidtipshead pt-5  '>Let's solve a puzzle</h1>
                             </div>
+                            <div>
+                                <p>{data.gamedesc}</p>
+                            </div>
                         </div>
 
                         <div class="col-lg-4 col-md-4 col-12">
