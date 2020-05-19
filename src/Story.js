@@ -33,7 +33,8 @@ class Story extends Component{
             time: 60,
             coin: 'head',
             rating: 0,
-            showRating: false
+            showRating: false,
+            showCards: 'hide'
 
         }
     }
@@ -42,7 +43,18 @@ class Story extends Component{
         this.setState({rating: newRating})
     }
 
+
+    changeCardsState = () => {
+
+        
+        this.setState({showCards:'pause'})
+        console.log(this.state.coin)
+        setTimeout(this.onRefreshClicked, 2000)
+    }
+
     onRefreshClicked =() => {
+
+        
         var card_one_number = Math.floor(Math.random() * 13)
         var card_two_number = Math.floor(Math.random() * 13)
         var card_three_number = Math.floor(Math.random() * 13)
@@ -59,6 +71,9 @@ class Story extends Component{
             card_three: data_three_value[card_three_number]
         })
 
+        this.setState({showCards:'show'})
+
+    
     }
 
     countDown = () => {
@@ -75,6 +90,7 @@ class Story extends Component{
         clearInterval(this.state.myInterval)
         this.setState({myInterval : setInterval(this.countDown,1000)})
         this.setState({showRating:false})
+        this.setState({rating:0})
     }
 
     pauseTimer = () => {
@@ -170,6 +186,8 @@ class Story extends Component{
                                             </div>
                                         }[this.state.coin]
                                     }
+
+                                      
                                 </div>
                                 <button onClick={this.toss} className='btn btn-info unifont'>toss a coin</button>
                                 
@@ -194,6 +212,34 @@ class Story extends Component{
                                         numberOfStars={5}
                                         name='rating'
                                     />
+
+                                    <div>
+                                    {
+                                        {
+                                        1: <div>
+                                               
+                                                <p className='coin-tossing-font'>The story needs improvement!</p>
+                                            </div>,
+                                        2: <div>
+                                                
+                                                <p className='coin-tossing-font'>The story is ok!</p>
+                                            </div>,
+                                        3: <div>
+                                                
+                                                <p className='coin-tossing-font'>What a good story</p>
+                                            </div>,
+                                        4: <div>
+                                                
+                                            <p className='coin-tossing-font'>I kinda like it!</p>
+                                        </div>,
+                                        5: <div>
+                                                
+                                            <p className='coin-tossing-font'>I really love the story!</p>
+                                        </div>,
+                                        }[this.state.rating]
+                                    }
+                                    </div>
+
                                 </div>
                                 ):(
                                 <div>
@@ -217,34 +263,96 @@ class Story extends Component{
                   
                     </div>
                 </div>
+                {
+                    {
+                'show': <div className='container'>
+                    <div className='row'>
+                        <div className='card m-4'>
+                            <div class="container">
+                                <img src={require('./images/card_one.jpeg')} className='story-img2 '/>
+                                <p className='card-name mt-5 mb-5'>{this.state.card_one}</p> 
+                            </div>
+                        </div>
 
-                <div className='container'>
+                        <div className='card m-4'>
+                            <div class="container">
+                                <img src={require('./images/card_two.jpeg')} className='story-img2'/>
+                                <p className='card-name mt-5 mb-5'>{this.state.card_two}</p> 
+                            </div>
+                        </div>
+
+                        <div className='card m-4'>
+                            <div class="container">
+                                <img src={require('./images/card_three.jpeg')} className='story-img3'/>
+                                <p className='card-name mt-5 mb-5'>{this.state.card_three}</p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>,
+                
+                'hide': <div className='container'>
                     <div className='row'>
                         <div className='card m-4'>
                             <div class="container">
                                 <img src={require('./images/question_mark.gif')} className='story-img '/>
-                                <p className='card-name'>{this.state.card_one}</p> 
+                                <p className='card-name mt-5 mb-5'>
+                                    
+                                </p>
                             </div>
                         </div>
 
                         <div className='card m-4'>
                             <div class="container">
                                 <img src={require('./images/question_mark.gif')} className='story-img'/>
-                                <p className='card-name'>{this.state.card_two}</p> 
+                                <p className='card-name mt-5 mb-5'></p>
                             </div>
                         </div>
 
                         <div className='card m-4'>
                             <div class="container">
                                 <img src={require('./images/question_mark.gif')} className='story-img'/>
-                                <p className='card-name'>{this.state.card_three}</p> 
+                                <p className='card-name mt-5 mb-5'></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>,
+
+                'pause':<div className='container'>
+                    <div className='row'>
+                        <div className='card m-4'>
+                            <div class="container">
+                                <img src={require('./images/question_mark.gif')} className='story-img '/>
+                                <div class="ml-5">
+                                    <ReactLoading type={"bubbles"} color={'orange'} height={'70%'} width={'70%'} className='button-refresh'/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='card m-4'>
+                            <div class="container">
+                                <img src={require('./images/question_mark.gif')} className='story-img'/>
+                                <div class="ml-5">
+                                    <ReactLoading type={"bubbles"} color={'orange'} height={'70%'} width={'70%'} className='button-refresh'/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='card m-4'>
+                            <div class="container">
+                                <img src={require('./images/question_mark.gif')} className='story-img'/>
+                                <div class="ml-5">
+                                    <ReactLoading type={"bubbles"} color={'orange'} height={'70%'} width={'70%'} className='button-refresh'/>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                    }[this.state.showCards]
+                }
+
                 <div className='button-refresh mb-5 pb-5'>
-                    <a className='btn btn-warning btn-lg mt-3 unifont text-white story-desc-font' onClick = {() => this.onRefreshClicked()}>Know your cards!</a>
+                    <a className='btn btn-warning btn-lg mt-3 unifont text-white story-desc-font' onClick = {() => this.changeCardsState()}>Know your cards!</a>
                 </div>
 
 
