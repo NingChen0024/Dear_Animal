@@ -230,7 +230,7 @@ class Story extends Component{
                                             </div>,
                                         4: <div>
                                                 
-                                            <p className='coin-tossing-font'>I kinda like it!</p>
+                                            <p className='coin-tossing-font'>I am kinda like it!</p>
                                         </div>,
                                         5: <div>
                                                 
@@ -246,7 +246,7 @@ class Story extends Component{
                                     <div className='mt-5'>
 
                                     </div>
-                                    <h1 className='unifont story-title mt-4'>Hey there time to make a story together! </h1>
+                                    <h1 className='unifont story-title mt-1'>Hey there time to make a story together! </h1>
                                 </div>)}
                             </div>
                         </div>
