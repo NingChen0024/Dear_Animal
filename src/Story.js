@@ -230,7 +230,7 @@ class Story extends Component{
                                             </div>,
                                         4: <div>
                                                 
-                                            <p className='coin-tossing-font'>I am kinda like it!</p>
+                                            <p className='coin-tossing-font'>I kinda like it!</p>
                                         </div>,
                                         5: <div>
                                                 

@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/koala.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/koala.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta
+  name="description"
+  content="Web site created using create-react-app"
+  />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
 
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-    <title>Dear Animals</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+  <title>Dear Animals</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- font css -->
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Sniglet" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Salsa" />
 
-    <!-- <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" /> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <!-- font css -->
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Sniglet" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Salsa" />
+
+  <!-- <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap" rel="stylesheet">
-    <style>
-      #map{
-        min-height: 500px;
-      }
-    </style>
-  </head>
-  <body>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap" rel="stylesheet">
+  <style>
+    #map{
+      min-height: 500px;
+    }
+  </style>
+</head>
+<body>
 
 
-    <div id="root"></div>
+  <div id="root"></div>
 
 
     <!--
@@ -56,7 +56,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/node_modules/jquery/dist/jquery.js"></script>
-  
+
     <!-- <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script> -->
     <script src="js/smoothscroll.js"></script>
     <script src="js/custom.js"></script>
@@ -65,26 +65,26 @@
 
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAKe8MrApmoUMAB4eACxl8_-UJCdzhCIw&callback=initMap">
-    </script>
+  </script>
 
-    <script>
-      function initMap() {
-        markers = [];
-        var vic = { lat: -37.4713, lng: 144.7852 };
-        map = new google.maps.Map(
-            document.getElementById('map'), { zoom: 8, center: vic });
+  <script>
+    function initMap() {
+      markers = [];
+      var vic = { lat: -37.4713, lng: 144.7852 };
+      map = new google.maps.Map(
+        document.getElementById('map'), { zoom: 8, center: vic });
     }
 
-      $(function(){
-        $("#postCodeForm").on('submit', function(e){
-          e.preventDefault();
+    $(function(){
+      $("#postCodeForm").on('submit', function(e){
+        e.preventDefault();
           //  Clear markers here
           markers = [];
           var matches = 0;
-            for (var i = 0; i < markers.length; i++) {
-                  markers[i].setMap(null);
-              }
-            
+          for (var i = 0; i < markers.length; i++) {
+            markers[i].setMap(null);
+          }
+
 
             // var postCode = document.getElementById('postCode').value;
             var postCode = $("#postCode").val();
@@ -92,18 +92,20 @@
             console.log(typeof postCode);
 
             var infowindow = new google.maps.InfoWindow({
-                content: ""
+              content: ""
             });
             console.log(animalData);
-            while(true){
+            var pattern = new RegExp("[0-9]{4}","g");
+            if(pattern.test(postCode))
+              { while(true){
                 if(!animalData[postCode] || animalData[postCode].length == 0){
-                    postCode = parseInt(postCode);
-                    postCode += 1
+                  postCode = parseInt(postCode);
+                  postCode += 1
                 }else{
                   for (var i = 0; i < animalData[postCode].length; i++) {
-                console.log(animalData[postCode][i]);
-                matches += 1;
-                console.log('match');
+                    console.log(animalData[postCode][i]);
+                    matches += 1;
+                    console.log('match');
                 // var name = []
                 // name.push(animalData[i]['Vernacular name - original'])
                 var name = animalData[postCode][i]['Vernacular name - original'];
@@ -115,33 +117,35 @@
 
 
                 google.maps.event.addListener(marker, 'click', (function (marker, content, infowindow) {
-                    return function () {
-                        infowindow.setContent(content);
-                        infowindow.open(map, marker);
-                    };
+                  return function () {
+                    infowindow.setContent(content);
+                    infowindow.open(map, marker);
+                  };
                 })(marker, content, infowindow));
 
 
                 markers.push(marker);
 
                 // Add infowindow HERE
-            }
+              }
 
-            var bounds = new google.maps.LatLngBounds();
-            for (var i = 0; i < markers.length; i++) {
+              var bounds = new google.maps.LatLngBounds();
+              for (var i = 0; i < markers.length; i++) {
                 bounds.extend(markers[i].position);
-            }
+              }
 
-            map.fitBounds(bounds);
-                    break;
-                }
+              map.fitBounds(bounds);
+              break;
+            }
             
 
 
 
-                }
-            })
-      })
-    </script>
-  </body>
+          } } 
+          else { alert('Please enter a valid Postcode'); }
+
+        })
+    })
+  </script>
+</body>
 </html>
