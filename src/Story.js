@@ -269,21 +269,21 @@ class Story extends Component{
                     <div className='row'>
                         <div className='card m-4'>
                             <div class="container">
-                                <img src={require('./images/card_one.jpeg')} className='story-img2 '/>
+                                <img src={require('./images/question_mark.gif')} className='story-img'/>
                                 <p className='card-name mt-5 mb-5'>{this.state.card_one}</p> 
                             </div>
                         </div>
 
                         <div className='card m-4'>
                             <div class="container">
-                                <img src={require('./images/card_two.jpeg')} className='story-img2'/>
+                                <img src={require('./images/question_mark.gif')} className='story-img'/>
                                 <p className='card-name mt-5 mb-5'>{this.state.card_two}</p> 
                             </div>
                         </div>
 
                         <div className='card m-4'>
                             <div class="container">
-                                <img src={require('./images/card_three.jpeg')} className='story-img3'/>
+                                <img src={require('./images/question_mark.gif')} className='story-img'/>
                                 <p className='card-name mt-5 mb-5'>{this.state.card_three}</p> 
                             </div>
                         </div>
