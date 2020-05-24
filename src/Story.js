@@ -226,7 +226,7 @@ class Story extends Component{
                                             </div>,
                                         3: <div>
                                                 
-                                                <p className='coin-tossing-font'>What a good story</p>
+                                                <p className='coin-tossing-font'>What a good story!</p>
                                             </div>,
                                         4: <div>
                                                 
