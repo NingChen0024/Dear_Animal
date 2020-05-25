@@ -218,7 +218,7 @@ class Story extends Component{
                                         {
                                         1: <div>
                                                
-                                                <p className='coin-tossing-font'>The story needs improvement!</p>
+                                                <p className='coin-tossing-font'>Another story please!</p>
                                             </div>,
                                         2: <div>
                                                 
@@ -234,7 +234,7 @@ class Story extends Component{
                                         </div>,
                                         5: <div>
                                                 
-                                            <p className='coin-tossing-font'>I really love the story!</p>
+                                            <p className='coin-tossing-font'>Amazing! I love the story!</p>
                                         </div>,
                                         }[this.state.rating]
                                     }

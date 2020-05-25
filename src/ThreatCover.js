@@ -13,7 +13,7 @@ class ThreatCover extends Component {
   
     initViz() {
        
-        const url = "https://public.tableau.com/views/Letsknowaboutanimals/Dashboard3?:display_count=y&publish=yes&:origin=viz_share_link",
+        const url = "https://public.tableau.com/shared/ZG836Y9BX?:display_count=y&:origin=viz_share_link",
         vizContainer = this.vizContainer;  
         var options = {
             hideTabs: true,
