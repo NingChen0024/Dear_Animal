@@ -213,6 +213,15 @@ class Story extends Component{
                                         name='rating'
                                     />
 
+
+
+
+
+
+
+
+                                {this.state.coin === 'tail' ? (
+
                                     <div>
                                     {
                                         {
@@ -238,7 +247,43 @@ class Story extends Component{
                                         </div>,
                                         }[this.state.rating]
                                     }
+                                    </div>) : (
+                                    
+                                    <div>
+                                    {
+                                        {
+                                        1: <div>
+                                               
+                                                <p className='coin-tossing-font'>You can do better buddy!</p>
+                                            </div>,
+                                        2: <div>
+                                                
+                                                <p className='coin-tossing-font'>Good Job!</p>
+                                            </div>,
+                                        3: <div>
+                                                
+                                                <p className='coin-tossing-font'>Thats a really good story well done!</p>
+                                            </div>,
+                                        4: <div>
+                                                
+                                            <p className='coin-tossing-font'>I Love the story!</p>
+                                        </div>,
+                                        5: <div>
+                                                
+                                            <p className='coin-tossing-font'>Creative! I am proud of you!</p>
+                                        </div>,
+                                        }[this.state.rating]
+                                    }
                                     </div>
+                                    )}
+
+                              
+
+
+
+
+
+
 
                                 </div>
                                 ):(
