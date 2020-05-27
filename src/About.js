@@ -17,7 +17,6 @@ class About extends Component {
       this.initViz()  
     }  
 
-    
       initViz() {
        
         const url = "https://public.tableau.com/views/FirstexplanationPART2/Dashboard3?:display_count=y&publish=yes&:origin=viz_share_link",
