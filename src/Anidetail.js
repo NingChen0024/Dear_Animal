@@ -71,7 +71,7 @@ class Anidetail extends Component{
                         </div>
 
                         <div className="col-lg-6 col-md-6 col-12 ">
-                            <p className='row3-font mb-3'>Description</p>
+                            <p className='row4-font mb-3'>Description</p>
                             <p className='row2-font'>{data.anidescription}</p>
                             <p className='row3-font mt-5'>{data.sound}</p>
                             <div className='sound'>
@@ -162,7 +162,7 @@ class Anidetail extends Component{
                         </div>
 
                         <div className="col-lg-6 col-md-6 col-12 ">
-                            <p className='row3-font mb-3'>Description</p>
+                            <p className='row4-font mb-3'>Description</p>
                             <p className='row2-font'>{data.anidescription}</p>
 
                         </div>
