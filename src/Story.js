@@ -123,7 +123,8 @@ class Story extends Component{
     }
 
     toss = () => {
-            this.setState({coin:'pause'})
+            this.setState({coin:'pause',time: 60, showRating:false})
+       
             console.log(this.state.coin)
             setTimeout(this.changeCoinState, 2000)
     
